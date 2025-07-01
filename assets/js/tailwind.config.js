@@ -2,7 +2,8 @@ tailwind.config = {
     theme: {
         extend: {
             screens: {
-                '3xl': '1288px',
+                '4xl': '1500px',
+                '3xl': '1336px',
                 '2xl': '1280px',
                 xl: '1024px',
                 lg: '992px',
@@ -12,9 +13,10 @@ tailwind.config = {
             },
             container: {
                 center: true,
-                maxWidth: '1288px',
+                maxWidth: '1336px',
                 padding: {
-                    // DEFAULT: '24px',
+                    DEFAULT: '24px',
+                    '4xl': '0px',
                     '3xl': '0px',
                     '2xl': '32px',
                     xl: '32px',

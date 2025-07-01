@@ -696,6 +696,7 @@ strong {
 }
 
 // ----------------------- button style -----------------------
+
 .button {
   &-wrap {
     position: relative;
@@ -703,6 +704,36 @@ strong {
     padding: 2px;
     transition: all 0.4s ease;
     overflow: hidden;
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 100rem;
+      transition: all 0.4s ease;
+      background: linear-gradient(
+        135deg,
+        #ebb75e 0%,
+        rgba(255, 255, 255, 0) 30%,
+        rgba(255, 255, 255, 0) 69%,
+        #ebb75e 100%
+      );
+    }
+    &:hover {
+      &:before {
+        transition: all 0.4s ease;
+        background: linear-gradient(
+          187deg,
+          #ebb75e 0%,
+          rgba(255, 255, 255, 0) 30%,
+          rgba(255, 255, 255, 0) 69%,
+          #ebb75e 100%
+        );
+      }
+    }
     .inner {
       position: relative;
       z-index: 2;
@@ -715,29 +746,17 @@ strong {
       padding: 12px 30px;
       border-radius: 99px;
       cursor: pointer;
+      &.footer-button {
+        height: 32px;
+        gap: 5px;
+        padding: 4px 16px;
+      }
       .text {
         @extend .text-body-sm-uppercase;
       }
     }
     &.bg-green {
       background: var(--luxury-green-radial-primary);
-      &:before {
-        content: "";
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 100rem;
-        background: linear-gradient(
-          135deg,
-          #ebb75e 0%,
-          rgba(255, 255, 255, 0) 30%,
-          rgba(255, 255, 255, 0) 69%,
-          #ebb75e 100%
-        );
-      }
       .inner {
         background: var(--luxury-green-radial-primary);
         .text {
@@ -745,45 +764,9 @@ strong {
           background: var(--general-fill-primary);
         }
       }
-      &:hover {
-        &:before {
-          content: "";
-          position: absolute;
-          z-index: 1;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          border-radius: 100rem;
-          transition: all 0.4s ease;
-          background: linear-gradient(
-            135deg,
-            rgba(255, 255, 255, 0) 15%,
-            #ffce6f 51%,
-            rgba(255, 255, 255, 0) 89%
-          );
-        }
-      }
     }
     &.bg-red {
       background: var(--accessible-red);
-      &:before {
-        content: "";
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 100rem;
-        background: linear-gradient(
-          135deg,
-          #ebb75e 0%,
-          rgba(255, 255, 255, 0) 30%,
-          rgba(255, 255, 255, 0) 69%,
-          #ebb75e 100%
-        );
-      }
       .inner {
         background: var(--accessible-red);
         .text {
@@ -794,14 +777,6 @@ strong {
       &:hover {
         .inner {
           background: var(--accessible-red-hover);
-        }
-        &:before {
-          background: linear-gradient(
-            135deg,
-            rgba(255, 255, 255, 0) 15%,
-            #ffce6f 51%,
-            rgba(255, 255, 255, 0) 89%
-          );
         }
       }
     }
@@ -821,6 +796,12 @@ a {
       color: var(--primary);
     }
   }
+  &.link-white {
+    color: var(--white);
+    &:hover {
+      color: var(--stock-system-yellow);
+    }
+  }
 }
 .link-sub {
   @extend .text-body-sm-medium;
@@ -837,6 +818,7 @@ a {
 }
 .link-nav {
   @extend .text-body-md-regular, .text-gradient;
+  width: fit-content;
   position: relative;
   padding: 6px 0;
   background: var(--general-label-secondary);
@@ -1029,7 +1011,7 @@ hr {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 10;
+  z-index: 15;
   overflow: hidden;
   align-items: center;
   justify-content: center;
@@ -1532,7 +1514,7 @@ hr {
 .header {
   .header-pc {
     position: fixed;
-    z-index: 5;
+    z-index: 10;
     width: 100%;
     top: 0;
     padding: 9px 0 27px 0;
@@ -1540,6 +1522,12 @@ hr {
     background: linear-gradient(180deg, #025436 0%, rgba(2, 84, 54, 0) 60%);
   }
   .header-mobile {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    top: 0;
+    height: 80px;
     background: linear-gradient(180deg, #025436 0%, rgba(2, 84, 54, 0) 60%);
   }
   .breadcrumb-header {
@@ -1548,17 +1536,17 @@ hr {
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
-      max-height: calc(100vh - 50px - 24px * 3);
+      max-height: 50vh;
       overflow-y: auto;
-      .menu-wrap {
-        > li {
-          padding: 12px 0;
-          border-bottom: 1px solid #e5e7eb;
-          &:last-child {
-            border-bottom: 1px solid transparent;
-          }
-        }
-      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .header-pc {
+      display: none;
+    }
+    .header-mobile {
+      display: block;
     }
   }
 
@@ -1679,6 +1667,27 @@ hr {
       }
     }
   }
+
+  .footer-form {
+    .input-home {
+      @extend .text-body-sm-regular;
+      width: 100%;
+      height: 44px;
+      color: var(--white);
+      padding: 4px 85px 4px 16px;
+      border-radius: 8px;
+      background: rgba(246, 246, 246, 0.2);
+      &::placeholder {
+        opacity: 0.7;
+      }
+    }
+    .button-wrap {
+      position: absolute;
+      top: 50%;
+      right: 4px;
+      transform: translateY(-50%);
+    }
+  }
 }
 
 .language {
@@ -1745,19 +1754,17 @@ hr {
     &-item {
       display: flex;
       align-items: flex-start;
+      gap: 16px;
       figure {
         width: 20px;
         height: 20px;
       }
-      p {
+      .context {
         flex: 1;
         color: var(--white);
-      }
-
-      &:hover {
-        p {
-          color: var();
-        }
+        display: flex;
+        align-items: center;
+        gap: 8px;
       }
     }
   }
@@ -1769,18 +1776,17 @@ hr {
     }
     &-item {
       position: relative;
-      width: 40px;
-      height: 40px;
+      width: 32px;
+      height: 32px;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: var(--white);
-      border-radius: 100rem;
+      // background: var(--white);
+      // border-radius: 100rem;
 
       &:hover {
-        svg {
-          path {
-            fill: var(--accent-1);
+        figure {
+          img {
           }
         }
       }

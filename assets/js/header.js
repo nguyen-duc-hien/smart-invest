@@ -8,14 +8,14 @@ document.addEventListener("DOMContentLoaded", function () {
     breadcrumbButtons.forEach((button, index) => {
         button.addEventListener("click", () => {
             const breadcrumbHeader = breadcrumbHeaders[index];
-            breadcrumbHeader.classList.remove("hidden", "translate-x-full");
+            breadcrumbHeader.classList.remove("hidden", "-translate-x-full");
             breadcrumbHeader.classList.add("translate-x-0");
         });
     });
 
     // Function to close the breadcrumb header
     function closeBreadcrumb(breadcrumbHeader) {
-        breadcrumbHeader.classList.add("translate-x-full");
+        breadcrumbHeader.classList.add("-translate-x-full");
         breadcrumbHeader.classList.remove("translate-x-0");
         setTimeout(() => breadcrumbHeader.classList.add("hidden"), 300); // Wait for animation to finish
     }

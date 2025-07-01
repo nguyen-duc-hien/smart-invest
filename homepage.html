@@ -27,8 +27,8 @@
 <body>
     <header class="header">
         <div class="header-pc">
-            <div class="container 3xl:max-w-[1475px] relative z-[2]">
-                <div class="first-row 3xl:max-w-[1435px] flex flex-wrap gap-10 items-center justify-between">
+            <div class="container w-full 4xl:max-w-[1523px] relative z-[2]">
+                <div class="first-row w-full 4xl:max-w-[1483px] flex flex-wrap gap-10 items-center justify-between">
                     <div class="flex items-center gap-5">
                         <a href="#" class="link-sub">Về AAS</a>
                         <a href="#" class="link-sub">Thông tin cổ đông</a>
@@ -79,11 +79,11 @@
                 </div>
                 <div class="second-row">
                     <div class="content-inner">
-                        <div class="flex items-center gap-6 3xl:gap-8">
+                        <div class="flex items-center gap-6 4xl:gap-8">
                             <a href="#" class="logo">
                                 <figure><img src="/assets/image/header/logo.svg" alt="logo"></figure>
                             </a>
-                            <nav class="flex items-center gap-4 3xl:gap-6">
+                            <nav class="flex items-center gap-4 4xl:gap-6">
                                 <a href="#" class="link-nav active">Trang chủ</a>
                                 <a href="#" class="link-nav">Khách hàng cá nhân</a>
                                 <a href="#" class="link-nav">Khách hàng tổ chức</a>
@@ -98,7 +98,7 @@
                                     <figure class="w-5 h-5 aspect-[1/1]"><img src="/assets/image/header/gd-ngay.svg"
                                             alt="icon">
                                     </figure>
-                                    <p class="text">Giao dịch ngay</p>
+                                    <p class="!hidden 3xl:!inline-block text">Giao dịch ngay</p>
                                 </div>
                             </a>
                             <a href="" class="button-wrap bg-red">
@@ -106,10 +106,117 @@
                                     <figure class="w-5 h-5 aspect-[1/1]"><img src="/assets/image/header/mo-tk.svg"
                                             alt="icon">
                                     </figure>
-                                    <p class="text">Mở tài khoản</p>
+                                    <p class="!hidden 3xl:!inline-block text">Mở tài khoản</p>
                                 </div>
                             </a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-mobile">
+            <div class="container">
+                <div class="second-row">
+                    <div class="content-inner">
+                        <a href="#" class="logo">
+                            <figure><img src="/assets/image/header/logo.svg" alt="logo"></figure>
+                        </a>
+                        <button class="breadcrumb-button">
+                            <figure class="w-6 h-6">
+                                <img src="/assets/image/icon/hamburger-icon.svg" alt="">
+                            </figure>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- breadcrumb mobile -->
+            <div
+                class="breadcrumb-header hidden fixed w-[95vw] max-w-[350px] h-[100vh] top-0 left-0 z-[5] transform transition-transform duration-300 ease-in-out translate-x-full">
+                <div class="shadow-1 flex flex-col gap-10 bg-[#025436] w-full h-full p-6">
+                    <div class="flex items-center justify-between">
+                        <a href="#" class="logo">
+                            <figure><img src="/assets/image/header/logo.svg" alt="logo"></figure>
+                        </a>
+                        <button class="breadcrumb-close">
+                            <figure class="w-8 h-8">
+                                <img src="/assets/image/icon/close.svg" alt="">
+                            </figure>
+                        </button>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="language-select">
+                            <div class="language-show">
+                                <div class="flex items-center gap-2">
+                                    <figure class="show-flag aspect-[1/1] max-w-5 "><img
+                                            src="/assets/image/country-flag/vn.svg" alt="vn">
+                                    </figure>
+                                    <p class="show-text text-body-sm-semibold text-white">Vie</p>
+                                </div>
+                                <figure class="action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.69247 7.09327C3.91711 6.83119 4.31167 6.80084 4.57375 7.02548L10.0003 11.6768L15.4269 7.02548C15.689 6.80084 16.0836 6.83119 16.3082 7.09327C16.5328 7.35535 16.5025 7.74991 16.2404 7.97455L10.4071 12.9745C10.173 13.1752 9.82765 13.1752 9.59359 12.9745L3.76026 7.97455C3.49818 7.74991 3.46783 7.35535 3.69247 7.09327Z"
+                                            fill="white" />
+                                    </svg>
+                                </figure>
+
+                            </div>
+                            <div class="language-container">
+                                <div class="language-item">
+                                    <figure class="aspect-[1/1] max-w-5 "><img src="/assets/image/country-flag/vn.svg"
+                                            alt="vn"></figure>
+                                    <p class="show-text text-body-sm-semibold text-text-content">Vie</p>
+                                </div>
+                                <div class="language-item">
+                                    <figure class="aspect-[1/1] max-w-5 "><img src="/assets/image/country-flag/vn.svg"
+                                            alt="vn"></figure>
+                                    <p class="show-text text-body-sm-semibold text-text-content">Vie</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-[1px] h-[26px] line-1">
+                        </div>
+
+                        <a href="#" class="hotline">
+                            <figure class="icon"><img src="/assets/image/header/hotline.svg" alt="icon"></figure>
+                            1900 1811
+                        </a>
+                    </div>
+
+                    <div class="breadcrumb-container custom-scrollbar">
+                        <nav class="flex flex-col gap-4 4xl:gap-6">
+                            <a href="#" class="link-nav active">Trang chủ</a>
+                            <a href="#" class="link-nav">Khách hàng cá nhân</a>
+                            <a href="#" class="link-nav">Khách hàng tổ chức</a>
+                            <a href="#" class="link-nav">AAS Research</a>
+                            <a href="#" class="link-nav">AAS Academy</a>
+                            <a href="#" class="link-nav">Trung tâm CSKH</a>
+                        </nav>
+                    </div>
+
+                    <div class="flex flex-col items-center gap-4">
+                        <a href="#" class="button-wrap bg-green">
+                            <div class="inner">
+                                <figure class="w-5 h-5 aspect-[1/1]"><img src="/assets/image/header/gd-ngay.svg"
+                                        alt="icon">
+                                </figure>
+                                <p class="text">Giao dịch ngay</p>
+                            </div>
+                        </a>
+                        <a href="" class="button-wrap bg-red">
+                            <div class="inner">
+                                <figure class="w-5 h-5 aspect-[1/1]"><img src="/assets/image/header/mo-tk.svg"
+                                        alt="icon">
+                                </figure>
+                                <p class="text">Mở tài khoản</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -133,7 +240,7 @@
                 background: linear-gradient(180deg, #025436 0%, rgba(2, 84, 54, 0.00) 50.44%);
             }
         </style>
-        <section class="w-screen h-screen">
+        <section class="">
             <div class="home-banner">
                 <figure class="max-h-screen"><img class="max-h-screen min-w-full"
                         src="/assets/image/homepage/banner.png" alt="banner"></figure>
@@ -255,23 +362,148 @@
 
 
     </main>
-    <footer class="footer-bg">
+    <footer class="footer footer-bg">
         <div class="absolute top-0 right-0 z-[1] h-full overflow-hidden">
             <figure><img src="/assets/image/footer/illus-bg.svg" alt="illus"></figure>
         </div>
-        <div class="container relative z-[2] 3xl:max-w-[1495px]">
+        <div
+            class="container relative z-[2] w-full 4xl:max-w-[1543px] pt-10 pb-8 grid grid-cols-1 md:grid-cols-2 lg:flex lg:flex-row gap-10 4xl:gap-20">
             <!-- first row -->
-            <div class="flex flex-col gap-6">
+            <div class="flex flex-col gap-6 lg:w-[27%] lg:max-w-[403px]">
                 <a href="#" class="">
                     <figure class="max-w-[175px]"><img src="/assets/image/footer/logo.svg" alt="logo"></figure>
                 </a>
 
                 <div class="social-link-list">
-                    <a href="#" class="social-link-item">
+                    <div class="social-link-item">
                         <figure><img src="/assets/image/icon/location.svg" alt="icon"></figure>
-                        <p class="text-body-sm-regular">Số 220 + 222 + 224 phố Nguyễn Lương Bằng,
-                            phường Quang Trung, quận Đồng Đa, thành phố Hà Nội</p>
+                        <div class="context text-body-sm-regular"><a href="#" class="link-white">
+                                Số 220 + 222 + 224 phố Nguyễn Lương Bằng,
+                                phường Quang Trung, quận Đồng Đa, thành phố Hà Nội
+                            </a></div>
+                    </div>
+                    <div class="social-link-item">
+                        <figure><img src="/assets/image/icon/headset.svg" alt="icon"></figure>
+                        <div class="context text-body-sm-regular">
+                            Số điện thoại:
+                            <a href="#" class="link-white">
+                                0243 573 9779
+                            </a>
+                        </div>
+                    </div>
+                    <div class="social-link-item">
+                        <figure><img src="/assets/image/icon/phone.svg" alt="icon"></figure>
+                        <div class="context text-body-sm-regular">
+                            Tổng đài:
+                            <a href="#" class="link-white">
+                                1900 1811
+                            </a>
+                        </div>
+                    </div>
+                    <div class="social-link-item">
+                        <figure><img src="/assets/image/icon/mail.svg" alt="icon"></figure>
+                        <div class="context text-body-sm-regular">
+                            Email:
+                            <a href="#" class="link-white">
+                                trungtamcskh@aas.com.vn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-icon-list">
+                    <a href="#" class="social-icon-item">
+                        <figure><img src="/assets/image/icon/social-fb.svg" alt="social"></figure>
                     </a>
+                    <a href="#" class="social-icon-item">
+                        <figure><img src="/assets/image/icon/social-zalo.svg" alt="social"></figure>
+                    </a>
+                    <a href="#" class="social-icon-item">
+                        <figure><img src="/assets/image/icon/social-yt.svg" alt="social"></figure>
+                    </a>
+                    <a href="#" class="social-icon-item">
+                        <figure><img src="/assets/image/icon/social-tt.svg" alt="social"></figure>
+                    </a>
+                    <a href="#" class="social-icon-item">
+                        <figure><img src="/assets/image/icon/social-sc.svg" alt="social"></figure>
+                    </a>
+                </div>
+            </div>
+
+            <!-- second row -->
+            <div class="flex flex-col gap-[22px] lg:w-[33%] lg:max-w-[490px]">
+                <h2 class="text-body-md-semibold text-white">
+                    Hệ thống chi nhánh và văn phòng đại diện
+                </h2>
+                <div class="flex flex-col gap-5">
+                    <div class="flex items-start gap-2.5">
+                        <figure><img src="/assets/image/icon/location.svg" alt="icon"></figure>
+                        <div class="flex-1 flex flex-col gap-2.5">
+                            <p class="text-body-md-semibold text-white">Chi nhánh Hồ Chí Minh</p>
+                            <a href="#" class="link-white text-body-sm-regular">Tầng 12, Diamond Plaza, 34 Lê Duẩn,
+                                phường Bến Nghé, quận 1, thành phố Hồ Chí Minh</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-2.5">
+                        <figure><img src="/assets/image/icon/location.svg" alt="icon"></figure>
+                        <div class="flex-1 flex flex-col gap-2.5">
+                            <p class="text-body-md-semibold text-white">Văn phòng đại diện Thái Nguyên</p>
+                            <a href="#" class="link-white text-body-sm-regular">Số 668 Phan Đình Phùng, phường Đồng
+                                Quang, thành phố Thái Nguyên</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-2.5">
+                        <figure><img src="/assets/image/icon/location.svg" alt="icon"></figure>
+                        <div class="flex-1 flex flex-col gap-2.5">
+                            <p class="text-body-md-semibold text-white">Văn phòng đại diện Nam Định</p>
+                            <a href="#" class="link-white text-body-sm-regular">Tầng 1, số 13 Minh Khai, phường Nguyễn
+                                Du, thành phố Nam Định</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- third row -->
+            <div class="md:col-span-2 lg:col-span-1 flex flex-col gap-6 lg:w-[30%] lg:max-w-[442px]">
+                <div class="flex flex-col gap-[15px]">
+                    <h2 class="text-body-md-semibold text-white">
+                        Nhận bản tin phân tích mới nhất từ AAS Research
+                    </h2>
+                    <form class="footer-form">
+                        <div class="relative">
+                            <input type="text" class="input-home" placeholder="Nhập địa chỉ email của bạn">
+                            <button class="button-wrap bg-red">
+                                <div class="inner footer-button">
+                                    <figure class="w-5 h-5 aspect-[1/1]"><img src="/assets/image/footer/send.svg"
+                                            alt="icon">
+                                    </figure>
+                                    <p class="text">Gửi</p>
+                                </div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="flex flex-col gap-5">
+                    <h2 class="text-body-md-semibold text-white">
+                        Quét để tải ứng dụng AAS
+                    </h2>
+                    <div class="flex items-center gap-10">
+                        <div class="flex items-center gap-[15px]">
+                            <figure class="w-16 h-16"><img class="aspect-[1/1]"
+                                    src="/assets/image/footer/qr-aas-pro.svg" alt="qr"></figure>
+                            <p class="text-body-sm-regular text-white">
+                                Tải ứng dụng <br>AAS PRO
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-[15px]">
+                            <figure class="w-16 h-16"><img class="aspect-[1/1]"
+                                    src="/assets/image/footer/qr-aas-robo.svg" alt="qr"></figure>
+                            <p class="text-body-sm-regular text-white">
+                                Tải ứng dụng <br>AAS Robo
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
