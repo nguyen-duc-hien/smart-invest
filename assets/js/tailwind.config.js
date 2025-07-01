@@ -46,6 +46,8 @@ tailwind.config = {
             text: {
                 content: '#292929',
                 title: '#F60',
+                logo: '#115231',
+                tertiary: '#666',
             }
         }
     }

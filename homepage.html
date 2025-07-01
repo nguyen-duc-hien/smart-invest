@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header id="header" class="header">
         <div class="header-pc">
             <div class="container w-full 4xl:max-w-[1523px] relative z-[2]">
                 <div class="first-row w-full 4xl:max-w-[1483px] flex flex-wrap gap-10 items-center justify-between">
@@ -346,9 +346,514 @@
             </div>
         </section>
         <!-- -------------------- section 3 -------------------- -->
+        <style>
+            .wrap-1-liner {
+                background: linear-gradient(180deg, #F2F2F2 0%, #FFF 39.01%);
+            }
 
+            .wrap-2-liner {
+                background: url(/assets/image/homepage/s3-wrap-2-bg.png) no-repeat center/cover;
+            }
+
+            .wrap-1-liner {
+                margin-top: 32px;
+            }
+
+            .wrap-context,
+            .wrap-1-liner,
+            .wrap-2-liner {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            @media(min-width:1024px) {
+                .wrap-context {
+                    z-index: 1;
+                    position: sticky;
+                    top: 0;
+                }
+
+                .wrap-1-liner {
+                    z-index: 2;
+                    position: sticky;
+                    top: calc(54px + 32px);
+                    margin-top: 32px;
+                }
+
+                .wrap-2-liner {
+                    z-index: 3;
+                    position: sticky;
+                    top: calc(54px + 20px + 66px);
+                }
+
+                .wrap-context,
+                .wrap-1-liner,
+                .wrap-2-liner {
+                    padding-top: 20px;
+                    padding-bottom: 0;
+                }
+            }
+        </style>
+        <section class="relative sticky-section">
+            <div class="wrap-context pt-10 lg:pt-20">
+                <div class="container">
+                    <h2 class="text-heading-h1-bold text-text-logo">Dịch vụ của AAS</h2>
+                </div>
+            </div>
+            <div class="wrap-1-liner h-fit xl:h-[716px]">
+                <div class="min-h-full overflow-hidden">
+                    <div class="container relative">
+                        <h2 class="text-body-lg-semibold text-text-content">01 Khách hàng tổ chức</h2>
+
+                        <div
+                            class="container xl:absolute left-0 top-[126px] w-full lg:pr-0 lg:w-[100vw] lg:max-w-[100vw] 4xl:w-[90vw] 4xl:max-w-[90vw]">
+                            <!-- <div class=""> -->
+                            <div class="flex max-xl:flex-col gap-10 xl:gap-14">
+                                <!-- title -->
+                                <div class="min-h-full w-full xl:max-w-[433px] flex flex-col justify-between">
+                                    <div class="w-full flex flex-col gap-6 pt-10 3xl:pt-[51px]">
+                                        <h2 class="text-heading-h1-semibold text-text-logo 2xl:text-[48px]">Dịch vụ
+                                            <br>chứng
+                                            khoán
+                                        </h2>
+                                        <p class="lg:max-w-[373px] text-body-md-regular text-text-content">Đầu tư thông
+                                            minh
+                                            với sự đồng
+                                            hành của chuyên gia cùng nền tảng công nghệ 4.0. Dễ dàng, nhanh chóng, đáng
+                                            tin
+                                            cậy
+                                        </p>
+                                    </div>
+
+                                    <div
+                                        class="flex swiper-button-container max-xl:mt-10 w-full h-[36px] items-center xl:justify-start gap-[34px]">
+                                        <!-- If we need navigation buttons -->
+                                        <div class="dvck-prev swiper-button-prev"></div>
+                                        <!-- If we need pagination -->
+                                        <div class="!relative !w-fit !bottom-0 dvck-pagin swiper-pagination"></div>
+                                        <div class="dvck-next swiper-button-next"></div>
+                                    </div>
+                                </div>
+
+                                <!-- swiper -->
+                                <!-- Slider main container -->
+                                <div id="dvck-swiper" class="swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <div class="dvck-item">
+                                                <figure class="images"><img
+                                                        class="aspect-[413/282] max-lg:min-h-[282px] min-w-full"
+                                                        src="/assets/image/homepage/dvck.png" alt="dvck">
+                                                </figure>
+                                                <div class="content">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h2 class="text-body-xl-bold text-text-logo">
+                                                            Giao dịch cổ phiếu
+                                                        </h2>
+                                                        <p
+                                                            class="truncate-3row min-h-3lh text-body-md-regular text-text-tertiary">
+                                                            Đầu tư thông minh với
+                                                            sự đồng hành của chuyên gia cùng nền tảng công nghệ 4.0. Dễ
+                                                            dàng,
+                                                            nhanh chóng, đáng tin cậy</p>
+                                                    </div>
+
+                                                    <a href="#" class="show-more">
+                                                        Tìm hiểu thêm
+                                                        <figure>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z"
+                                                                    fill="#FF6600" />
+                                                            </svg>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <div class="dvck-item">
+                                                <figure class="images"><img
+                                                        class="aspect-[413/282] max-lg:min-h-[282px] min-w-full"
+                                                        src="/assets/image/homepage/dvck.png" alt="dvck">
+                                                </figure>
+                                                <div class="content">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h2 class="text-body-xl-bold text-text-logo">
+                                                            Giao dịch cổ phiếu
+                                                        </h2>
+                                                        <p
+                                                            class="truncate-3row min-h-3lh text-body-md-regular text-text-tertiary">
+                                                            Đầu tư thông minh với
+                                                            sự đồng hành của chuyên gia cùng nền tảng công nghệ 4.0. Dễ
+                                                            dàng,
+                                                            nhanh chóng, đáng tin cậy</p>
+                                                    </div>
+
+                                                    <a href="#" class="show-more">
+                                                        Tìm hiểu thêm
+                                                        <figure>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z"
+                                                                    fill="#FF6600" />
+                                                            </svg>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <div class="dvck-item">
+                                                <figure class="images"><img
+                                                        class="aspect-[413/282] max-lg:min-h-[282px] min-w-full"
+                                                        src="/assets/image/homepage/dvck.png" alt="dvck">
+                                                </figure>
+                                                <div class="content">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h2 class="text-body-xl-bold text-text-logo">
+                                                            Giao dịch cổ phiếu
+                                                        </h2>
+                                                        <p
+                                                            class="truncate-3row min-h-3lh text-body-md-regular text-text-tertiary">
+                                                            Đầu tư thông minh với
+                                                            sự đồng hành của chuyên gia cùng nền tảng công nghệ 4.0. Dễ
+                                                            dàng,
+                                                            nhanh chóng, đáng tin cậy</p>
+                                                    </div>
+
+                                                    <a href="#" class="show-more">
+                                                        Tìm hiểu thêm
+                                                        <figure>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z"
+                                                                    fill="#FF6600" />
+                                                            </svg>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <div class="dvck-item">
+                                                <figure class="images"><img
+                                                        class="aspect-[413/282] max-lg:min-h-[282px] min-w-full"
+                                                        src="/assets/image/homepage/dvck.png" alt="dvck">
+                                                </figure>
+                                                <div class="content">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h2 class="text-body-xl-bold text-text-logo">
+                                                            Giao dịch cổ phiếu
+                                                        </h2>
+                                                        <p
+                                                            class="truncate-3row min-h-3lh text-body-md-regular text-text-tertiary">
+                                                            Đầu tư thông minh với
+                                                            sự đồng hành của chuyên gia cùng nền tảng công nghệ 4.0. Dễ
+                                                            dàng,
+                                                            nhanh chóng, đáng tin cậy</p>
+                                                    </div>
+
+                                                    <a href="#" class="show-more">
+                                                        Tìm hiểu thêm
+                                                        <figure>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z"
+                                                                    fill="#FF6600" />
+                                                            </svg>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <div class="dvck-item">
+                                                <figure class="images"><img
+                                                        class="aspect-[413/282] max-lg:min-h-[282px] min-w-full"
+                                                        src="/assets/image/homepage/dvck.png" alt="dvck">
+                                                </figure>
+                                                <div class="content">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h2 class="text-body-xl-bold text-text-logo">
+                                                            Giao dịch cổ phiếu
+                                                        </h2>
+                                                        <p
+                                                            class="truncate-3row min-h-3lh text-body-md-regular text-text-tertiary">
+                                                            Đầu tư thông minh với
+                                                            sự đồng hành của chuyên gia cùng nền tảng công nghệ 4.0. Dễ
+                                                            dàng,
+                                                            nhanh chóng, đáng tin cậy</p>
+                                                    </div>
+
+                                                    <a href="#" class="show-more">
+                                                        Tìm hiểu thêm
+                                                        <figure>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z"
+                                                                    fill="#FF6600" />
+                                                            </svg>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap-2-liner h-fit xl:h-[666px]">
+                <div class="min-h-full overflow-hidden">
+                    <div class="container relative">
+                        <h2 class="text-body-lg-semibold text-text-content">02 Khách hàng tổ chức</h2>
+
+                        <div
+                            class="container xl:absolute left-0 top-[126px] w-full lg:pr-0 lg:w-[100vw] lg:max-w-[100vw] 4xl:w-[90vw] 4xl:max-w-[90vw]">
+                            <!-- <div class=""> -->
+                            <div class="flex max-xl:flex-col gap-10 xl:gap-14">
+                                <!-- title -->
+                                <div class="min-h-full w-full xl:max-w-[433px] flex flex-col justify-between">
+                                    <div class="w-full flex flex-col gap-6 pt-10 3xl:pt-[51px]">
+                                        <h2 class="text-heading-h1-semibold text-text-logo 2xl:text-[48px]">Dịch vụ thị
+                                            trường vốn
+                                        </h2>
+                                        <p class="lg:max-w-[373px] text-body-md-regular text-text-content">Giải pháp
+                                            toàn
+                                            diện, chiến lược hiệu quả
+                                        </p>
+                                    </div>
+
+                                    <div
+                                        class="swiper-button-container max-xl:mt-10 w-full h-[36px] flex items-center xl:justify-start gap-[34px]">
+                                        <!-- If we need navigation buttons -->
+                                        <div class="dvtt-prev swiper-button-prev"></div>
+                                        <!-- If we need pagination -->
+                                        <div class="!relative !w-fit !bottom-0 dvtt-pagin swiper-pagination"></div>
+                                        <div class="dvtt-next swiper-button-next"></div>
+                                    </div>
+                                </div>
+
+                                <!-- swiper -->
+                                <!-- Slider main container -->
+                                <div id="dvtt-swiper" class="swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <div class="dvck-item">
+                                                <figure class="images"><img
+                                                        class="aspect-[413/282] max-lg:min-h-[282px] min-w-full"
+                                                        src="/assets/image/homepage/dvck.png" alt="dvck">
+                                                </figure>
+                                                <div class="content">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h2 class="text-body-xl-bold text-text-logo">
+                                                            Giao dịch cổ phiếu
+                                                        </h2>
+                                                        <p
+                                                            class="truncate-3row min-h-3lh text-body-md-regular text-text-tertiary">
+                                                            Đầu tư thông minh với
+                                                            sự đồng hành của chuyên gia cùng nền tảng công nghệ 4.0. Dễ
+                                                            dàng,
+                                                            nhanh chóng, đáng tin cậy</p>
+                                                    </div>
+
+                                                    <a href="#" class="show-more">
+                                                        Tìm hiểu thêm
+                                                        <figure>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z"
+                                                                    fill="#FF6600" />
+                                                            </svg>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <div class="dvck-item">
+                                                <figure class="images"><img
+                                                        class="aspect-[413/282] max-lg:min-h-[282px] min-w-full"
+                                                        src="/assets/image/homepage/dvck.png" alt="dvck">
+                                                </figure>
+                                                <div class="content">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h2 class="text-body-xl-bold text-text-logo">
+                                                            Giao dịch cổ phiếu
+                                                        </h2>
+                                                        <p
+                                                            class="truncate-3row min-h-3lh text-body-md-regular text-text-tertiary">
+                                                            Đầu tư thông minh với
+                                                            sự đồng hành của chuyên gia cùng nền tảng công nghệ 4.0. Dễ
+                                                            dàng,
+                                                            nhanh chóng, đáng tin cậy</p>
+                                                    </div>
+
+                                                    <a href="#" class="show-more">
+                                                        Tìm hiểu thêm
+                                                        <figure>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z"
+                                                                    fill="#FF6600" />
+                                                            </svg>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <div class="dvck-item">
+                                                <figure class="images"><img
+                                                        class="aspect-[413/282] max-lg:min-h-[282px] min-w-full"
+                                                        src="/assets/image/homepage/dvck.png" alt="dvck">
+                                                </figure>
+                                                <div class="content">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h2 class="text-body-xl-bold text-text-logo">
+                                                            Giao dịch cổ phiếu
+                                                        </h2>
+                                                        <p
+                                                            class="truncate-3row min-h-3lh text-body-md-regular text-text-tertiary">
+                                                            Đầu tư thông minh với
+                                                            sự đồng hành của chuyên gia cùng nền tảng công nghệ 4.0. Dễ
+                                                            dàng,
+                                                            nhanh chóng, đáng tin cậy</p>
+                                                    </div>
+
+                                                    <a href="#" class="show-more">
+                                                        Tìm hiểu thêm
+                                                        <figure>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z"
+                                                                    fill="#FF6600" />
+                                                            </svg>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <div class="dvck-item">
+                                                <figure class="images"><img
+                                                        class="aspect-[413/282] max-lg:min-h-[282px] min-w-full"
+                                                        src="/assets/image/homepage/dvck.png" alt="dvck">
+                                                </figure>
+                                                <div class="content">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h2 class="text-body-xl-bold text-text-logo">
+                                                            Giao dịch cổ phiếu
+                                                        </h2>
+                                                        <p
+                                                            class="truncate-3row min-h-3lh text-body-md-regular text-text-tertiary">
+                                                            Đầu tư thông minh với
+                                                            sự đồng hành của chuyên gia cùng nền tảng công nghệ 4.0. Dễ
+                                                            dàng,
+                                                            nhanh chóng, đáng tin cậy</p>
+                                                    </div>
+
+                                                    <a href="#" class="show-more">
+                                                        Tìm hiểu thêm
+                                                        <figure>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z"
+                                                                    fill="#FF6600" />
+                                                            </svg>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <div class="dvck-item">
+                                                <figure class="images"><img
+                                                        class="aspect-[413/282] max-lg:min-h-[282px] min-w-full"
+                                                        src="/assets/image/homepage/dvck.png" alt="dvck">
+                                                </figure>
+                                                <div class="content">
+                                                    <div class="flex flex-col gap-2">
+                                                        <h2 class="text-body-xl-bold text-text-logo">
+                                                            Giao dịch cổ phiếu
+                                                        </h2>
+                                                        <p
+                                                            class="truncate-3row min-h-3lh text-body-md-regular text-text-tertiary">
+                                                            Đầu tư thông minh với
+                                                            sự đồng hành của chuyên gia cùng nền tảng công nghệ 4.0. Dễ
+                                                            dàng,
+                                                            nhanh chóng, đáng tin cậy</p>
+                                                    </div>
+
+                                                    <a href="#" class="show-more">
+                                                        Tìm hiểu thêm
+                                                        <figure>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                                height="24" viewBox="0 0 24 24" fill="none">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                    d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z"
+                                                                    fill="#FF6600" />
+                                                            </svg>
+                                                        </figure>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- -------------------- section 4 -------------------- -->
+        <style>
+            .s4-bg {
+                background: url(/assets/image/homepage/s4-bg.png) no-repeat center/cover;
+            }
+        </style>
+        <section class="s4-bg py-10 lg:py-[100px] lg:h-[600px]">
+            <div class="container">
+                <h2 class="text-heading-h1 text-white">
+                    Tiện ích giao dịch
+                </h2>
 
+                <div class="mt-10 lg:max-w-[1068px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div class="w-[340px]">abcd</div>
+                </div>
+            </div>
+        </section>
         <!-- -------------------- section 5 -------------------- -->
 
         <!-- -------------------- section 6 -------------------- -->
@@ -514,58 +1019,93 @@
     <script defer src="/assets/js/header.js"></script>
     <script defer src="/assets/js/language.js"></script>
     <script defer src="/assets/js/accordion.js"></script>
+    <!-- sticky section script -->
+    <script defer>
+        const header = document.getElementById("header");
+        const stickySection = document.querySelector(".sticky-section");
+
+        function handleScroll() {
+            const scrollY = window.scrollY;
+            const sectionTop = stickySection.offsetTop;
+            const sectionHeight = stickySection.offsetHeight;
+            const sectionBottom = sectionTop + sectionHeight;
+
+            // Nếu scrollY vào giữa sticky section
+            if (scrollY >= sectionTop && scrollY <= sectionBottom) {
+                header.classList.add("hidden");
+            } else {
+                header.classList.remove("hidden");
+            }
+        }
+
+        window.addEventListener("scroll", handleScroll);
+
+    </script>
 
     <!-- swiper script -->
     <script defer>
-        const swiper = new Swiper('#home-swiper', {
+        const swiper = new Swiper('#dvck-swiper', {
             slidesPerView: 1,
+            spaceBetween: 20,
             navigation: true,
             loop: true,
             // autoplay: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-
-        const swiper3 = new Swiper('#review-swiper', {
-            slidesPerView: 1,
-            spaceBetween: 24,
-            centeredSlides: true,
-            loop: true,
-            autoplay: {
-                delay: 50000,
-                disableOnInteraction: false,
-            },
-            speed: 1000,
             breakpoints: {
                 768: {
-                    slidesPerView: 1.5,
-                },
-                992: {
                     slidesPerView: 2,
-                },
-                1024: {
-                    slidesPerView: 2.2,
+                    spaceBetween: 20,
                 },
                 1280: {
-                    slidesPerView: 2.2,
+                    slidesPerView: 2.5,
+                    spaceBetween: 20,
                 },
                 1440: {
-                    slidesPerView: 2.2,
-                },
+                    slidesPerView: 3.5,
+                    spaceBetween: 20,
+                }
             },
-
             pagination: {
-                el: '.review-swiper-pagination',
+                el: ".dvck-pagin",
                 clickable: true,
             },
-
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.dvck-next',
+                prevEl: '.dvck-prev',
             },
         });
+
+        const swiper2 = new Swiper('#dvtt-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: true,
+            loop: true,
+            // autoplay: true,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1280: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 20,
+                },
+                1440: {
+                    slidesPerView: 3.5,
+                    spaceBetween: 20,
+                }
+            },
+            pagination: {
+                el: ".dvtt-pagin",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.dvtt-next',
+                prevEl: '.dvtt-prev',
+            },
+        });
+
+
+
     </script>
 </body>
 
