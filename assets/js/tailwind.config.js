@@ -12,14 +12,21 @@ tailwind.config = {
                 DEFAULT: '1360px',
             },
             container: {
+                screens: {
+                    sm: "640px",
+                    md: "768px",
+                    lg: "1024px",
+                    xl: "1280px",
+                    "2xl": "1288px"
+                },
                 center: true,
-                maxWidth: '1336px',
+                maxWidth: '1288px',
                 padding: {
                     DEFAULT: '24px',
                     '4xl': '0px',
                     '3xl': '0px',
-                    '2xl': '32px',
-                    xl: '32px',
+                    '2xl': '0px',
+                    xl: '24px',
                     lg: '24px',
                     md: '24px',
                     sm: '24px',
@@ -48,6 +55,7 @@ tailwind.config = {
                 title: '#F60',
                 logo: '#115231',
                 tertiary: '#666',
+                quaternary: '#D28D3E',
             }
         }
     }
