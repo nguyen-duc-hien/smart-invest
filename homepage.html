@@ -1077,15 +1077,645 @@
                 <h2 class="text-heading-h1-semibold text-text-logo">AAS Research</h2>
 
                 <div class="mt-6">
-                    <div class="flex w-full items-center gap-10 custom-scrollbar pb-3">
-                        <div class=""></div>
+                    <div class="flex w-full items-center gap-10 overflow-auto custom-scrollbar pb-3">
+                        <button class="items-green active">Bản tin ngày</button>
+                        <button class="items-green">Tiêu điểm tuần</button>
+                        <button class="items-green">Nghiên cứu cổ phiếu</button>
+                        <button class="items-green">Nghiên cứu ngành</button>
+                        <button class="items-green">Nghiên cứu vĩ mô</button>
+                        <button class="items-green">Podcast</button>
+                    </div>
+
+                    <div class="mt-8 w-full">
+                        <!-- Slider main container -->
+                        <div id="research-swiper" class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="research-item">
+                                        <figure class="images"><img
+                                                class="aspect-[413/220] max-lg:min-h-[220px] min-w-full"
+                                                src="/assets/image/homepage/research.png" alt="research">
+                                        </figure>
+                                        <div class="content">
+                                            <div class="flex flex-col gap-4">
+                                                <div
+                                                    class="text-body-sm-regular text-text-logo flex items-center gap-2.5">
+                                                    <p>
+                                                        TinAAS
+                                                    </p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    <div class="flex items-center gap-2">
+                                                        <figure><img src="/assets/image/icon/calendar-green.svg"
+                                                                alt="icon">
+                                                        </figure>
+                                                        <p>
+                                                            01/10/2023</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="flex flex-wrap gap-2 items-center justify-between">
+                                                    <div
+                                                        class="py-1 px-4 rounded-2xl bg-[#E6E6E6] text-body-sm-regular text-text-content">
+                                                        Báo cáo phân tích DN
+                                                    </div>
+                                                    <div class="status-time text-body-sm-regular text-text-tertiary">
+                                                        Thời
+                                                        lượng: 12 phút</div>
+                                                </div>
+
+                                                <div class="flex flex-col gap-2">
+                                                    <h2
+                                                        class="text-body-lg-semibold text-text-content min-h-2lh truncate-2row">
+                                                        VPB – Sẵn sàng cho sự trở lại - cập nhật
+                                                    </h2>
+                                                    <p class="text-body-sm-regular text-text-tertiary truncate-2row">
+                                                        Công ty Cổ phần Chứng khoán SmartInvest công bố thông tin Báo
+                                                        cáo Tỷ
+                                                        lệ an toàn tài chính tại thời điểm 30/6/2023
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="flex flex-wrap gap-10 items-center justify-between">
+                                                <a href="#" class="download">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        viewBox="0 0 20 20" fill="none">
+                                                        <path
+                                                            d="M7.5 14.793C7.41667 14.793 7.34167 14.7763 7.25833 14.743C7.025 14.6513 6.875 14.418 6.875 14.168V9.16797C6.875 8.8263 7.15833 8.54297 7.5 8.54297C7.84167 8.54297 8.125 8.8263 8.125 9.16797V12.6596L8.725 12.0596C8.96667 11.818 9.36667 11.818 9.60833 12.0596C9.85 12.3013 9.85 12.7013 9.60833 12.943L7.94167 14.6096C7.825 14.7263 7.65833 14.793 7.5 14.793Z"
+                                                            fill="#D28D3E" />
+                                                        <path
+                                                            d="M7.49954 14.7935C7.34121 14.7935 7.18288 14.7352 7.05788 14.6102L5.39121 12.9435C5.14954 12.7018 5.14954 12.3018 5.39121 12.0602C5.63288 11.8185 6.03288 11.8185 6.27454 12.0602L7.94121 13.7268C8.18288 13.9685 8.18288 14.3685 7.94121 14.6102C7.81621 14.7352 7.65788 14.7935 7.49954 14.7935Z"
+                                                            fill="#D28D3E" />
+                                                        <path
+                                                            d="M12.5003 18.9596H7.50033C2.97533 18.9596 1.04199 17.0263 1.04199 12.5013V7.5013C1.04199 2.9763 2.97533 1.04297 7.50033 1.04297H11.667C12.0087 1.04297 12.292 1.3263 12.292 1.66797C12.292 2.00964 12.0087 2.29297 11.667 2.29297H7.50033C3.65866 2.29297 2.29199 3.65964 2.29199 7.5013V12.5013C2.29199 16.343 3.65866 17.7096 7.50033 17.7096H12.5003C16.342 17.7096 17.7087 16.343 17.7087 12.5013V8.33464C17.7087 7.99297 17.992 7.70964 18.3337 7.70964C18.6753 7.70964 18.9587 7.99297 18.9587 8.33464V12.5013C18.9587 17.0263 17.0253 18.9596 12.5003 18.9596Z"
+                                                            fill="#D28D3E" />
+                                                        <path
+                                                            d="M18.3337 8.9584H15.0003C12.1503 8.9584 11.042 7.85007 11.042 5.00007V1.66674C11.042 1.41674 11.192 1.18341 11.4253 1.09174C11.6587 0.991739 11.9253 1.05007 12.1087 1.22507L18.7753 7.89174C18.9503 8.06674 19.0087 8.34174 18.9087 8.57507C18.8087 8.8084 18.5837 8.9584 18.3337 8.9584ZM12.292 3.17507V5.00007C12.292 7.15007 12.8503 7.70841 15.0003 7.70841H16.8253L12.292 3.17507Z"
+                                                            fill="#D28D3E" />
+                                                    </svg>
+                                                    Tải xuống
+                                                </a>
+
+                                                <div
+                                                    class="flex items-center gap-2 text-body-sm-regular text-text-tertiary">
+                                                    <figure><img src="/assets/image/icon/eyes.svg" alt="icon"></figure>
+                                                    8386 lượt xem
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="research-item">
+                                        <figure class="images"><img
+                                                class="aspect-[413/220] max-lg:min-h-[220px] min-w-full"
+                                                src="/assets/image/homepage/research.png" alt="research">
+                                        </figure>
+                                        <div class="content">
+                                            <div class="flex flex-col gap-4">
+                                                <div
+                                                    class="text-body-sm-regular text-text-logo flex items-center gap-2.5">
+                                                    <p>
+                                                        TinAAS
+                                                    </p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    <div class="flex items-center gap-2">
+                                                        <figure><img src="/assets/image/icon/calendar-green.svg"
+                                                                alt="icon">
+                                                        </figure>
+                                                        <p>
+                                                            01/10/2023</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="flex flex-wrap gap-2 items-center justify-between">
+                                                    <div
+                                                        class="py-1 px-4 rounded-2xl bg-[#E6E6E6] text-body-sm-regular text-text-content">
+                                                        Báo cáo phân tích DN
+                                                    </div>
+                                                    <div class="status-time text-body-sm-regular text-text-tertiary">
+                                                        Thời
+                                                        lượng: 12 phút</div>
+                                                </div>
+
+                                                <div class="flex flex-col gap-2">
+                                                    <h2
+                                                        class="text-body-lg-semibold text-text-content min-h-2lh truncate-2row">
+                                                        VPB – Sẵn sàng cho sự trở lại - cập nhật
+                                                    </h2>
+                                                    <p class="text-body-sm-regular text-text-tertiary truncate-2row">
+                                                        Công ty Cổ phần Chứng khoán SmartInvest công bố thông tin Báo
+                                                        cáo Tỷ
+                                                        lệ an toàn tài chính tại thời điểm 30/6/2023
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="flex flex-wrap gap-10 items-center justify-between">
+                                                <a href="#" class="download">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        viewBox="0 0 20 20" fill="none">
+                                                        <path
+                                                            d="M7.5 14.793C7.41667 14.793 7.34167 14.7763 7.25833 14.743C7.025 14.6513 6.875 14.418 6.875 14.168V9.16797C6.875 8.8263 7.15833 8.54297 7.5 8.54297C7.84167 8.54297 8.125 8.8263 8.125 9.16797V12.6596L8.725 12.0596C8.96667 11.818 9.36667 11.818 9.60833 12.0596C9.85 12.3013 9.85 12.7013 9.60833 12.943L7.94167 14.6096C7.825 14.7263 7.65833 14.793 7.5 14.793Z"
+                                                            fill="#D28D3E" />
+                                                        <path
+                                                            d="M7.49954 14.7935C7.34121 14.7935 7.18288 14.7352 7.05788 14.6102L5.39121 12.9435C5.14954 12.7018 5.14954 12.3018 5.39121 12.0602C5.63288 11.8185 6.03288 11.8185 6.27454 12.0602L7.94121 13.7268C8.18288 13.9685 8.18288 14.3685 7.94121 14.6102C7.81621 14.7352 7.65788 14.7935 7.49954 14.7935Z"
+                                                            fill="#D28D3E" />
+                                                        <path
+                                                            d="M12.5003 18.9596H7.50033C2.97533 18.9596 1.04199 17.0263 1.04199 12.5013V7.5013C1.04199 2.9763 2.97533 1.04297 7.50033 1.04297H11.667C12.0087 1.04297 12.292 1.3263 12.292 1.66797C12.292 2.00964 12.0087 2.29297 11.667 2.29297H7.50033C3.65866 2.29297 2.29199 3.65964 2.29199 7.5013V12.5013C2.29199 16.343 3.65866 17.7096 7.50033 17.7096H12.5003C16.342 17.7096 17.7087 16.343 17.7087 12.5013V8.33464C17.7087 7.99297 17.992 7.70964 18.3337 7.70964C18.6753 7.70964 18.9587 7.99297 18.9587 8.33464V12.5013C18.9587 17.0263 17.0253 18.9596 12.5003 18.9596Z"
+                                                            fill="#D28D3E" />
+                                                        <path
+                                                            d="M18.3337 8.9584H15.0003C12.1503 8.9584 11.042 7.85007 11.042 5.00007V1.66674C11.042 1.41674 11.192 1.18341 11.4253 1.09174C11.6587 0.991739 11.9253 1.05007 12.1087 1.22507L18.7753 7.89174C18.9503 8.06674 19.0087 8.34174 18.9087 8.57507C18.8087 8.8084 18.5837 8.9584 18.3337 8.9584ZM12.292 3.17507V5.00007C12.292 7.15007 12.8503 7.70841 15.0003 7.70841H16.8253L12.292 3.17507Z"
+                                                            fill="#D28D3E" />
+                                                    </svg>
+                                                    Tải xuống
+                                                </a>
+
+                                                <div
+                                                    class="flex items-center gap-2 text-body-sm-regular text-text-tertiary">
+                                                    <figure><img src="/assets/image/icon/eyes.svg" alt="icon"></figure>
+                                                    8386 lượt xem
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="research-item">
+                                        <figure class="images"><img
+                                                class="aspect-[413/220] max-lg:min-h-[220px] min-w-full"
+                                                src="/assets/image/homepage/research.png" alt="research">
+                                        </figure>
+                                        <div class="content">
+                                            <div class="flex flex-col gap-4">
+                                                <div
+                                                    class="text-body-sm-regular text-text-logo flex items-center gap-2.5">
+                                                    <p>
+                                                        TinAAS
+                                                    </p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    <div class="flex items-center gap-2">
+                                                        <figure><img src="/assets/image/icon/calendar-green.svg"
+                                                                alt="icon">
+                                                        </figure>
+                                                        <p>
+                                                            01/10/2023</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="flex flex-wrap gap-2 items-center justify-between">
+                                                    <div
+                                                        class="py-1 px-4 rounded-2xl bg-[#E6E6E6] text-body-sm-regular text-text-content">
+                                                        Báo cáo phân tích DN
+                                                    </div>
+                                                    <div class="status-time text-body-sm-regular text-text-tertiary">
+                                                        Thời
+                                                        lượng: 12 phút</div>
+                                                </div>
+
+                                                <div class="flex flex-col gap-2">
+                                                    <h2
+                                                        class="text-body-lg-semibold text-text-content min-h-2lh truncate-2row">
+                                                        VPB – Sẵn sàng cho sự trở lại - cập nhật
+                                                    </h2>
+                                                    <p class="text-body-sm-regular text-text-tertiary truncate-2row">
+                                                        Công ty Cổ phần Chứng khoán SmartInvest công bố thông tin Báo
+                                                        cáo Tỷ
+                                                        lệ an toàn tài chính tại thời điểm 30/6/2023
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="flex flex-wrap gap-10 items-center justify-between">
+                                                <a href="#" class="download">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        viewBox="0 0 20 20" fill="none">
+                                                        <path
+                                                            d="M7.5 14.793C7.41667 14.793 7.34167 14.7763 7.25833 14.743C7.025 14.6513 6.875 14.418 6.875 14.168V9.16797C6.875 8.8263 7.15833 8.54297 7.5 8.54297C7.84167 8.54297 8.125 8.8263 8.125 9.16797V12.6596L8.725 12.0596C8.96667 11.818 9.36667 11.818 9.60833 12.0596C9.85 12.3013 9.85 12.7013 9.60833 12.943L7.94167 14.6096C7.825 14.7263 7.65833 14.793 7.5 14.793Z"
+                                                            fill="#D28D3E" />
+                                                        <path
+                                                            d="M7.49954 14.7935C7.34121 14.7935 7.18288 14.7352 7.05788 14.6102L5.39121 12.9435C5.14954 12.7018 5.14954 12.3018 5.39121 12.0602C5.63288 11.8185 6.03288 11.8185 6.27454 12.0602L7.94121 13.7268C8.18288 13.9685 8.18288 14.3685 7.94121 14.6102C7.81621 14.7352 7.65788 14.7935 7.49954 14.7935Z"
+                                                            fill="#D28D3E" />
+                                                        <path
+                                                            d="M12.5003 18.9596H7.50033C2.97533 18.9596 1.04199 17.0263 1.04199 12.5013V7.5013C1.04199 2.9763 2.97533 1.04297 7.50033 1.04297H11.667C12.0087 1.04297 12.292 1.3263 12.292 1.66797C12.292 2.00964 12.0087 2.29297 11.667 2.29297H7.50033C3.65866 2.29297 2.29199 3.65964 2.29199 7.5013V12.5013C2.29199 16.343 3.65866 17.7096 7.50033 17.7096H12.5003C16.342 17.7096 17.7087 16.343 17.7087 12.5013V8.33464C17.7087 7.99297 17.992 7.70964 18.3337 7.70964C18.6753 7.70964 18.9587 7.99297 18.9587 8.33464V12.5013C18.9587 17.0263 17.0253 18.9596 12.5003 18.9596Z"
+                                                            fill="#D28D3E" />
+                                                        <path
+                                                            d="M18.3337 8.9584H15.0003C12.1503 8.9584 11.042 7.85007 11.042 5.00007V1.66674C11.042 1.41674 11.192 1.18341 11.4253 1.09174C11.6587 0.991739 11.9253 1.05007 12.1087 1.22507L18.7753 7.89174C18.9503 8.06674 19.0087 8.34174 18.9087 8.57507C18.8087 8.8084 18.5837 8.9584 18.3337 8.9584ZM12.292 3.17507V5.00007C12.292 7.15007 12.8503 7.70841 15.0003 7.70841H16.8253L12.292 3.17507Z"
+                                                            fill="#D28D3E" />
+                                                    </svg>
+                                                    Tải xuống
+                                                </a>
+
+                                                <div
+                                                    class="flex items-center gap-2 text-body-sm-regular text-text-tertiary">
+                                                    <figure><img src="/assets/image/icon/eyes.svg" alt="icon"></figure>
+                                                    8386 lượt xem
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="research-item">
+                                        <figure class="images"><img
+                                                class="aspect-[413/220] max-lg:min-h-[220px] min-w-full"
+                                                src="/assets/image/homepage/research.png" alt="research">
+                                        </figure>
+                                        <div class="content">
+                                            <div class="flex flex-col gap-4">
+                                                <div
+                                                    class="text-body-sm-regular text-text-logo flex items-center gap-2.5">
+                                                    <p>
+                                                        TinAAS
+                                                    </p>
+                                                    <p>
+                                                        -
+                                                    </p>
+                                                    <div class="flex items-center gap-2">
+                                                        <figure><img src="/assets/image/icon/calendar-green.svg"
+                                                                alt="icon">
+                                                        </figure>
+                                                        <p>
+                                                            01/10/2023</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="flex flex-wrap gap-2 items-center justify-between">
+                                                    <div
+                                                        class="py-1 px-4 rounded-2xl bg-[#E6E6E6] text-body-sm-regular text-text-content">
+                                                        Báo cáo phân tích DN
+                                                    </div>
+                                                    <div class="status-time text-body-sm-regular text-text-tertiary">
+                                                        Thời
+                                                        lượng: 12 phút</div>
+                                                </div>
+
+                                                <div class="flex flex-col gap-2">
+                                                    <h2
+                                                        class="text-body-lg-semibold text-text-content min-h-2lh truncate-2row">
+                                                        VPB – Sẵn sàng cho sự trở lại - cập nhật
+                                                    </h2>
+                                                    <p class="text-body-sm-regular text-text-tertiary truncate-2row">
+                                                        Công ty Cổ phần Chứng khoán SmartInvest công bố thông tin Báo
+                                                        cáo Tỷ
+                                                        lệ an toàn tài chính tại thời điểm 30/6/2023
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="flex flex-wrap gap-10 items-center justify-between">
+                                                <a href="#" class="download">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        viewBox="0 0 20 20" fill="none">
+                                                        <path
+                                                            d="M7.5 14.793C7.41667 14.793 7.34167 14.7763 7.25833 14.743C7.025 14.6513 6.875 14.418 6.875 14.168V9.16797C6.875 8.8263 7.15833 8.54297 7.5 8.54297C7.84167 8.54297 8.125 8.8263 8.125 9.16797V12.6596L8.725 12.0596C8.96667 11.818 9.36667 11.818 9.60833 12.0596C9.85 12.3013 9.85 12.7013 9.60833 12.943L7.94167 14.6096C7.825 14.7263 7.65833 14.793 7.5 14.793Z"
+                                                            fill="#D28D3E" />
+                                                        <path
+                                                            d="M7.49954 14.7935C7.34121 14.7935 7.18288 14.7352 7.05788 14.6102L5.39121 12.9435C5.14954 12.7018 5.14954 12.3018 5.39121 12.0602C5.63288 11.8185 6.03288 11.8185 6.27454 12.0602L7.94121 13.7268C8.18288 13.9685 8.18288 14.3685 7.94121 14.6102C7.81621 14.7352 7.65788 14.7935 7.49954 14.7935Z"
+                                                            fill="#D28D3E" />
+                                                        <path
+                                                            d="M12.5003 18.9596H7.50033C2.97533 18.9596 1.04199 17.0263 1.04199 12.5013V7.5013C1.04199 2.9763 2.97533 1.04297 7.50033 1.04297H11.667C12.0087 1.04297 12.292 1.3263 12.292 1.66797C12.292 2.00964 12.0087 2.29297 11.667 2.29297H7.50033C3.65866 2.29297 2.29199 3.65964 2.29199 7.5013V12.5013C2.29199 16.343 3.65866 17.7096 7.50033 17.7096H12.5003C16.342 17.7096 17.7087 16.343 17.7087 12.5013V8.33464C17.7087 7.99297 17.992 7.70964 18.3337 7.70964C18.6753 7.70964 18.9587 7.99297 18.9587 8.33464V12.5013C18.9587 17.0263 17.0253 18.9596 12.5003 18.9596Z"
+                                                            fill="#D28D3E" />
+                                                        <path
+                                                            d="M18.3337 8.9584H15.0003C12.1503 8.9584 11.042 7.85007 11.042 5.00007V1.66674C11.042 1.41674 11.192 1.18341 11.4253 1.09174C11.6587 0.991739 11.9253 1.05007 12.1087 1.22507L18.7753 7.89174C18.9503 8.06674 19.0087 8.34174 18.9087 8.57507C18.8087 8.8084 18.5837 8.9584 18.3337 8.9584ZM12.292 3.17507V5.00007C12.292 7.15007 12.8503 7.70841 15.0003 7.70841H16.8253L12.292 3.17507Z"
+                                                            fill="#D28D3E" />
+                                                    </svg>
+                                                    Tải xuống
+                                                </a>
+
+                                                <div
+                                                    class="flex items-center gap-2 text-body-sm-regular text-text-tertiary">
+                                                    <figure><img src="/assets/image/icon/eyes.svg" alt="icon"></figure>
+                                                    8386 lượt xem
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="flex swiper-button-container mt-10 mx-auto w-full h-[36px] items-center gap-[34px]">
+                                <!-- If we need navigation buttons -->
+                                <div class="research-prev swiper-button-prev"></div>
+                                <!-- If we need pagination -->
+                                <div class="!relative !w-fit !bottom-0 research-pagin swiper-pagination"></div>
+                                <div class="research-next swiper-button-next"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- -------------------- section 7 -------------------- -->
+        <style>
+            .cta-bg {
+                background: url(/assets/image/homepage/cta-img.png) no-repeat center/cover;
+            }
 
+            .chuyen-gia-bg {
+                background: url(/assets/image/homepage/chuyen-gia-bg.svg) no-repeat center/cover;
+
+            }
+        </style>
+        <section class="cta-bg h-[250px] flex items-center justify-center ">
+            <div class="container flex flex-col items-center justify-center gap-[28px]">
+                <h2 class="text-body-3xl-semibold text-white text-center">
+                    Hôm nay bạn thấy <span class="text-gradient bg-fill-primary">thị trường như thế nào?</span>
+                </h2>
+                <a href="#" class="button-wrap bg-green w-fit">
+                    <div class="inner">
+                        <p class="text">Tham gia khảo sát</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="mt-10 lg:mt-20">
+            <div class="container flex max-lg:flex-col items-center relative">
+                <div class="w-full lg:w-[70%] lg:max-w-[738px]">
+                    <figure class="rounded-[2px] rounded-ss-[60px] rounded-ee-[60px] overflow-hidden"><img
+                            src="/assets/image/homepage/chuyen-gia.png" alt="img"></figure>
+                </div>
+                <div
+                    class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 right-0 w-full lg:w-[50%] lg:max-w-[606px] chuyen-gia-bg aspect-[606/412] rounded-3xl p-6 3xl:px-10 3xl:pt-12 lg:-translate-x-[18%] flex flex-col items-center">
+                    <h2 class="text-heading-h1-semibold text-white">Gặp gỡ đội ngũ chuyên gia của chúng tôi</h2>
+                    <p class="mt-4 text-body-md-regular text-white">
+                        Trải qua hơn 17 năm hoạt động trong lĩnh vực tư vấn tài chính, AAS tự hào mang đến giải pháp tốt
+                        nhất với chất lượng tốt
+                        nhất cho khách hàng bằng đội ngũ chuyên gia giàu kinh nghiệm, nền tảng công nghệ hiện đại, dịch
+                        vụ chuyên nghiệp.
+                    </p>
+                    <a href="#" class="mt-8 button-wrap bg-red w-fit">
+                        <div class="inner">
+                            <p class="text">Liên hệ để được tư vấn</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
         <!-- -------------------- section 8 -------------------- -->
+        <style>
+            .academy-wrap.limit-items .items-green:nth-child(n+5) {
+                display: none;
+            }
+        </style>
+        <section class="py-10 lg:py-20">
+            <div class="container">
+                <h2 class="text-heading-h1-semibold text-text-logo">AAS Academy</h2>
+
+                <div class="mt-6">
+                    <div class="academy-wrap flex w-full items-center gap-10 overflow-auto custom-scrollbar pb-3">
+                        <button class="items-green active">Giao dịch cổ phiếu</button>
+                        <button class="items-green">Giao dịch phái sinh</button>
+                        <button class="items-green">Giao dịch trái phiếu</button>
+                        <button class="items-green">Giao dịch chứng quyền</button>
+                        <button class="items-green">Giao dịch cổ phiếu</button>
+                        <button class="items-green">Giao dịch phái sinh</button>
+                        <button class="items-green">Giao dịch trái phiếu</button>
+                        <button class="items-green">Giao dịch chứng quyền</button>
+
+                        <button
+                            class="more-item min-w-fit px-2.5 py-1 rounded-[50px] flex items-center gap-1 bg-[#15852B]">
+                            <p class="text-body-md-regular text-white">Nhiều hơn</p>
+                            <figure><img src="/assets/image/icon/chev-down-16.svg" alt="icon"></figure>
+                        </button>
+                    </div>
+
+                    <div class="mt-8 w-full">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-5 gap-y-4">
+                            <div class="academy-item hot-item row-span-2">
+                                <div class="figure">
+                                    <figure class="h-[180px]"><img class="min-w-full aspect-[304/180]"
+                                            src="/assets/image/homepage/academy-img.png" alt="img">
+                                    </figure>
+                                    <figure class="hot-icon"><img src="/assets/image/homepage/academy-hot.svg"
+                                            alt="hot">
+                                    </figure>
+                                </div>
+                                <div class="academy-content gap-10 lg:gap-14">
+                                    <div class="flex flex-col gap-4">
+                                        <h2 class="text-body-lg-semibold text-text-content truncate-2row min-h-2lh">La
+                                            bàn
+                                            Đầu
+                                            tư: Tích sản Bảo an Thịnh Vượng</h2>
+                                        <p class="text-body-md-regular text-text-tertiary truncate-6row">
+                                            Chuỗi chương trình chia sẻ kiến thức giúp thiết lập con đường bảo an tài
+                                            chính
+                                            và
+                                            sức khoẻ đầu tư cho những nhà đầu tư
+                                            mới chưa có nhiều kiến thức chuyên sâu về tài chính.</p>
+                                    </div>
+
+                                    <div class="flex flex-col gap-3">
+                                        <div
+                                            class="w-full px-[14px] py-[2] rounded-[50px] flex items-center gap-2 bg-[#15852B]">
+                                            <figure><img src="/assets/image/homepage/calendar.svg" alt="icon"></figure>
+                                            <p class="text-body-sm-regular text-white"><span
+                                                    class="font-semibold">9h30</span> Thứ 7 ngày 15/10/2023</p>
+                                        </div>
+                                        <div class="flex items-center flex-wrap gap-[18px]">
+                                            <div class="flex items-center gap-2.5">
+                                                <figure><img src="/assets/image/homepage/sand-watch.svg" alt="icon">
+                                                </figure>
+                                                <p class="text-body-sm-semibold text-[#616161]">120 phút</p>
+                                            </div>
+                                            <div class="w-[1px] h-[17px] bg-[#D8D8D8]"></div>
+                                            <div class="flex items-center gap-2.5">
+                                                <figure><img src="/assets/image/homepage/eyes.svg" alt="icon">
+                                                </figure>
+                                                <p class="text-body-sm-regular text-[#616161]">Online Zoom</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="academy-item hot-item row-span-2">
+                                <div class="figure">
+                                    <figure class="h-[180px]"><img class="min-w-full aspect-[304/180]"
+                                            src="/assets/image/homepage/academy-img.png" alt="img">
+                                    </figure>
+                                    <figure class="hot-icon"><img src="/assets/image/homepage/academy-hot.svg"
+                                            alt="hot">
+                                    </figure>
+                                </div>
+                                <div class="academy-content gap-10 lg:gap-14">
+                                    <div class="flex flex-col gap-4">
+                                        <h2 class="text-body-lg-semibold text-text-content truncate-2row min-h-2lh">La
+                                            bàn
+                                            Đầu
+                                            tư: Tích sản Bảo an Thịnh Vượng</h2>
+                                        <p class="text-body-md-regular text-text-tertiary truncate-6row">
+                                            Chuỗi chương trình chia sẻ kiến thức giúp thiết lập con đường bảo an tài
+                                            chính
+                                            và
+                                            sức khoẻ đầu tư cho những nhà đầu tư
+                                            mới chưa có nhiều kiến thức chuyên sâu về tài chính.</p>
+                                    </div>
+
+                                    <div class="flex flex-col gap-3">
+                                        <div
+                                            class="w-full px-[14px] py-[2] rounded-[50px] flex items-center gap-2 bg-[#15852B]">
+                                            <figure><img src="/assets/image/homepage/calendar.svg" alt="icon"></figure>
+                                            <p class="text-body-sm-regular text-white"><span
+                                                    class="font-semibold">9h30</span> Thứ 7 ngày 15/10/2023
+                                            </p>
+                                        </div>
+                                        <div class="flex items-center flex-wrap gap-[18px]">
+                                            <div class="flex items-center gap-2.5">
+                                                <figure><img src="/assets/image/homepage/sand-watch.svg" alt="icon">
+                                                </figure>
+                                                <p class="text-body-sm-semibold text-[#616161]">120 phút</p>
+                                            </div>
+                                            <div class="w-[1px] h-[17px] bg-[#D8D8D8]"></div>
+                                            <div class="flex items-center gap-2.5">
+                                                <figure><img src="/assets/image/homepage/eyes.svg" alt="icon">
+                                                </figure>
+                                                <p class="text-body-sm-regular text-[#616161]">Online Zoom</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="academy-item">
+                                <div class="figure">
+                                    <figure class="h-[180px]"><img class="min-w-full aspect-[304/180]"
+                                            src="/assets/image/homepage/academy-img.png" alt="img">
+                                    </figure>
+                                    <div class="number">
+                                        <p class="text-heading-h2-semibold text-[36px] text-white">06</p>
+                                    </div>
+                                    <div class="tag">
+                                        <figure><img src="/assets/image/homepage/news.svg" alt="icon"></figure>
+                                        <p class="text-body-sm-regular text-white">Kiến thức giao dịch cổ phiếu</p>
+                                    </div>
+                                </div>
+                                <div class="academy-content">
+                                    <div class="flex flex-col gap-4">
+                                        <h2 class="text-body-lg-semibold text-[#0d0d0d] truncate-2row min-h-2lh">
+                                            Đầu tư thế nào để an toàn trong dài hạn?</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="academy-item">
+                                <div class="figure">
+                                    <figure class="h-[180px]"><img class="min-w-full aspect-[304/180]"
+                                            src="/assets/image/homepage/academy-img.png" alt="img">
+                                    </figure>
+                                    <div class="number">
+                                        <p class="text-heading-h2-semibold text-[36px] text-white">06</p>
+                                    </div>
+                                    <div class="tag">
+                                        <figure><img src="/assets/image/homepage/news.svg" alt="icon"></figure>
+                                        <p class="text-body-sm-regular text-white">Kiến thức giao dịch cổ phiếu</p>
+                                    </div>
+                                </div>
+                                <div class="academy-content">
+                                    <div class="flex flex-col gap-4">
+                                        <h2 class="text-body-lg-semibold text-[#0d0d0d] truncate-2row min-h-2lh">
+                                            Đầu tư thế nào để an toàn trong dài hạn?</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="academy-item">
+                                <div class="figure">
+                                    <figure class="h-[180px]"><img class="min-w-full aspect-[304/180]"
+                                            src="/assets/image/homepage/academy-img.png" alt="img">
+                                    </figure>
+                                    <div class="number">
+                                        <p class="text-heading-h2-semibold text-[36px] text-white">06</p>
+                                    </div>
+                                    <div class="tag">
+                                        <figure><img src="/assets/image/homepage/news.svg" alt="icon"></figure>
+                                        <p class="text-body-sm-regular text-white">Kiến thức giao dịch cổ phiếu</p>
+                                    </div>
+                                </div>
+                                <div class="academy-content">
+                                    <div class="flex flex-col gap-4">
+                                        <h2 class="text-body-lg-semibold text-[#0d0d0d] truncate-2row min-h-2lh">
+                                            Đầu tư thế nào để an toàn trong dài hạn?</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="academy-item">
+                                <div class="figure">
+                                    <figure class="h-[180px]"><img class="min-w-full aspect-[304/180]"
+                                            src="/assets/image/homepage/academy-img.png" alt="img">
+                                    </figure>
+                                    <div class="number">
+                                        <p class="text-heading-h2-semibold text-[36px] text-white">06</p>
+                                    </div>
+                                    <div class="tag">
+                                        <figure><img src="/assets/image/homepage/news.svg" alt="icon"></figure>
+                                        <p class="text-body-sm-regular text-white">Kiến thức giao dịch cổ phiếu</p>
+                                    </div>
+                                </div>
+                                <div class="academy-content">
+                                    <div class="flex flex-col gap-4">
+                                        <h2 class="text-body-lg-semibold text-[#0d0d0d] truncate-2row min-h-2lh">
+                                            Đầu tư thế nào để an toàn trong dài hạn?</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="mt-6 lg:mt-10 flex justify-center items-center">
+                        <a href="#" class="link-green text-body-md-bold">
+                            Tìm hiểu thêm
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12.4697 8.46967C12.7626 8.17678 13.2374 8.17678 13.5303 8.46967L16.5303 11.4697C16.8232 11.7626 16.8232 12.2374 16.5303 12.5303L13.5303 15.5303C13.2374 15.8232 12.7626 15.8232 12.4697 15.5303C12.1768 15.2374 12.1768 14.7626 12.4697 14.4697L14.1893 12.75H8C7.58579 12.75 7.25 12.4142 7.25 12C7.25 11.5858 7.58579 11.25 8 11.25H14.1893L12.4697 9.53033C12.1768 9.23744 12.1768 8.76256 12.4697 8.46967Z"
+                                    fill="#115231" />
+                            </svg>
+                        </a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <script defer>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const wrap = document.querySelector(".academy-wrap");
+                    const moreBtn = wrap.querySelector(".more-item");
+                    const moreText = moreBtn.querySelector("p");
+                    const moreIcon = moreBtn.querySelector("img");
+
+                    let expanded = false;
+
+                    moreBtn.addEventListener("click", () => {
+                        expanded = !expanded;
+                        wrap.classList.toggle("limit-items", !expanded);
+
+                        // Đổi text/icon
+                        moreText.textContent = expanded ? "Thu gọn" : "Nhiều hơn";
+                        moreIcon.style.transform = expanded ? "rotate(180deg)" : "rotate(0deg)";
+                    });
+
+                    // Set trạng thái ban đầu
+                    wrap.classList.add("limit-items");
+                });
+            </script>
+
+        </section>
+        <!-- -------------------- section 9 -------------------- -->
+
+        <!-- -------------------- section 10 -------------------- -->
+
+        <!-- -------------------- section 11 -------------------- -->
+
+        <!-- -------------------- section 12 -------------------- -->
 
 
 
@@ -1327,7 +1957,35 @@
             },
         });
 
-
+        const swiper3 = new Swiper('#research-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: true,
+            loop: true,
+            // autoplay: true,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1280: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1440: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                }
+            },
+            pagination: {
+                el: ".research-pagin",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.research-next',
+                prevEl: '.research-prev',
+            },
+        });
 
     </script>
 </body>
