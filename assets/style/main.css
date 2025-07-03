@@ -506,7 +506,7 @@ strong {
   mix-blend-mode: multiply;
 }
 
-.text-gradient, .tigd-inner .desc, .tigd-inner .title, .link-nav, .button-wrap.bg-red .inner .text, .button-wrap.bg-green .inner .text {
+.text-gradient, .tigd-inner .desc, .tigd-inner .title, .link-nav, .button-wrap.bg-trans:hover .inner .text, .button-wrap.bg-red .inner .text, .button-wrap.bg-green .inner .text {
   background-clip: text !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent;
@@ -1149,6 +1149,31 @@ strong {
 }
 .button-wrap.bg-red:hover .inner {
   background: var(--accessible-red-hover);
+}
+.button-wrap.bg-trans {
+  background: transparent;
+}
+.button-wrap.bg-trans:before {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.button-wrap.bg-trans .inner {
+  background: transparent;
+}
+.button-wrap.bg-trans .inner .text {
+  color: var(--white);
+}
+.button-wrap.bg-trans:hover:before {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  background: linear-gradient(187deg, #ebb75e 0%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 69%, #ebb75e 100%);
+  border: none;
+}
+.button-wrap.bg-trans:hover .inner {
+  background: var(--accessible-red-hover);
+}
+.button-wrap.bg-trans:hover .inner .text {
+  background: var(--general-fill-primary);
 }
 
 a {

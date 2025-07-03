@@ -826,6 +826,41 @@ strong {
         }
       }
     }
+    &.bg-trans {
+      background: transparent;
+      &:before {
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      .inner {
+        background: transparent;
+        .text {
+          // @extend .text-gradient;
+          // background: var(--general-fill-primary);
+          color: var(--white);
+        }
+      }
+      &:hover {
+        &:before {
+          transition: all 0.4s ease;
+          background: linear-gradient(
+            187deg,
+            #ebb75e 0%,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(255, 255, 255, 0) 69%,
+            #ebb75e 100%
+          );
+          border: none;
+        }
+        .inner {
+          background: var(--accessible-red-hover);
+          .text {
+            @extend .text-gradient;
+            background: var(--general-fill-primary);
+          }
+        }
+      }
+    }
   }
 }
 
