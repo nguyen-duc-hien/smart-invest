@@ -1263,6 +1263,26 @@ a.link-white:hover {
   fill: var(--text-title);
 }
 
+.link-yellow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  color: #d28d3e;
+}
+.link-yellow svg path {
+  fill: #d28d3e;
+}
+.link-yellow:hover {
+  color: var(--text-logo);
+}
+.link-yellow:hover svg path {
+  fill: var(--text-logo);
+}
+
 .button-tab {
   width: 56px;
   height: 56px;
@@ -1623,16 +1643,18 @@ hr.footer-divider {
   max-height: 500px;
 }
 
-.figure-hover {
+.figure-hover, .news-item .image {
   overflow: hidden;
 }
-.figure-hover figure img,
-.figure-hover figure svg {
+.figure-hover figure img, .news-item .image figure img,
+.figure-hover figure svg,
+.news-item .image figure svg {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-.figure-hover:hover figure img,
-.figure-hover:hover figure svg {
+.figure-hover:hover figure img, .news-item .image:hover figure img,
+.figure-hover:hover figure svg,
+.news-item .image:hover figure svg {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transition: all 0.5s ease-in-out;
@@ -2409,6 +2431,54 @@ hr.footer-divider {
 }
 .research-item:hover .content .download svg path {
   fill: var(--text-logo);
+}
+
+.news-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.news-item .image {
+  width: 100%;
+  max-width: 204px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media (max-width: 552px) {
+  .news-item .image {
+    max-width: 160px;
+  }
+}
+.news-item .context {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.news-item .context h2 {
+  margin-top: 11px;
+}
+.news-item .context .link-yellow {
+  margin-top: 10px;
+}
+.news-item.topic {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+.news-item.topic .image {
+  max-width: unset;
+}
+.news-item.topic .context h2 {
+  margin-top: 16px;
+}
+.news-item.topic .context .link-yellow {
+  margin-top: 16px;
 }
 
 .tigd-wrap {
