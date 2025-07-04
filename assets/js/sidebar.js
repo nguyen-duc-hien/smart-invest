@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const sideContext = document.querySelector('.side-context');
     const titleTexts = document.querySelectorAll('.side-row .title p');
 
-    // Collapse sidebar
-    collapseBtn?.addEventListener('click', () => {
+    // Hàm collapse sidebar
+    function collapseSidebar() {
         sidebar.classList.add('collapsed');
 
         titleTexts.forEach(p => p.classList.add('hidden'));
@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', function () {
         sideContext?.querySelectorAll('h2, p, span, div')
             .forEach(el => el.classList.add('hidden'));
 
-        collapseBtn.classList.add('hidden');
-        openBtn.classList.remove('hidden');
+        collapseBtn?.classList.add('hidden');
+        openBtn?.classList.remove('hidden');
 
-        // Ẩn tất cả sub-bar và open-sub, gỡ sub-open, giữ nguyên .active
+        // Ẩn sub-bar, open-sub, gỡ sub-open
         document.querySelectorAll('.sub-bar').forEach(bar => {
             bar.classList.remove('active');
             bar.classList.add('hidden');
@@ -31,10 +31,10 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelectorAll('.side-row.sub-open').forEach(row => {
             row.classList.remove('sub-open');
         });
-    });
+    }
 
-    // Open sidebar
-    openBtn?.addEventListener('click', () => {
+    // Hàm open sidebar
+    function openSidebar() {
         sidebar.classList.remove('collapsed');
 
         titleTexts.forEach(p => p.classList.remove('hidden'));
@@ -42,10 +42,9 @@ document.addEventListener('DOMContentLoaded', function () {
         sideContext?.querySelectorAll('h2, p, span, div')
             .forEach(el => el.classList.remove('hidden'));
 
-        openBtn.classList.add('hidden');
-        collapseBtn.classList.remove('hidden');
+        openBtn?.classList.add('hidden');
+        collapseBtn?.classList.remove('hidden');
 
-        // Hiện lại các nút open-sub nếu có sub-bar
         document.querySelectorAll('.side-row').forEach(row => {
             const subBar = row.querySelector('.sub-bar');
             const openSub = row.querySelector('.open-sub');
@@ -53,7 +52,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 openSub.classList.remove('hidden');
             }
         });
-    });
+    }
+
+    // Gán sự kiện cho nút
+    collapseBtn?.addEventListener('click', collapseSidebar);
+    openBtn?.addEventListener('click', openSidebar);
 
     // Toggle sub-bar
     document.querySelectorAll('.open-sub').forEach(button => {
@@ -65,9 +68,17 @@ document.addEventListener('DOMContentLoaded', function () {
             const isOpen = button.classList.toggle('active');
             subBar.classList.toggle('active', isOpen);
             subBar.classList.toggle('hidden', !isOpen);
-
-            // ✅ Thêm class riêng 'sub-open' mà không ảnh hưởng đến .active của route
             row.classList.toggle('sub-open', isOpen);
         });
     });
+
+    // Tự động collapse nếu màn hình < 992px
+    function handleResponsiveSidebar() {
+        if (window.innerWidth < 992) {
+            collapseSidebar();
+        }
+    }
+
+    handleResponsiveSidebar(); // Gọi khi DOM load
+    window.addEventListener('resize', handleResponsiveSidebar);
 });
