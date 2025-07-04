@@ -1111,8 +1111,113 @@ hr {
   }
 }
 
-// ----------------------- custom pagination style -----------------------
+// ----------------------- custom side active -----------------------
+.side-bar {
+  position: relative;
+  width: fit-content;
+  min-height: 100vh;
+  border-right: 1px solid #d0d1d2;
+  transition: all 0.4s ease;
+  .side-container {
+    padding: 100px 16px;
+    position: sticky;
+    top: 0;
+  }
+  &.collapsed {
+    transition: all 0.4s ease;
+    .side-view {
+      min-width: unset;
+    }
+  }
 
+  .collapse-sidebar {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    transform: translateX(50%);
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0px 0px 1.5px 0px rgba(0, 0, 0, 0.32);
+  }
+
+  .side-view {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 280px;
+  }
+
+  .main-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 15px;
+    background: #f8f9fe;
+    .side-row {
+      padding: 13px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+      color: #999;
+      .title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .side-icon {
+          opacity: 0.4;
+        }
+        p {
+          flex: 1;
+        }
+      }
+      &:hover,
+      &.active {
+        color: var(--text-tertiary);
+        background: var(--white);
+        box-shadow: 0px 0px 0.5px 0px rgba(66, 71, 76, 0.32),
+          0px 4px 8px 0px rgba(66, 71, 76, 0.05), 0px 4px 40px 0px #eee;
+        .side-icon {
+          opacity: 1;
+        }
+      }
+    }
+    .open-sub {
+      transition: all 0.4s ease;
+
+      &.active {
+        transition: all 0.4s ease;
+        transform: rotate(180deg);
+      }
+    }
+    .sub-bar {
+      max-height: 0;
+      opacity: 0;
+      transition: all 0.4s ease;
+      &.active {
+        max-height: 1000px;
+        opacity: 1;
+        transition: all 0.4s ease;
+      }
+      .sub-bar-list {
+        display: flex;
+        flex-direction: column;
+        .sub-row {
+          @extend .text-body-sm-semibold;
+          color: #d0d1d2;
+          padding: 5px;
+          padding-left: 30px;
+          &:hover,
+          &.active {
+            color: #15852b;
+          }
+        }
+      }
+    }
+  }
+}
 // ----------------------- custom pagination style -----------------------
 .pagination {
   display: flex;
