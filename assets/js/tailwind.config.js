@@ -51,6 +51,7 @@ tailwind.config = {
                 },
             },
             text: {
+                button: '#023D28',
                 content: '#292929',
                 title: '#F60',
                 logo: '#115231',
