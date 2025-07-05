@@ -17,15 +17,15 @@ tailwind.config = {
                     md: "768px",
                     lg: "1024px",
                     xl: "1280px",
-                    "2xl": "1288px"
+                    "2xl": "1336px"
                 },
                 center: true,
-                maxWidth: '1288px',
+                maxWidth: '1336px',
                 padding: {
                     DEFAULT: '24px',
                     '4xl': '0px',
-                    '3xl': '0px',
-                    '2xl': '0px',
+                    '3xl': '24px',
+                    '2xl': '24px',
                     xl: '24px',
                     lg: '24px',
                     md: '24px',
