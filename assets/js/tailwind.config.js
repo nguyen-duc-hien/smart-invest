@@ -57,6 +57,8 @@ tailwind.config = {
                 logo: '#115231',
                 tertiary: '#666',
                 quaternary: '#D28D3E',
+                d9: '#31333F',
+                158: '#15852B',
             }
         }
     }
