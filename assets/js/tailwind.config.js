@@ -59,6 +59,10 @@ tailwind.config = {
                 quaternary: '#D28D3E',
                 d9: '#31333F',
                 158: '#15852B',
+
+            },
+            label: {
+                tertiary: '#E9AE3D',
             }
         }
     }
