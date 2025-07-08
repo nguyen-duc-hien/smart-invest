@@ -1007,7 +1007,25 @@ a {
     }
   }
 }
-
+.link-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #F60;
+  svg {
+    path {
+      fill: #F60;
+    }
+  }
+  &:hover {
+    color: var(--text-logo);
+    svg {
+      path {
+        fill: var(--text-logo);
+      }
+    }
+  }
+}
 .button-tab {
   width: 56px;
   height: 56px;
