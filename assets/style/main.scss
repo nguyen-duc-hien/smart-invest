@@ -825,6 +825,9 @@ strong {
       padding: 12px 30px;
       border-radius: 99px;
       cursor: pointer;
+      @media (max-width: 768px) {
+        padding: 12px 24px;
+      }
       &.footer-button {
         height: 32px;
         gap: 5px;

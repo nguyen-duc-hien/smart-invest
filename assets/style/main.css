@@ -1145,6 +1145,11 @@ strong {
   border-radius: 99px;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .button-wrap .inner {
+    padding: 12px 24px;
+  }
+}
 .button-wrap .inner.footer-button {
   height: 32px;
   gap: 5px;
