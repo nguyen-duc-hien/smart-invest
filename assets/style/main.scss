@@ -657,6 +657,17 @@ strong {
       background-position: right 20px center;
       background-size: 16px 16px;
     }
+
+    &.filter-news {
+      padding: 0;
+      border: none;
+      background: transparent;
+      font-weight: 600;
+      background-image: url("../../assets/image/icon/triangle-down-24.svg"); /* Hình nền */
+      background-repeat: no-repeat;
+      background-position: right 0px center;
+      background-size: 24px 24px;
+    }
   }
   .input-trans {
     // @extend .text-body-sm-regular;
@@ -1254,7 +1265,7 @@ hr {
 .pagination {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 
   .page-numbers {
     display: flex;
@@ -1262,22 +1273,19 @@ hr {
     align-items: center;
     width: 36px;
     height: 36px;
-    background-color: #fff;
-    color: #453f3f;
+    background: #fff;
+    color: #2a2d2f;
     border: 1px solid #898a8d;
-    border-radius: 8px;
+    border-radius: 35px;
     cursor: pointer;
     @extend .text-body-sm-semibold;
     transition: background-color 0.2s;
 
-    &:hover {
-      background-color: #f0f0f0;
-    }
-
+    &:hover,
     &.current {
-      background-color: var(--primary);
+      background: var(--luxury-green-radial-primary);
       color: var(--white);
-      border-color: var(--primary);
+      border-color: var(--luxury-green-radial-primary);
     }
 
     &.prev,
@@ -1285,6 +1293,13 @@ hr {
       border: none;
       font-weight: bold;
       font-size: 18px;
+      &:hover {
+        svg {
+          path {
+            stroke: var(--white);
+          }
+        }
+      }
     }
   }
 }
@@ -2373,6 +2388,10 @@ hr {
   border-radius: 16px;
   border: 1px solid;
   border-color: #d0d1d2;
+  &.news {
+    border: none;
+    box-shadow: 0px 2px 4px 3px rgba(104, 104, 104, 0.1);
+  }
   .content {
     padding: 24px;
     display: flex;
@@ -2393,6 +2412,10 @@ hr {
   }
   &:hover {
     border-color: var(--text-logo);
+    &.news {
+      border: none;
+      box-shadow: 0px 2px 4px 3px rgba(104, 104, 104, 0.1);
+    }
     .content {
       .status-time {
         opacity: 1;
@@ -2479,6 +2502,49 @@ hr {
           }
         }
       }
+    }
+  }
+}
+
+.dmkq-item {
+  &-news {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    @media (max-width: 552px) {
+      flex-direction: column;
+      align-items: unset;
+    }
+    .figure {
+      border-radius: 8px;
+      overflow: hidden;
+      @extend .figure-hover;
+    }
+    .content {
+      flex: 1;
+      .link-share {
+        color: #d28d3e;
+        svg {
+          path {
+            fill: #d28d3e;
+          }
+        }
+        &:hover {
+          // border-color: var(--text-logo);
+          color: var(--text-logo);
+          svg {
+            path {
+              fill: var(--text-logo);
+            }
+          }
+        }
+      }
+    }
+    &.first-item {
+      flex-direction: column;
+      align-items: unset;
+      gap: 34px;
     }
   }
 }
