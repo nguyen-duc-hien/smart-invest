@@ -3193,6 +3193,21 @@ hr.footer-divider {
   background: radial-gradient(100% 100% at 50% 0%, #04784e 5.73%, #064c32 64.06%);
 }
 
+.list-icon-check li {
+  list-style: none;
+  position: relative;
+  padding-left: 28px;
+}
+.list-icon-check li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("/assets/image/dau-tu-va-qlts/tick.svg");
+  background-size: cover;
+}
+
 .table-bpgd-wrap {
   display: -webkit-box;
   display: -ms-flexbox;

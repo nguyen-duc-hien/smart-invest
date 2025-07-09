@@ -2778,6 +2778,22 @@ hr {
   }
 }
 
+.list-icon-check li {
+  list-style: none;
+  position: relative;
+  padding-left: 28px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url("/assets/image/dau-tu-va-qlts/tick.svg");
+    background-size: cover;
+  }
+}
+
 .table-bpgd-wrap {
   display: flex;
   flex-direction: column;
