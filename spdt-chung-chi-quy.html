@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dịch vụ chứng khoán</title>
+    <title>Main page</title>
     <!-- taildwind css import -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/assets/js/tailwind.config.js"></script>
@@ -421,438 +421,219 @@
             </div>
 
             <!-- main content -->
-            <div class="main-content-with-sub py-10 lg:py-[100px]">
-                <!-- -------------------- section 3 -------------------- -->
+            <div class="main-content-with-sub pt-10 lg:pt-[100px]">
                 <div class="container">
-                    <h2 class="mx-auto lg:max-w-[821px] text-body-xl-semibold text-text-content text-center">Đáp ứng dễ
-                        dàng mỗi nhu cầu đầu tư của khách hàng bằng các dịch vụ chứng khoán đa dạng, đội ngũ chuyên gia
-                        phân tích
-                        nhiều năm kinh nghiệm, cùng nhiều tiện ích đầu tư thông minh.</h2>
-                    <!-- item 1 -->
-                    <div class="mt-10 lg:mt-[100px] flex lg:justify-end lg:items-center max-lg:flex-col gap-8">
-                        <div class="w-full lg:w-[36%] lg:max-w-[458px] flex flex-col">
-                            <h2 class="text-heading-h2-bold text-text-logo">Giao dịch cổ phiếu</h2>
-                            <p class="mt-4 text-body-lg-regular text-text-content">Đầu tư thông minh với sự đồng hành
-                                của chuyên gia, cùng nền tảng công nghệ 4.0. Dễ dàng - Nhanh chóng - Đáng tin cậy</p>
-                            <a href="#" class="mt-8 button-wrap border-primary bg-green w-fit">
-                                <div class="inner">
-                                    <p class="text">Tìm hiểu thêm</p>
-                                    <figure class="w-6 h-6 aspect-[1/1]"><img
-                                            src="/assets/image/icon/arrow-right-gradient-yellow-2.svg" alt="icon">
-                                    </figure>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="w-ful lg:w-[54%] lg:max-w-[687px]">
-                            <figure class="w-ful"><img class="min-w-full" src="/assets/image/khcn/dvck-img.png"
-                                    alt="dvck"></figure>
-                        </div>
-                    </div>
-                    <!-- item 2 -->
+                    <h2 class="text-body-xl-semibold text-text-content mb-8 lg:mb-12 text-start">
+                        Chứng chỉ quỹ là một loại chứng khoán xác nhận quyền sở hữu một phần vốn góp trong quỹ đại chúng
+                        của Nhà đầu tư. Trong đó, quỹ đại chúng được hình thành từ vốn góp của các nhà đầu tư với mục
+                        đích kiếm lợi nhuận từ việc đa dạng hóa đầu tư vào chứng khoán hoặc nhiều dạng tài sản đầu tư
+                        khác
+                    </h2>
+                    <!-- filter and search -->
                     <div
-                        class="mt-10 lg:mt-[100px] flex lg:items-center max-lg:flex-col gap-8 lg:gap-12 3xl:gap-[87px]">
-                        <div class="w-ful lg:w-[54%] lg:max-w-[634px]">
-                            <figure class="w-ful"><img class="min-w-full" src="/assets/image/khcn/dvck-img-2.png"
-                                    alt="dvck"></figure>
+                        class="flex max-sm:flex-col gap-5 lg:gap-[30px] bg-[#F6F6F6] py-3 px-8 min-h-[70px] rounded-lg lg:items-center">
+                        <div class="flex items-center gap-4 xl:gap-12">
+                            <p class="min-w-[100px] text-body-md-regular text-text-tertiary whitespace-nowrap">Phân
+                                loại quỹ:</p>
+                            <label class="input-label">
+                                <select class="input-field filter-news">
+                                    <option value="1">Tất cả</option>
+                                    <option value="1">Hôm nay</option>
+                                    <option value="1">3 ngày trước</option>
+                                </select>
+                            </label>
                         </div>
-
-                        <div class="w-full lg:w-[36%] lg:max-w-[458px] flex flex-col">
-                            <h2 class="text-heading-h2-bold text-text-logo">Giao dịch cổ phiếu</h2>
-                            <p class="mt-4 text-body-lg-regular text-text-content">Đầu tư thông minh với sự đồng hành
-                                của chuyên gia, cùng nền tảng công nghệ 4.0. Dễ dàng - Nhanh chóng - Đáng tin cậy</p>
-                            <a href="#" class="mt-8 button-wrap border-primary bg-green w-fit">
-                                <div class="inner">
-                                    <p class="text">Tìm hiểu thêm</p>
-                                    <figure class="w-6 h-6 aspect-[1/1]"><img
-                                            src="/assets/image/icon/arrow-right-gradient-yellow-2.svg" alt="icon">
-                                    </figure>
-                                </div>
-                            </a>
+                        <div class="max-lg:hidden w-[1px] h-6 bg-text-tertiary"></div>
+                        <div class="flex items-center gap-4 xl:gap-12">
+                            <input class="input-field filter-news" type="text" placeholder="Tìm kiếm theo tên quỹ" />
                         </div>
-                    </div>
-                    <!-- item 2 -->
-
-                    <div class="mt-10 lg:mt-[100px] flex lg:justify-end lg:items-center max-lg:flex-col gap-8">
-                        <div class="w-full lg:w-[36%] lg:max-w-[458px] flex flex-col">
-                            <h2 class="text-heading-h2-bold text-text-logo">Giao dịch phái sinh</h2>
-                            <p class="mt-4 text-body-lg-regular text-text-content">
-                                AAS là một trong những đơn vị uy tín hàng đầu cung cấp
-                                dịch vụ phái sinh cho khách hàng. Đa dạng hóa danh mục đầu tư - Tìm kiếm lợi nhuận khi
-                                thị trường giảm điểm - Thanh
-                                khoản cao
-                            </p>
-                            <a href="#" class="mt-8 button-wrap border-primary bg-green w-fit">
-                                <div class="inner">
-                                    <p class="text">Tìm hiểu thêm</p>
-                                    <figure class="w-6 h-6 aspect-[1/1]"><img
-                                            src="/assets/image/icon/arrow-right-gradient-yellow-2.svg" alt="icon">
-                                    </figure>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="w-ful lg:w-[54%] lg:max-w-[687px]">
-                            <figure class="w-ful"><img class="min-w-full" src="/assets/image/khcn/dvck-img-3.png"
-                                    alt="dvck"></figure>
-                        </div>
-                    </div>
-
-                    <!-- item 4 -->
-                    <div
-                        class="mt-10 lg:mt-[100px] flex lg:items-center max-lg:flex-col gap-8 lg:gap-12 3xl:gap-[87px]">
-                        <div class="w-ful lg:w-[54%] lg:max-w-[634px]">
-                            <figure class="w-ful"><img class="min-w-full" src="/assets/image/khcn/dvck-img-4.png"
-                                    alt="dvck"></figure>
-                        </div>
-
-                        <div class="w-full lg:w-[36%] lg:max-w-[458px] flex flex-col">
-                            <h2 class="text-heading-h2-bold text-text-logo">Giao dịch chứng quyền</h2>
-                            <p class="mt-4 text-body-lg-regular text-text-content">Giao dịch tiện lợi, nhanh chóng - Tỷ
-                                suất sinh lời cao - Thanh khoản được đảm bảo</p>
-                            <a href="#" class="mt-8 button-wrap border-primary bg-green w-fit">
-                                <div class="inner">
-                                    <p class="text">Tìm hiểu thêm</p>
-                                    <figure class="w-6 h-6 aspect-[1/1]"><img
-                                            src="/assets/image/icon/arrow-right-gradient-yellow-2.svg" alt="icon">
-                                    </figure>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- -------------------- section 4 -------------------- -->
-                <div class="container mt-10 lg:mt-[100px]">
-                    <div class="flex flex-col items-center justify-center gap-4">
-                        <h2 class="text-heading-h1-bold text-text-logo text-cener">AAS Academy</h2>
-                        <p class="text-body-lg-regular text-text-content text-center">Nâng cấp kiến thức, nâng tầm đầu
-                            tư</p>
-                    </div>
-                    <div class="mt-8 flex-1 w-full">
-                        <!-- Slider main container -->
-                        <div id="academy-swiper" class="swiper">
-                            <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
-                                <!-- Slides -->
-                                <div class="swiper-slide">
-                                    <div class="w-full academy-item hot-item">
-                                        <div class="figure">
-                                            <figure class="h-[180px]"><img class="min-w-full aspect-[304/180]"
-                                                    src="/assets/image/homepage/academy-img.png" alt="img">
-                                            </figure>
-                                            <figure class="hot-icon"><img src="/assets/image/homepage/academy-hot.svg"
-                                                    alt="hot">
-                                            </figure>
-                                        </div>
-                                        <div class="academy-content gap-10 lg:gap-14">
-                                            <div class="flex flex-col gap-4">
-                                                <h2
-                                                    class="text-body-lg-semibold text-text-content truncate-2row min-h-2lh">
-                                                    La
-                                                    bàn
-                                                    Đầu
-                                                    tư: Tích sản Bảo an Thịnh Vượng</h2>
-                                                <p class="text-body-md-regular text-text-tertiary truncate-6row">
-                                                    Chuỗi chương trình chia sẻ kiến thức giúp thiết lập con đường bảo an
-                                                    tài
-                                                    chính
-                                                    và
-                                                    sức khoẻ đầu tư cho những nhà đầu tư
-                                                    mới chưa có nhiều kiến thức chuyên sâu về tài chính.</p>
-                                            </div>
-
-                                            <div class="flex flex-col gap-3">
-                                                <div
-                                                    class="w-full px-[14px] py-[2] rounded-[50px] flex items-center gap-2 bg-[#15852B]">
-                                                    <figure><img src="/assets/image/homepage/calendar.svg" alt="icon">
-                                                    </figure>
-                                                    <p class="text-body-sm-regular text-white"><span
-                                                            class="font-semibold">9h30</span> Thứ 7 ngày 15/10/2023
-                                                    </p>
-                                                </div>
-                                                <div class="flex items-center flex-wrap gap-[18px]">
-                                                    <div class="flex items-center gap-2.5">
-                                                        <figure><img src="/assets/image/homepage/sand-watch.svg"
-                                                                alt="icon">
-                                                        </figure>
-                                                        <p class="text-body-sm-semibold text-[#616161]">120 phút</p>
-                                                    </div>
-                                                    <div class="w-[1px] h-[17px] bg-[#D8D8D8]"></div>
-                                                    <div class="flex items-center gap-2.5">
-                                                        <figure><img src="/assets/image/homepage/eyes.svg" alt="icon">
-                                                        </figure>
-                                                        <p class="text-body-sm-regular text-[#616161]">Online Zoom</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Slides -->
-                                <div class="swiper-slide">
-                                    <div class="w-full academy-item hot-item">
-                                        <div class="figure">
-                                            <figure class="h-[180px]"><img class="min-w-full aspect-[304/180]"
-                                                    src="/assets/image/homepage/academy-img.png" alt="img">
-                                            </figure>
-                                            <figure class="hot-icon"><img src="/assets/image/homepage/academy-hot.svg"
-                                                    alt="hot">
-                                            </figure>
-                                        </div>
-                                        <div class="academy-content gap-10 lg:gap-14">
-                                            <div class="flex flex-col gap-4">
-                                                <h2
-                                                    class="text-body-lg-semibold text-text-content truncate-2row min-h-2lh">
-                                                    La
-                                                    bàn
-                                                    Đầu
-                                                    tư: Tích sản Bảo an Thịnh Vượng</h2>
-                                                <p class="text-body-md-regular text-text-tertiary truncate-6row">
-                                                    Chuỗi chương trình chia sẻ kiến thức giúp thiết lập con đường bảo an
-                                                    tài
-                                                    chính
-                                                    và
-                                                    sức khoẻ đầu tư cho những nhà đầu tư
-                                                    mới chưa có nhiều kiến thức chuyên sâu về tài chính.</p>
-                                            </div>
-
-                                            <div class="flex flex-col gap-3">
-                                                <div
-                                                    class="w-full px-[14px] py-[2] rounded-[50px] flex items-center gap-2 bg-[#15852B]">
-                                                    <figure><img src="/assets/image/homepage/calendar.svg" alt="icon">
-                                                    </figure>
-                                                    <p class="text-body-sm-regular text-white"><span
-                                                            class="font-semibold">9h30</span> Thứ 7 ngày 15/10/2023
-                                                    </p>
-                                                </div>
-                                                <div class="flex items-center flex-wrap gap-[18px]">
-                                                    <div class="flex items-center gap-2.5">
-                                                        <figure><img src="/assets/image/homepage/sand-watch.svg"
-                                                                alt="icon">
-                                                        </figure>
-                                                        <p class="text-body-sm-semibold text-[#616161]">120 phút</p>
-                                                    </div>
-                                                    <div class="w-[1px] h-[17px] bg-[#D8D8D8]"></div>
-                                                    <div class="flex items-center gap-2.5">
-                                                        <figure><img src="/assets/image/homepage/eyes.svg" alt="icon">
-                                                        </figure>
-                                                        <p class="text-body-sm-regular text-[#616161]">Online Zoom</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Slides -->
-                                <div class="swiper-slide">
-                                    <div class="w-full academy-item hot-item">
-                                        <div class="figure">
-                                            <figure class="h-[180px]"><img class="min-w-full aspect-[304/180]"
-                                                    src="/assets/image/homepage/academy-img.png" alt="img">
-                                            </figure>
-                                            <figure class="hot-icon"><img src="/assets/image/homepage/academy-hot.svg"
-                                                    alt="hot">
-                                            </figure>
-                                        </div>
-                                        <div class="academy-content gap-10 lg:gap-14">
-                                            <div class="flex flex-col gap-4">
-                                                <h2
-                                                    class="text-body-lg-semibold text-text-content truncate-2row min-h-2lh">
-                                                    La
-                                                    bàn
-                                                    Đầu
-                                                    tư: Tích sản Bảo an Thịnh Vượng</h2>
-                                                <p class="text-body-md-regular text-text-tertiary truncate-6row">
-                                                    Chuỗi chương trình chia sẻ kiến thức giúp thiết lập con đường bảo an
-                                                    tài
-                                                    chính
-                                                    và
-                                                    sức khoẻ đầu tư cho những nhà đầu tư
-                                                    mới chưa có nhiều kiến thức chuyên sâu về tài chính.</p>
-                                            </div>
-
-                                            <div class="flex flex-col gap-3">
-                                                <div
-                                                    class="w-full px-[14px] py-[2] rounded-[50px] flex items-center gap-2 bg-[#15852B]">
-                                                    <figure><img src="/assets/image/homepage/calendar.svg" alt="icon">
-                                                    </figure>
-                                                    <p class="text-body-sm-regular text-white"><span
-                                                            class="font-semibold">9h30</span> Thứ 7 ngày 15/10/2023
-                                                    </p>
-                                                </div>
-                                                <div class="flex items-center flex-wrap gap-[18px]">
-                                                    <div class="flex items-center gap-2.5">
-                                                        <figure><img src="/assets/image/homepage/sand-watch.svg"
-                                                                alt="icon">
-                                                        </figure>
-                                                        <p class="text-body-sm-semibold text-[#616161]">120 phút</p>
-                                                    </div>
-                                                    <div class="w-[1px] h-[17px] bg-[#D8D8D8]"></div>
-                                                    <div class="flex items-center gap-2.5">
-                                                        <figure><img src="/assets/image/homepage/eyes.svg" alt="icon">
-                                                        </figure>
-                                                        <p class="text-body-sm-regular text-[#616161]">Online Zoom</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Slides -->
-                                <div class="swiper-slide">
-                                    <div class="w-full academy-item hot-item">
-                                        <div class="figure">
-                                            <figure class="h-[180px]"><img class="min-w-full aspect-[304/180]"
-                                                    src="/assets/image/homepage/academy-img.png" alt="img">
-                                            </figure>
-                                            <figure class="hot-icon"><img src="/assets/image/homepage/academy-hot.svg"
-                                                    alt="hot">
-                                            </figure>
-                                        </div>
-                                        <div class="academy-content gap-10 lg:gap-14">
-                                            <div class="flex flex-col gap-4">
-                                                <h2
-                                                    class="text-body-lg-semibold text-text-content truncate-2row min-h-2lh">
-                                                    La
-                                                    bàn
-                                                    Đầu
-                                                    tư: Tích sản Bảo an Thịnh Vượng</h2>
-                                                <p class="text-body-md-regular text-text-tertiary truncate-6row">
-                                                    Chuỗi chương trình chia sẻ kiến thức giúp thiết lập con đường bảo an
-                                                    tài
-                                                    chính
-                                                    và
-                                                    sức khoẻ đầu tư cho những nhà đầu tư
-                                                    mới chưa có nhiều kiến thức chuyên sâu về tài chính.</p>
-                                            </div>
-
-                                            <div class="flex flex-col gap-3">
-                                                <div
-                                                    class="w-full px-[14px] py-[2] rounded-[50px] flex items-center gap-2 bg-[#15852B]">
-                                                    <figure><img src="/assets/image/homepage/calendar.svg" alt="icon">
-                                                    </figure>
-                                                    <p class="text-body-sm-regular text-white"><span
-                                                            class="font-semibold">9h30</span> Thứ 7 ngày 15/10/2023
-                                                    </p>
-                                                </div>
-                                                <div class="flex items-center flex-wrap gap-[18px]">
-                                                    <div class="flex items-center gap-2.5">
-                                                        <figure><img src="/assets/image/homepage/sand-watch.svg"
-                                                                alt="icon">
-                                                        </figure>
-                                                        <p class="text-body-sm-semibold text-[#616161]">120 phút</p>
-                                                    </div>
-                                                    <div class="w-[1px] h-[17px] bg-[#D8D8D8]"></div>
-                                                    <div class="flex items-center gap-2.5">
-                                                        <figure><img src="/assets/image/homepage/eyes.svg" alt="icon">
-                                                        </figure>
-                                                        <p class="text-body-sm-regular text-[#616161]">Online Zoom</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Slides -->
-                                <div class="swiper-slide">
-                                    <div class="w-full academy-item hot-item">
-                                        <div class="figure">
-                                            <figure class="h-[180px]"><img class="min-w-full aspect-[304/180]"
-                                                    src="/assets/image/homepage/academy-img.png" alt="img">
-                                            </figure>
-                                            <figure class="hot-icon"><img src="/assets/image/homepage/academy-hot.svg"
-                                                    alt="hot">
-                                            </figure>
-                                        </div>
-                                        <div class="academy-content gap-10 lg:gap-14">
-                                            <div class="flex flex-col gap-4">
-                                                <h2
-                                                    class="text-body-lg-semibold text-text-content truncate-2row min-h-2lh">
-                                                    La
-                                                    bàn
-                                                    Đầu
-                                                    tư: Tích sản Bảo an Thịnh Vượng</h2>
-                                                <p class="text-body-md-regular text-text-tertiary truncate-6row">
-                                                    Chuỗi chương trình chia sẻ kiến thức giúp thiết lập con đường bảo an
-                                                    tài
-                                                    chính
-                                                    và
-                                                    sức khoẻ đầu tư cho những nhà đầu tư
-                                                    mới chưa có nhiều kiến thức chuyên sâu về tài chính.</p>
-                                            </div>
-
-                                            <div class="flex flex-col gap-3">
-                                                <div
-                                                    class="w-full px-[14px] py-[2] rounded-[50px] flex items-center gap-2 bg-[#15852B]">
-                                                    <figure><img src="/assets/image/homepage/calendar.svg" alt="icon">
-                                                    </figure>
-                                                    <p class="text-body-sm-regular text-white"><span
-                                                            class="font-semibold">9h30</span> Thứ 7 ngày 15/10/2023
-                                                    </p>
-                                                </div>
-                                                <div class="flex items-center flex-wrap gap-[18px]">
-                                                    <div class="flex items-center gap-2.5">
-                                                        <figure><img src="/assets/image/homepage/sand-watch.svg"
-                                                                alt="icon">
-                                                        </figure>
-                                                        <p class="text-body-sm-semibold text-[#616161]">120 phút</p>
-                                                    </div>
-                                                    <div class="w-[1px] h-[17px] bg-[#D8D8D8]"></div>
-                                                    <div class="flex items-center gap-2.5">
-                                                        <figure><img src="/assets/image/homepage/eyes.svg" alt="icon">
-                                                        </figure>
-                                                        <p class="text-body-sm-regular text-[#616161]">Online Zoom</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <a href="#" class="button-wrap bg-green lg:ml-auto">
+                            <div class="inner">
+                                <p class=" text">Tìm kiếm</p>
                             </div>
-                            <div
-                                class="flex lg:hidden swiper-button-container mt-10 mx-auto w-full h-[36px] items-center gap-[34px]">
-                                <!-- If we need pagination -->
-                                <div class="!relative !w-fit !bottom-0 academy-pagin swiper-pagination"></div>
-                            </div>
+                        </a>
+                    </div>
+
+                    <!-- list item -->
+                    <div class="grid grid-cols-12  mt-8 lg:mt-12 gap-6 lg:gap-x-4 lg:gap-y-12">
+                        <!-- single item -->
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4">
+                            <a class="single-item flex flex-col gap-3 items-start" href="spdt-cck-detail.html">
+                                <figure class="rounded-[10px] overflow-hidden">
+                                    <img src="assets/image/spdt-cck/image.png" alt="img-post"
+                                        class="min-w-full aspect-[416/259] lg:min-h-[259px]">
+                                </figure>
+                                <h3 class="text-body-xl-semibold text-[#333] truncate-row2">
+                                    Quỹ Đầu Tư Lợi Thế Cạnh Tranh
+                                    Bền Vững
+                                </h3>
+                                <p class="text-body-md-semibold link-yellow">
+                                    Xem thêm
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11.9031 4.55806C12.1472 4.31398 12.5429 4.31398 12.787 4.55806L17.787 9.55806C18.0311 9.80214 18.0311 10.1979 17.787 10.4419L12.787 15.4419C12.5429 15.686 12.1472 15.686 11.9031 15.4419C11.659 15.1979 11.659 14.8021 11.9031 14.5581L15.8362 10.625H4.01172C3.66654 10.625 3.38672 10.3452 3.38672 10C3.38672 9.65482 3.66654 9.375 4.01172 9.375H15.8362L11.9031 5.44194C11.659 5.19786 11.659 4.80214 11.9031 4.55806Z"
+                                            fill="#D28D3E" />
+                                    </svg>
+                                </p>
+                            </a>
                         </div>
-                        <div class="mt-6 lg:mt-10 flex justify-center items-center">
-                            <a href="#" class="link-green text-body-md-bold">
-                                Tìm hiểu thêm
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4">
+                            <a class="single-item flex flex-col gap-3 items-start" href="spdt-cck-detail.html">
+                                <figure class="rounded-[10px] overflow-hidden">
+                                    <img src="assets/image/spdt-cck/image.png" alt="img-post"
+                                        class="min-w-full aspect-[416/259] lg:min-h-[259px]">
+                                </figure>
+                                <h3 class="text-body-xl-semibold text-[#333] truncate-row2">
+                                    Quỹ Đầu Tư Lợi Thế Cạnh Tranh
+                                    Bền Vững
+                                </h3>
+                                <p class="text-body-md-semibold link-yellow">
+                                    Xem thêm
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11.9031 4.55806C12.1472 4.31398 12.5429 4.31398 12.787 4.55806L17.787 9.55806C18.0311 9.80214 18.0311 10.1979 17.787 10.4419L12.787 15.4419C12.5429 15.686 12.1472 15.686 11.9031 15.4419C11.659 15.1979 11.659 14.8021 11.9031 14.5581L15.8362 10.625H4.01172C3.66654 10.625 3.38672 10.3452 3.38672 10C3.38672 9.65482 3.66654 9.375 4.01172 9.375H15.8362L11.9031 5.44194C11.659 5.19786 11.659 4.80214 11.9031 4.55806Z"
+                                            fill="#D28D3E" />
+                                    </svg>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4">
+                            <a class="single-item flex flex-col gap-3 items-start" href="spdt-cck-detail.html">
+                                <figure class="rounded-[10px] overflow-hidden">
+                                    <img src="assets/image/spdt-cck/image.png" alt="img-post"
+                                        class="min-w-full aspect-[416/259] lg:min-h-[259px]">
+                                </figure>
+                                <h3 class="text-body-xl-semibold text-[#333] truncate-row2">
+                                    Quỹ Đầu Tư Lợi Thế Cạnh Tranh
+                                    Bền Vững
+                                </h3>
+                                <p class="text-body-md-semibold link-yellow">
+                                    Xem thêm
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11.9031 4.55806C12.1472 4.31398 12.5429 4.31398 12.787 4.55806L17.787 9.55806C18.0311 9.80214 18.0311 10.1979 17.787 10.4419L12.787 15.4419C12.5429 15.686 12.1472 15.686 11.9031 15.4419C11.659 15.1979 11.659 14.8021 11.9031 14.5581L15.8362 10.625H4.01172C3.66654 10.625 3.38672 10.3452 3.38672 10C3.38672 9.65482 3.66654 9.375 4.01172 9.375H15.8362L11.9031 5.44194C11.659 5.19786 11.659 4.80214 11.9031 4.55806Z"
+                                            fill="#D28D3E" />
+                                    </svg>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4">
+                            <a class="single-item flex flex-col gap-3 items-start" href="spdt-cck-detail.html">
+                                <figure class="rounded-[10px] overflow-hidden">
+                                    <img src="assets/image/spdt-cck/image.png" alt="img-post"
+                                        class="min-w-full aspect-[416/259] lg:min-h-[259px]">
+                                </figure>
+                                <h3 class="text-body-xl-semibold text-[#333] truncate-row2">
+                                    Quỹ Đầu Tư Lợi Thế Cạnh Tranh
+                                    Bền Vững
+                                </h3>
+                                <p class="text-body-md-semibold link-yellow">
+                                    Xem thêm
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11.9031 4.55806C12.1472 4.31398 12.5429 4.31398 12.787 4.55806L17.787 9.55806C18.0311 9.80214 18.0311 10.1979 17.787 10.4419L12.787 15.4419C12.5429 15.686 12.1472 15.686 11.9031 15.4419C11.659 15.1979 11.659 14.8021 11.9031 14.5581L15.8362 10.625H4.01172C3.66654 10.625 3.38672 10.3452 3.38672 10C3.38672 9.65482 3.66654 9.375 4.01172 9.375H15.8362L11.9031 5.44194C11.659 5.19786 11.659 4.80214 11.9031 4.55806Z"
+                                            fill="#D28D3E" />
+                                    </svg>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- pagination -->
+                    <div class="md:col-span-2 xl:col-span-3 mt-10 lg:mt-[60px] flex items-center justify-center">
+                        <div class="pagination">
+                            <button class="page-numbers prev">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12.4697 8.46967C12.7626 8.17678 13.2374 8.17678 13.5303 8.46967L16.5303 11.4697C16.8232 11.7626 16.8232 12.2374 16.5303 12.5303L13.5303 15.5303C13.2374 15.8232 12.7626 15.8232 12.4697 15.5303C12.1768 15.2374 12.1768 14.7626 12.4697 14.4697L14.1893 12.75H8C7.58579 12.75 7.25 12.4142 7.25 12C7.25 11.5858 7.58579 11.25 8 11.25H14.1893L12.4697 9.53033C12.1768 9.23744 12.1768 8.76256 12.4697 8.46967Z"
-                                        fill="#115231" />
+                                    <path d="M14 7L9 12L14 17" stroke="#2A2D2F" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14 7L9 12L14 17" stroke="black" stroke-opacity="0.2" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-                            </a>
+                            </button>
+                            <button class="page-numbers current">1</button>
+                            <button class="page-numbers ">2</button>
+                            <button class="page-numbers ">3</button>
+                            <button class="page-numbers ">4</button>
+                            <button class="page-numbers next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path d="M10 7L15 12L10 17" stroke="#2A2D2F" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M10 7L15 12L10 17" stroke="black" stroke-opacity="0.2" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>
-                <!-- -------------------- section 5 -------------------- -->
-                <div class="container">
-                    <style>
-                        .ss-mtk {
-                            background: url(/assets/image/khcn/section-mtk.png) no-repeat center/cover;
-                            padding: 24px;
-                        }
-                    </style>
+
+                <div class="mt-10 lg:mt-[100px] relative flex h-screen max-h-[698px] items-end justify-end">
                     <div
-                        class="mt-10 lg:mt-[100px] ss-mtk rounded-3xl min-h-[280px] lg:min-h-[330px] flex items-center justify-center">
-                        <div class="max-w-[698px] mx-auto flex flex-col items-center justify-center">
-                            <h2 class="text-heading-h2-semibold text-white text-center">Mở tài khoản và đầu tư ngay cùng
-                                AAS</h2>
-                            <p class="mt-1 text-body-md-regular text-white text-center">
-                                Với hơn 18 năm kinh nghiệm trong lĩnh vực tư vấn tài chính, chúng tôi hân hạnh mang đến
-                                cho quý nhà đầu tư những dịch vụ
-                                và tiện ích chất lượng tốt nhất
-                            </p>
-                            <a href="#" class="mt-6 button-wrap bg-red w-fit">
-                                <div class="inner">
-                                    <figure><img src="/assets/image/header/mo-tk.svg" alt="icon"></figure>
-                                    <p class="text">Mở tài khoản</p>
-                                </div>
-                            </a>
+                        class="relative z-[2] xl:w-[52%] max-h-[92.4%] p-6 xl:pb-10 xl:pt-[73px] rounded-r-[32px] bg-white shadow-[0px_2px_8px_0px_rgba(50,50,50,0.08)] overflow-hidden mr-[-50%] lg:mr-[-10%]">
+                        <figure class="absolute left-0 bottom-0"><img src="/assets/image/lkcq/form-illus.svg"
+                                alt="illus"></figure>
+                        <div class="w-full h-full flex flex-col items-center justify-center">
+                            <div class="flex flex-col gap-6 lg:gap-10 lg:pl-[10%]">
+                                <h2 class="text-heading-h2-semibold text-text-logo">Đăng ký thông tin để được tư vấn đầu
+                                    tư
+                                </h2>
+                                <form class="flex flex-col gap-3 lg:max-w-[525px]">
+                                    <label class="input-label"><input type="text" class="input-field"
+                                            placeholder="Nhập tên"></label>
+                                    <div class="flex max-lg:flex-col items-center gap-2">
+                                        <label class="input-label"><input type="email" class="input-field"
+                                                placeholder="Nhập email"></label>
+                                        <label class="input-label"><input type="text" class="input-field"
+                                                placeholder="Nhập số điện thoại"></label>
+                                    </div>
+                                    <label class="input-label">
+                                        <select class="input-field">
+                                            <option value="">Số tiền dự định đầu tư</option>
+                                            <option value="">Số tiền dự định đầu tư</option>
+                                            <option value="">Số tiền dự định đầu tư</option>
+                                            <option value="">Số tiền dự định đầu tư</option>
+                                            <option value="">Số tiền dự định đầu tư</option>
+                                        </select>
+                                    </label>
+                                    <label class="input-label">
+                                        <select class="input-field">
+                                            <option value="">Tỉnh/ Thành phố</option>
+                                            <option value="">Tỉnh/ Thành phố</option>
+                                            <option value="">Tỉnh/ Thành phố</option>
+                                        </select>
+                                    </label>
+                                    <label class="input-label"><textarea class="input-field" rows="4"
+                                            placeholder="Nhập nội dung bạn cần hỗ trợ"></textarea></label>
+
+                                    <button class="mt-3 button-wrap bg-green w-fit">
+                                        <div class="inner w-full">
+                                            <p class="text">Nhập nội dung bạn cần hỗ trợ</p>
+                                            <!-- <figure><img src="/assets/image/icon/arrow-right-gradient-yellow-2.svg"
+                                                                                                        alt="">
+                                                                                                </figure> -->
+                                        </div>
+                                    </button>
+                                </form>
+                            </div>
                         </div>
                     </div>
+                    <div class="w-full xl:w-[62%] h-full">
+                        <figure class="rounded-l-[32px] h-full overflow-hidden"><img class="min-w-full aspect-[903/698]"
+                                src="/assets/image/lkcq/form-img.png" alt="img"></figure>
+                    </div>
                 </div>
+
+                <!-- -------------------- section 3 -------------------- -->
+
+                <!-- -------------------- section 4 -------------------- -->
+
+                <!-- -------------------- section 5 -------------------- -->
+
                 <!-- -------------------- section 6 -------------------- -->
 
                 <!-- -------------------- section 7 -------------------- -->
@@ -1027,47 +808,6 @@
     <script defer src="/assets/js/header-scroll.js"></script>
     <script defer src="/assets/js/sidebar.js"></script>
     <!-- sticky section script -->
-
-    <!-- swiper script -->
-    <script defer>
-        const swiper = new Swiper('#academy-swiper', {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            navigation: true,
-            loop: true,
-            // autoplay: true,
-            breakpoints: {
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                1280: {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
-                },
-                1440: {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
-                },
-                1600: {
-                    slidesPerView: 4,
-                    spaceBetween: 20,
-                }
-            },
-            pagination: {
-                el: ".academy-pagin",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.academy-next',
-                prevEl: '.academy-prev',
-            },
-        });
-        // ⚠️ Thêm sự kiện resize để force update Swiper
-        window.addEventListener('resize', () => {
-            swiper.update();
-        });
-    </script>
 </body>
 
 </html>

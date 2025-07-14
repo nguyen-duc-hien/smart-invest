@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <!-- taildwind css import -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/assets/js/tailwind.config.js"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="/assets/style/main.css" />
+
+    <!-- font import -->
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- fancy box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+        integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdơ]ơpXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="header-pc">
+            <div class="container w-full 4xl:max-w-[1523px] relative z-[2]">
+                <div class="first-row w-full 4xl:max-w-[1483px] flex flex-wrap gap-10 items-center justify-between">
+                    <div class="flex items-center gap-5">
+                        <a href="#" class="link-sub">Về AAS</a>
+                        <a href="#" class="link-sub">Thông tin cổ đông</a>
+                        <a href="#" class="link-sub">Cơ hội nghề nghiệp</a>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="language-select">
+                            <div class="language-show">
+                                <div class="flex items-center gap-2">
+                                    <figure class="show-flag aspect-[1/1] max-w-5 "><img
+                                            src="/assets/image/country-flag/vn.svg" alt="vn">
+                                    </figure>
+                                    <p class="show-text text-body-sm-semibold text-white">Vie</p>
+                                </div>
+                                <figure class="action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.69247 7.09327C3.91711 6.83119 4.31167 6.80084 4.57375 7.02548L10.0003 11.6768L15.4269 7.02548C15.689 6.80084 16.0836 6.83119 16.3082 7.09327C16.5328 7.35535 16.5025 7.74991 16.2404 7.97455L10.4071 12.9745C10.173 13.1752 9.82765 13.1752 9.59359 12.9745L3.76026 7.97455C3.49818 7.74991 3.46783 7.35535 3.69247 7.09327Z"
+                                            fill="white" />
+                                    </svg>
+                                </figure>
+
+                            </div>
+                            <div class="language-container">
+                                <div class="language-item">
+                                    <figure class="aspect-[1/1] max-w-5 "><img src="/assets/image/country-flag/vn.svg"
+                                            alt="vn"></figure>
+                                    <p class="show-text text-body-sm-semibold text-text-content">Vie</p>
+                                </div>
+                                <div class="language-item">
+                                    <figure class="aspect-[1/1] max-w-5 "><img src="/assets/image/country-flag/vn.svg"
+                                            alt="vn"></figure>
+                                    <p class="show-text text-body-sm-semibold text-text-content">Vie</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-[1px] h-[26px] line-1">
+                        </div>
+
+                        <a href="#" class="hotline">
+                            <figure class="icon"><img src="/assets/image/header/hotline.svg" alt="icon"></figure>
+                            1900 1811
+                        </a>
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div class="content-inner">
+                        <div class="flex items-center gap-6 4xl:gap-8">
+                            <a href="#" class="logo">
+                                <figure><img src="/assets/image/header/logo.svg" alt="logo"></figure>
+                            </a>
+                            <nav class="flex items-center gap-4 4xl:gap-6">
+                                <a href="#" class="link-nav active">Trang chủ</a>
+                                <a href="#" class="link-nav">Khách hàng cá nhân</a>
+                                <a href="#" class="link-nav">Khách hàng tổ chức</a>
+                                <a href="#" class="link-nav">AAS Research</a>
+                                <a href="#" class="link-nav">AAS Academy</a>
+                                <a href="#" class="link-nav">Trung tâm CSKH</a>
+                            </nav>
+                        </div>
+                        <div class="flex items-center gap-6">
+                            <a href="#" class="button-wrap bg-green">
+                                <div class="inner">
+                                    <figure class="w-5 h-5 aspect-[1/1]"><img src="/assets/image/header/gd-ngay.svg"
+                                            alt="icon">
+                                    </figure>
+                                    <p class="!hidden 3xl:!inline-block text">Giao dịch ngay</p>
+                                </div>
+                            </a>
+                            <a href="" class="button-wrap bg-red">
+                                <div class="inner">
+                                    <figure class="w-5 h-5 aspect-[1/1]"><img src="/assets/image/header/mo-tk.svg"
+                                            alt="icon">
+                                    </figure>
+                                    <p class="!hidden 3xl:!inline-block text">Mở tài khoản</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-mobile">
+            <div class="container">
+                <div class="second-row">
+                    <div class="content-inner">
+                        <a href="#" class="logo">
+                            <figure><img src="/assets/image/header/logo.svg" alt="logo"></figure>
+                        </a>
+                        <button class="breadcrumb-button">
+                            <figure class="w-6 h-6">
+                                <img src="/assets/image/icon/hamburger-icon.svg" alt="">
+                            </figure>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- breadcrumb mobile -->
+            <div
+                class="breadcrumb-header hidden fixed w-[95vw] max-w-[350px] h-[100vh] top-0 left-0 z-[5] transform transition-transform duration-300 ease-in-out translate-x-full">
+                <div class="shadow-1 flex flex-col gap-10 bg-[#025436] w-full h-full p-6">
+                    <div class="flex items-center justify-between">
+                        <a href="#" class="logo">
+                            <figure><img src="/assets/image/header/logo.svg" alt="logo"></figure>
+                        </a>
+                        <button class="breadcrumb-close">
+                            <figure class="w-8 h-8">
+                                <img src="/assets/image/icon/close.svg" alt="">
+                            </figure>
+                        </button>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="language-select">
+                            <div class="language-show">
+                                <div class="flex items-center gap-2">
+                                    <figure class="show-flag aspect-[1/1] max-w-5 "><img
+                                            src="/assets/image/country-flag/vn.svg" alt="vn">
+                                    </figure>
+                                    <p class="show-text text-body-sm-semibold text-white">Vie</p>
+                                </div>
+                                <figure class="action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.69247 7.09327C3.91711 6.83119 4.31167 6.80084 4.57375 7.02548L10.0003 11.6768L15.4269 7.02548C15.689 6.80084 16.0836 6.83119 16.3082 7.09327C16.5328 7.35535 16.5025 7.74991 16.2404 7.97455L10.4071 12.9745C10.173 13.1752 9.82765 13.1752 9.59359 12.9745L3.76026 7.97455C3.49818 7.74991 3.46783 7.35535 3.69247 7.09327Z"
+                                            fill="white" />
+                                    </svg>
+                                </figure>
+
+                            </div>
+                            <div class="language-container">
+                                <div class="language-item">
+                                    <figure class="aspect-[1/1] max-w-5 "><img src="/assets/image/country-flag/vn.svg"
+                                            alt="vn"></figure>
+                                    <p class="show-text text-body-sm-semibold text-text-content">Vie</p>
+                                </div>
+                                <div class="language-item">
+                                    <figure class="aspect-[1/1] max-w-5 "><img src="/assets/image/country-flag/vn.svg"
+                                            alt="vn"></figure>
+                                    <p class="show-text text-body-sm-semibold text-text-content">Vie</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-[1px] h-[26px] line-1">
+                        </div>
+
+                        <a href="#" class="hotline">
+                            <figure class="icon"><img src="/assets/image/header/hotline.svg" alt="icon"></figure>
+                            1900 1811
+                        </a>
+                    </div>
+
+                    <div class="breadcrumb-container custom-scrollbar">
+                        <nav class="flex flex-col gap-4 4xl:gap-6">
+                            <a href="#" class="link-nav active">Trang chủ</a>
+                            <a href="#" class="link-nav">Khách hàng cá nhân</a>
+                            <a href="#" class="link-nav">Khách hàng tổ chức</a>
+                            <a href="#" class="link-nav">AAS Research</a>
+                            <a href="#" class="link-nav">AAS Academy</a>
+                            <a href="#" class="link-nav">Trung tâm CSKH</a>
+                        </nav>
+                    </div>
+
+                    <div class="flex flex-col items-center gap-4">
+                        <a href="#" class="button-wrap bg-green">
+                            <div class="inner">
+                                <figure class="w-5 h-5 aspect-[1/1]"><img src="/assets/image/header/gd-ngay.svg"
+                                        alt="icon">
+                                </figure>
+                                <p class="text">Giao dịch ngay</p>
+                            </div>
+                        </a>
+                        <a href="" class="button-wrap bg-red">
+                            <div class="inner">
+                                <figure class="w-5 h-5 aspect-[1/1]"><img src="/assets/image/header/mo-tk.svg"
+                                        alt="icon">
+                                </figure>
+                                <p class="text">Mở tài khoản</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="h-[162px] bg-luxury-green-primary"></section>
+        <style>
+            .bg-section {
+                background: url('/assets/image/ekyc/image.png') no-repeat center center;
+                background-size: cover;
+            }
+        </style>
+        <section class="bg-section lg:min-h-[804px] lg:pt-[129px] lg:pb-[85px]">
+            <div class="container w-full 4xl:max-w-[1523px] relative z-[2]">
+                <div
+                    class="box flex flex-col items-start justify-center bg-white lg:max-w-[596px] p-8 lg:py-[60px] lg:px-[40px] rounded-2xl backdrop-blur-[6px]">
+                    <h1 class="text-heading-h1-semibold text-text-logo text-center lg:text-left">
+                        Mở tài khoản trực tuyến
+                    </h1>
+                    <div class="text-body-md-semibold text-text-content mt-2 flex gap-2">
+                        <figure class="w-6 h-6">
+                            <img src="/assets/image/ekyc/danger.svg" alt="danger">
+                        </figure>
+                        <span class="text-[#FF453A]">Lưu ý:</span>
+                        <span class="font-semibold flex-1 lg:flex-shrink-0">Trước khi mở tài khoản, Quý khách vui lòng:</span>
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-4 mt-6">
+                        <div class="flex gap-4">
+                            <figure class="w-6 h-6">
+                                <img src="/assets/image/ekyc/check.svg" alt="check">
+                            </figure>
+                            <p class="text-body-md-regular text-text-content">
+                                Chuẩn bị sẵn CCCD gắn chip mới nhất
+                            </p>
+                        </div>
+                        <div class="flex gap-4">
+                            <figure class="w-6 h-6">
+                                <img src="/assets/image/ekyc/check.svg" alt="check">
+                            </figure>
+                            <p class="text-body-md-regular text-text-content">
+                                Chuẩn bị sẵn CCCD gắn chip mới nhất
+                            </p>
+                        </div>
+                        <div class="flex gap-4">
+                            <figure class="w-6 h-6">
+                                <img src="/assets/image/ekyc/check.svg" alt="check">
+                            </figure>
+                            <p class="text-body-md-regular text-text-content">
+                                Chuẩn bị sẵn CCCD gắn chip mới nhất
+                            </p>
+                        </div>
+                        <div class="flex gap-4">
+                            <figure class="w-6 h-6">
+                                <img src="/assets/image/ekyc/check.svg" alt="check">
+                            </figure>
+                            <p class="text-body-md-regular text-text-content">
+                                Chuẩn bị sẵn CCCD gắn chip mới nhất
+                            </p>
+                        </div>
+                        <div class="flex gap-4">
+                            <figure class="w-6 h-6">
+                                <img src="/assets/image/ekyc/check.svg" alt="check">
+                            </figure>
+                            <p class="text-body-md-regular text-text-content">
+                                Chuẩn bị sẵn CCCD gắn chip mới nhất
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 mt-8 flex-col lg:flex-row">
+                        <a href="" class="button-wrap bg-red">
+                            <div class="inner">
+                                <figure class="w-5 h-5 aspect-[1/1]"><img src="/assets/image/header/mo-tk.svg"
+                                        alt="icon">
+                                </figure>
+                                <p class="text">Mở tài khoản</p>
+                            </div>
+                        </a>
+                        <a href="#" class="button-wrap bg-green">
+                            <div class="inner">
+                                <figure class="w-5 h-5 aspect-[1/1]"><img src="/assets/image/ekyc/plus.svg" alt="icon">
+                                </figure>
+                                <p class=" text">Đăng ký thêm tài khoản</p>
+                            </div>
+                        </a>
+                    </div>
+                    <p class="text-body-md-regular text-text-content mt-8">
+                        Hoặc liên hệ tổng đài chăm sóc khách hàng <span class="text-text-logo font-semibold">1900
+                            1811</span> để được hỗ trợ
+                    </p>
+                        <a href="#"
+                            class=" text-body-md-semibold  flex gap-[10px] mt-2 link-title">
+                            Hướng dẫn mở tài khoản trực tuyến
+                            <figure class="w-4 h-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14.7022 7.95625L9.70218 2.95625C9.52218 2.76625 9.27218 2.65625 8.99218 2.65625C8.44218 2.65625 7.99219 3.10625 7.99219 3.65625C7.99219 3.93625 8.10218 4.18625 8.28219 4.36625L11.5722 7.65625L1.99219 7.65625C1.44219 7.65625 0.992187 8.10625 0.992187 8.65625C0.992187 9.20625 1.44219 9.65625 1.99219 9.65625L11.5822 9.65625L8.29219 12.9462C8.11219 13.1263 8.00219 13.3763 8.00219 13.6563C8.00219 14.2063 8.45219 14.6563 9.00218 14.6563C9.28218 14.6563 9.53218 14.5463 9.71218 14.3663L14.7122 9.36625C14.8922 9.18625 15.0022 8.93625 15.0022 8.65625C15.0022 8.37625 14.8822 8.13625 14.7022 7.95625Z"
+                                        fill="#FF6600" />
+                                </svg>
+                            </figure>
+                        </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer footer-bg">
+        <div class="absolute top-0 right-0 z-[1] h-full overflow-hidden">
+            <figure><img src="/assets/image/footer/illus-bg.svg" alt="illus"></figure>
+        </div>
+        <div
+            class="container relative z-[2] w-full 4xl:max-w-[1543px] pt-10 pb-8 grid grid-cols-1 md:grid-cols-2 lg:flex lg:flex-row gap-10 4xl:gap-20">
+            <!-- first row -->
+            <div class="flex flex-col gap-6 lg:w-[27%] lg:max-w-[403px]">
+                <a href="#" class="">
+                    <figure class="max-w-[175px]"><img src="/assets/image/footer/logo.svg" alt="logo"></figure>
+                </a>
+
+                <div class="social-link-list">
+                    <div class="social-link-item">
+                        <figure><img src="/assets/image/icon/location.svg" alt="icon"></figure>
+                        <div class="context text-body-sm-regular"><a href="#" class="link-white">
+                                Số 220 + 222 + 224 phố Nguyễn Lương Bằng,
+                                phường Quang Trung, quận Đồng Đa, thành phố Hà Nội
+                            </a></div>
+                    </div>
+                    <div class="social-link-item">
+                        <figure><img src="/assets/image/icon/headset.svg" alt="icon"></figure>
+                        <div class="context text-body-sm-regular">
+                            Số điện thoại:
+                            <a href="#" class="link-white">
+                                0243 573 9779
+                            </a>
+                        </div>
+                    </div>
+                    <div class="social-link-item">
+                        <figure><img src="/assets/image/icon/phone.svg" alt="icon"></figure>
+                        <div class="context text-body-sm-regular">
+                            Tổng đài:
+                            <a href="#" class="link-white">
+                                1900 1811
+                            </a>
+                        </div>
+                    </div>
+                    <div class="social-link-item">
+                        <figure><img src="/assets/image/icon/mail.svg" alt="icon"></figure>
+                        <div class="context text-body-sm-regular">
+                            Email:
+                            <a href="#" class="link-white">
+                                trungtamcskh@aas.com.vn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-icon-list">
+                    <a href="#" class="social-icon-item">
+                        <figure><img src="/assets/image/icon/social-fb.svg" alt="social"></figure>
+                    </a>
+                    <a href="#" class="social-icon-item">
+                        <figure><img src="/assets/image/icon/social-zalo.svg" alt="social"></figure>
+                    </a>
+                    <a href="#" class="social-icon-item">
+                        <figure><img src="/assets/image/icon/social-yt.svg" alt="social"></figure>
+                    </a>
+                    <a href="#" class="social-icon-item">
+                        <figure><img src="/assets/image/icon/social-tt.svg" alt="social"></figure>
+                    </a>
+                    <a href="#" class="social-icon-item">
+                        <figure><img src="/assets/image/icon/social-sc.svg" alt="social"></figure>
+                    </a>
+                </div>
+            </div>
+
+            <!-- second row -->
+            <div class="flex flex-col gap-[22px] lg:w-[33%] lg:max-w-[490px]">
+                <h2 class="text-body-md-semibold text-white">
+                    Hệ thống chi nhánh và văn phòng đại diện
+                </h2>
+                <div class="flex flex-col gap-5">
+                    <div class="flex items-start gap-2.5">
+                        <figure><img src="/assets/image/icon/location.svg" alt="icon"></figure>
+                        <div class="flex-1 flex flex-col gap-2.5">
+                            <p class="text-body-md-semibold text-white">Chi nhánh Hồ Chí Minh</p>
+                            <a href="#" class="link-white text-body-sm-regular">Tầng 12, Diamond Plaza, 34 Lê Duẩn,
+                                phường Bến Nghé, quận 1, thành phố Hồ Chí Minh</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-2.5">
+                        <figure><img src="/assets/image/icon/location.svg" alt="icon"></figure>
+                        <div class="flex-1 flex flex-col gap-2.5">
+                            <p class="text-body-md-semibold text-white">Văn phòng đại diện Thái Nguyên</p>
+                            <a href="#" class="link-white text-body-sm-regular">Số 668 Phan Đình Phùng, phường Đồng
+                                Quang, thành phố Thái Nguyên</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-2.5">
+                        <figure><img src="/assets/image/icon/location.svg" alt="icon"></figure>
+                        <div class="flex-1 flex flex-col gap-2.5">
+                            <p class="text-body-md-semibold text-white">Văn phòng đại diện Nam Định</p>
+                            <a href="#" class="link-white text-body-sm-regular">Tầng 1, số 13 Minh Khai, phường Nguyễn
+                                Du, thành phố Nam Định</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- third row -->
+            <div class="md:col-span-2 lg:col-span-1 flex flex-col gap-6 lg:w-[30%] lg:max-w-[442px]">
+                <div class="flex flex-col gap-[15px]">
+                    <h2 class="text-body-md-semibold text-white">
+                        Nhận bản tin phân tích mới nhất từ AAS Research
+                    </h2>
+                    <form class="footer-form">
+                        <div class="relative">
+                            <input type="text" class="input-home" placeholder="Nhập địa chỉ email của bạn">
+                            <button class="button-wrap bg-red">
+                                <div class="inner footer-button">
+                                    <figure class="w-5 h-5 aspect-[1/1]"><img src="/assets/image/footer/send.svg"
+                                            alt="icon">
+                                    </figure>
+                                    <p class="text">Gửi</p>
+                                </div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="flex flex-col gap-5">
+                    <h2 class="text-body-md-semibold text-white">
+                        Quét để tải ứng dụng AAS
+                    </h2>
+                    <div class="flex items-center gap-10">
+                        <div class="flex items-center gap-[15px]">
+                            <figure class="w-16 h-16"><img class="aspect-[1/1]"
+                                    src="/assets/image/footer/qr-aas-pro.svg" alt="qr"></figure>
+                            <p class="text-body-sm-regular text-white">
+                                Tải ứng dụng <br>AAS PRO
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-[15px]">
+                            <figure class="w-16 h-16"><img class="aspect-[1/1]"
+                                    src="/assets/image/footer/qr-aas-robo.svg" alt="qr"></figure>
+                            <p class="text-body-sm-regular text-white">
+                                Tải ứng dụng <br>AAS Robo
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- header script -->
+    <script defer src="/assets/js/sub-menu.js"></script>
+    <script defer src="/assets/js/header.js"></script>
+    <script defer src="/assets/js/language.js"></script>
+    <script defer src="/assets/js/accordion.js"></script>
+    <!-- sticky section script -->
+    <script defer>
+        const header = document.getElementById("header");
+        const stickySection = document.querySelector(".sticky-section");
+
+        function handleScroll() {
+            const scrollY = window.scrollY;
+            const sectionTop = stickySection.offsetTop;
+            const sectionHeight = stickySection.offsetHeight;
+            const sectionBottom = sectionTop + sectionHeight;
+
+            // Nếu scrollY vào giữa sticky section
+            if (scrollY >= sectionTop && scrollY <= sectionBottom) {
+                header.classList.add("hidden");
+            } else {
+                header.classList.remove("hidden");
+            }
+        }
+
+        window.addEventListener("scroll", handleScroll);
+
+    </script>
+
+</body>
+
+</html>
