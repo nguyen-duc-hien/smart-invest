@@ -73,7 +73,9 @@
     #9d2c1e 0%,
     #640904 40.63%
   );
+  --fill-background: linear-gradient(270deg, #025436 0%, #053725 100%);
 }
+
 body {
   font-family: var(--f-body);
   font-weight: 400;
@@ -156,6 +158,9 @@ strong {
 
 .bg-accessible-red {
   background: var(--accessible-red);
+}
+.bg-fill-background {
+  background: var(--fill-background);
 }
 
 .text-heading {
@@ -1122,6 +1127,10 @@ a {
   }
   &-2 {
     box-shadow: 0px 6.091px 35.53px 0px rgba(0, 0, 0, 0.16);
+  }
+  &-2-bold {
+    box-shadow: 0px 7.55px 9.09px 0px rgba(31, 139, 36, 0.1),
+      0px 3.09px 4.18px 0px rgba(31, 139, 36, 0.1);
   }
   &-footer {
     box-shadow: 0px -4px 20px 0px rgba(63, 63, 63, 0.05);
@@ -2940,6 +2949,12 @@ hr {
     }
     &:first-child {
       margin-left: 0;
+    }
+    &.border-green {
+      margin-left: -8px;
+      width: 36px;
+      height: 36px;
+      border: 2px solid #025436;
     }
   }
 }
