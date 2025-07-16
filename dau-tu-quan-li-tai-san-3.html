@@ -445,12 +445,40 @@
                         width: fit-content;
                         padding-right: 16px;
                     }
+
+                    .box-absolute {
+                        width: 175.531px;
+                        height: 134px;
+                        flex-shrink: 0;
+                        border-radius: 10px;
+                        background: #fff;
+                        filter: drop-shadow(0px 3.09px 4.18px rgba(31, 139, 36, 0.10)) drop-shadow(0px 7.55px 9.09px rgba(31, 139, 36, 0.10));
+                    }
                 </style>
                 <div class="container max-w-[852px] ">
-                    <h2 class="text-body-xl-semibold text-text-content text-center mb-6 max-w-[821px] mx-auto">
-                        Giải pháp tài chính chuẩn mực giúp bảo toàn, phát triển, phân bổ và sử dụng đúng mục tiêu, từ đó
-                        tối ưu tăng trưởng tài sản cho Quý Khách hàng
-                    </h2>
+                    <div class="flex flex-col lg:flex-row justify-between items-center">
+                        <div class="flex flex-col gap-4 lg:max-w-[410px]">
+                            <h2 class="text-heading-h2-semibold text-text-logo">
+                                Quản lý tài sản
+                            </h2>
+                            <p class="text-body-md-regular text-text-content">
+                                Giải pháp tài chính chuẩn mực giúp bảo toàn, phát triển, phân bổ và sử dụng đúng mục
+                                tiêu,
+                                từ đó tối ưu tăng trưởng tài sản cho Quý Khách hàng
+                            </p>
+                        </div>
+                        <div class="col-right relative">
+                            <figure class="h-full">
+                                <img src="/assets/image/dau-tu-va-qlts/qlts-3.png" alt="img" class="aspect-[405/448]">
+                            </figure>
+                            <div class="box-absolute absolute lg:-left-[30%] bottom-[2%] pl-3 pt-3 flex flex-col gap-2">
+                                <span class="text-body-sm-medium text-[#2E2E30] text-[12px] ">Phân bố tài sản</span>
+                                <figure>
+                                    <img src="/assets/image/dau-tu-va-qlts/chart-qlts-3.svg" alt="img">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
                     <div class="flex flex-col gap-6  lg:gap-16 mt-10 lg:mt-[100px] ">
                         <!-- item1 -->
                         <div class="flex flex-col lg:flex-row gap-10 items-center lg:justify-between">
