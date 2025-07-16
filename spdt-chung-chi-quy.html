@@ -421,14 +421,46 @@
             </div>
 
             <!-- main content -->
-            <div class="main-content-with-sub pt-10 lg:pt-[100px]">
+            <div class="main-content-with-sub pt-10 lg:pt-0">
+                <style>
+                    .col-left::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translate(-50%, 50%);
+                        width: 80%;
+                        height: 100%;
+                        background-image: url('/assets/image/spdt-cck/back-cck.svg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        z-index: 1;
+                        user-select: none;
+                    }
+                </style>
                 <div class="container">
-                    <h2 class="text-body-xl-semibold text-text-content mb-8 lg:mb-12 text-start">
-                        Chứng chỉ quỹ là một loại chứng khoán xác nhận quyền sở hữu một phần vốn góp trong quỹ đại chúng
-                        của Nhà đầu tư. Trong đó, quỹ đại chúng được hình thành từ vốn góp của các nhà đầu tư với mục
-                        đích kiếm lợi nhuận từ việc đa dạng hóa đầu tư vào chứng khoán hoặc nhiều dạng tài sản đầu tư
-                        khác
-                    </h2>
+                    <div class="grid grid-cols-12 gap-6">
+                        <div class="col-span-12 lg:col-span-6 relative overflow-hidden col-left ">
+                            <div class="context lg:mt-[10%]">
+                                <h2 class="text-heading-h2-bold text-text-logo">Chứng chỉ quỹ</h2>
+                                <div class="text-body-md-regular text-text-content mt-1">
+                                    Chứng chỉ quỹ là một loại chứng khoán xác nhận quyền sở hữu một phần vốn góp trong
+                                    quỹ
+                                    đại chúng của Nhà đầu tư. Trong đó, quỹ đại chúng được hình thành từ vốn góp của các
+                                    nhà
+                                    đầu tư với mục đích kiếm lợi nhuận từ việc đa dạng hóa đầu tư vào chứng khoán hoặc
+                                    nhiều
+                                    dạng tài sản đầu tư khác
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 lg:col-span-6">
+                            <figure>
+                                <img src="assets/image/spdt-cck/img-col-right.png" alt="cck-illus"
+                                    class="aspect-[587/472]">
+                            </figure>
+                        </div>
+                    </div>
                     <!-- filter and search -->
                     <div
                         class="flex max-sm:flex-col gap-5 lg:gap-[30px] bg-[#F6F6F6] py-3 px-8 min-h-[70px] rounded-lg lg:items-center">
