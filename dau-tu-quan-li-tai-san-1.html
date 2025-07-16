@@ -423,19 +423,125 @@
             <!-- main content -->
             <div class="main-content-with-sub pt-10 lg:pt-[100px]">
                 <!-- -------------------- section 2 -------------------- -->
+                <style>
+                    .box-absolute {
+                        border-radius: 20px;
+                        background: #FFF;
+                        box-shadow: 0px 7.55px 9.09px 0px rgba(31, 139, 36, 0.10), 0px 3.09px 4.18px 0px rgba(31, 139, 36, 0.10);
+                        width: 257px;
+                        height: 97px;
+
+                        @media (max-width: 480px) {
+                            height: auto;
+                        }
+                    }
+
+                    .box-with-circle {
+                        border-radius: 100px;
+                        background: #fff;
+                        box-shadow: 0px 7.55px 9.09px 0px rgba(31, 139, 36, 0.10), 0px 3.09px 4.18px 0px rgba(31, 139, 36, 0.10);
+
+                    }
+
+                    .group-custom-box:nth-child(1) .circle {
+                        top: -15%;
+                        left: -11%;
+
+                    }
+
+                    .group-custom-box:nth-child(2) .circle {
+                        bottom: 10%;
+                        left: -11%;
+                    }
+
+                    .group-custom-box:nth-child(3) .circle {
+                        top: -15%;
+                        left: -11%;
+                    }
+
+                    .group-custom-box:nth-child(4) .circle {
+                        bottom: 10%;
+                        left: -11%;
+                    }
+                </style>
                 <div class="container">
-                    <h2 class="text-body-3xl-semibold text-text-content text-center max-w-[700px] ml-auto mr-auto">Tối
-                        ưu hóa dòng tiền, kiểm soát
-                        tài sản, sinh lời hiệu quả,
-                        giảm thiểu rủi ro</h2>
-                    <div class="text-body-md-regular text-text-content text-center max-w-[900px] ml-auto mr-auto mt-6">
-                        Quản lý gia sản là quản lý tài sản của cá nhân/gia đình nhằm đảm bảo tài sản (bao gồm vật, tiền,
-                        chứng khoán và các quyền tài sản…) được giữ gìn và sinh lời. AAS đảm bảo một tương lai bền vững
-                        cho gia đình và chính Quý Khách hàng, bằng cách đồng hành cùng Khách hàng để quản lý tài sản
-                        tránh thất thoát và hiệu quả nhất.
+                    <div class="grid grid-cols-12">
+                        <div class="col-span-12 lg:col-span-6">
+                            <h2 class="text-heading-h1-semibold text-text-logo">Quản Lý Gia Sản</h2>
+                            <div class="text-body-md-regular text-text-content mt-3.5">
+                                Quản lý gia sản là quản lý tài sản của cá nhân/gia đình nhằm đảm bảo tài sản (bao gồm
+                                vật, tiền, chứng khoán và các quyền tài sản…) được giữ gìn và sinh lời. AAS đảm bảo một
+                                tương lai bền vững cho gia đình và chính Quý Khách hàng, bằng cách đồng hành cùng Khách
+                                hàng để quản lý tài sản tránh thất thoát và hiệu quả nhất.
+                            </div>
+                            <div class="mt-[57px] flex gap-10  lg:gap-3 flex-col lg:flex-row justify-center items-center">
+                                <div class="relative w-[153px] h-[153px] group-custom-box">
+                                    <div
+                                        class="box-with-circle w-[112px] h-[112px] p-4 flex items-center justify-center text-center relative">
+                                        <span class="text-body-sm-regular text-text-logo">
+                                            Giảm thiểu rủi ro
+                                        </span>
+                                    </div>
+                                    <figure class="absolute circle ">
+                                        <img src="/assets/image/dau-tu-va-qlts/arrow-1.svg" alt="icon">
+                                    </figure>
+                                </div>
+                                <div class="relative w-[153px] h-[153px] group-custom-box">
+                                    <div
+                                        class="box-with-circle w-[112px] h-[112px] p-4 flex items-center justify-center text-center relative">
+                                        <span class="text-body-sm-regular text-text-logo">
+                                            Giảm thiểu rủi ro
+                                        </span>
+                                    </div>
+                                    <figure class="absolute circle ">
+                                        <img src="/assets/image/dau-tu-va-qlts/arrow-2.svg" alt="icon">
+                                    </figure>
+                                </div>
+                                <div class="relative w-[153px] h-[153px] group-custom-box">
+                                    <div
+                                        class="box-with-circle w-[112px] h-[112px] p-4 flex items-center justify-center text-center relative">
+                                        <span class="text-body-sm-regular text-text-logo">
+                                            Giảm thiểu rủi ro
+                                        </span>
+                                    </div>
+                                    <figure class="absolute circle ">
+                                        <img src="/assets/image/dau-tu-va-qlts/arrow-3.svg" alt="icon">
+                                    </figure>
+                                </div>
+                                <div class="relative w-[153px] h-[153px] group-custom-box">
+                                    <div
+                                        class="box-with-circle w-[112px] h-[112px] p-4 flex items-center justify-center text-center relative">
+                                        <span class="text-body-sm-regular text-text-logo">
+                                            Giảm thiểu rủi ro
+                                        </span>
+                                    </div>
+                                    <figure class="absolute circle ">
+                                        <img src="/assets/image/dau-tu-va-qlts/arrow-4.svg" alt="icon">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 lg:col-span-6 lg:mt-[-20%] relative ">
+                            <figure>
+                                <img class="aspect-[646/583]" src="/assets/image/dau-tu-va-qlts/ss1-new.png" alt="img">
+                            </figure>
+                            <div class="absolute bottom-[1%] left-[7%]">
+                                <div class="box-absolute pl-4 flex gap-4 justify-start items-center ">
+                                    <figure class="justify-start">
+                                        <img src="/assets/image/dau-tu-va-qlts/human-icon.svg" alt="img">
+                                    </figure>
+                                    <div class="flex flex-col">
+                                        <span class="text-body-md-semibold text-[#C5C5C5]">Khách hàng</span>
+                                        <span class="text-body-lg-bold text-text-logo">+15.000</span>
+                                    </div>
+                                    <figure class="absolute right-[14%] top-[25%] ">
+                                        <img src="/assets/image/dau-tu-va-qlts/wave-icon.svg" alt="img">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
                 <!-- -------------------- section 3 -------------------- -->
                 <div class="container py-10 lg-py-[100px]">
                     <div class="flex flex-col gap-10 lg:gap-[100px]">
@@ -571,13 +677,13 @@
                                         </div>
                                     </button>
                                 </form>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                     <div class="w-full xl:w-[61%] h-full">
                         <figure class="rounded-l-[32px] h-full overflow-hidden">
-                            <img class="min-w-full aspect-[903/621]"
-                                src="/assets/image/dau-tu-va-qlts/anh-contact.png" alt="img">
+                            <img class="min-w-full aspect-[903/621]" src="/assets/image/dau-tu-va-qlts/anh-contact.png"
+                                alt="img">
                         </figure>
                     </div>
                 </div>
