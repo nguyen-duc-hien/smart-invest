@@ -499,9 +499,56 @@
                         </div>
                         <div class="table-bpgd-item">
                             <div class="bpgd-title">
-                                <h2 class="flex-1 text-body-3xl-semibold text-[#0a0a0a]">
-                                    Biểu phí giao dịch chứng khoán (áp dụng từ ngày 17/03/2022)
-                                </h2>
+                                <div class="flex-1 flex flex-wrap gap-8 items-center">
+                                    <h2 class="text-body-3xl-semibold text-[#0a0a0a]">
+                                        Biểu phí giao dịch theo ngân hàng
+                                    </h2>
+                                    <div class="flex max-md:flex-col items-center gap-4">
+                                        <p class="text-body-sm-semibold text-text-content whitespace-nowrap">Tìm kiếm
+                                            ngân hàng</p>
+                                        <!-- multi-select combo box -->
+                                        <div class="combo-box min-w-[240px] md:min-w-[261px]">
+                                            <!-- view -->
+                                            <div class="combo-view">
+                                                <p class="text-body-sm-medium text-text-content opacity-70">Chọn ngân
+                                                    hàng</p>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none">
+                                                    <path
+                                                        d="M8.19403 12.7612L13.4401 6.30447C13.8649 5.78166 13.4929 5 12.8192 5L3.18078 5C2.50715 5 2.1351 5.78166 2.55988 6.30447L7.80597 12.7612C7.90602 12.8843 8.09398 12.8843 8.19403 12.7612Z"
+                                                        fill="#292929" />
+                                                </svg>
+                                            </div>
+
+                                            <!-- dropdown -->
+                                            <div class="dropdown lg:min-w-[300px]">
+                                                <div class="dropdown-toggle">
+                                                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M21 21L16.65 16.65M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+                                                            stroke="#6A6A6A" stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    <input type="text" class="search-box" placeholder="Tìm kiếm..." />
+                                                </div>
+
+                                                <ul class="dropdown-list">
+                                                    <li>
+                                                        <span
+                                                            class="text-body-sm-semibold text-text-content truncate-1row">Ngân
+                                                            hàng abcd</span>
+                                                    </li>
+                                                    <li>
+                                                        <span
+                                                            class="text-body-sm-semibold text-text-content truncate-1row">Ngân
+                                                            hàng abcd</span>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <button class="show-more">
                                     <figure class="hidden"><img src="/assets/image/icon/icon-plus-green.svg" alt="plus">
                                     </figure>
@@ -764,6 +811,10 @@
     <script defer src="/assets/js/accordion-faq.js"></script>
     <script defer src="/assets/js/header-scroll.js"></script>
     <script defer src="/assets/js/sidebar.js"></script>
+
+    <script defer src="/assets/js/combo-box.js"></script>
+
+
     <!-- sticky section script -->
 
     <!-- swiper script -->
