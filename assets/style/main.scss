@@ -1537,13 +1537,8 @@ hr {
     margin: auto;
     width: 95%;
     max-width: 1356px;
-    display: flex;
-    flex-direction: column;
-    padding: 24px 32px;
-    padding-right: 10px;
     gap: 32px;
-    background: #fff;
-    border-radius: 12px;
+    border-radius: 16px;
     position: relative;
 
     @media (max-width: 768px) {
@@ -1578,11 +1573,11 @@ hr {
       @extend .custom-scrollbar;
       max-height: 80vh;
       overflow-y: auto;
-      z-index: 2;
-      padding-right: 22px;
-      @media (max-width: 768px) {
-        padding-right: 14px;
-      }
+      // z-index: 2;
+      // padding-right: 20px;
+      // @media (max-width: 768px) {
+      //   padding-right: 14px;
+      // }
     }
   }
 }
@@ -2612,6 +2607,9 @@ hr {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    &.dau-gia {
+      padding: 28px 28px 16px 36px;
+    }
     .status-time {
       opacity: 0;
       transition: all 0.4s ease;
@@ -2621,6 +2619,14 @@ hr {
       svg {
         path {
           fill: #d28d3e;
+        }
+      }
+    }
+    .learn-more {
+      color: #d28d3e;
+      svg {
+        path {
+          stroke: #d28d3e;
         }
       }
     }
@@ -2641,6 +2647,15 @@ hr {
         svg {
           path {
             fill: var(--text-logo);
+          }
+        }
+      }
+      .learn-more {
+        color: #d28d3e;
+        color: var(--text-logo);
+        svg {
+          path {
+            stroke: var(--text-logo);
           }
         }
       }
