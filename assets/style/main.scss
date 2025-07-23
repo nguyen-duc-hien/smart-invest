@@ -2345,17 +2345,10 @@ hr {
 }
 .accordion {
   &-item {
-    padding: 24px 32px;
-    border-radius: 12px;
+    padding: 24px;
+    border-radius: 16px;
     background: var(--white);
     cursor: pointer;
-    &.faq {
-      padding: 24px;
-      border: 1px solid #e6e6e6;
-    }
-    &.product {
-      padding: 0;
-    }
   }
   &-title {
     display: flex;
@@ -2372,7 +2365,7 @@ hr {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    transition: max-height 0.2s ease-in-out;
+    // transition: max-height 0.2s ease-in-out;
   }
   &-item:hover {
     .accordion-title {
@@ -2391,7 +2384,7 @@ hr {
     .accordion-title {
       .accordion-show-more {
         svg {
-          transition: all 0.2s ease-in-out;
+          // transition: all 0.2s ease-in-out;
           transform: rotate(180deg);
         }
       }
@@ -2399,7 +2392,7 @@ hr {
     .accordion-content {
       margin-top: 24px;
       max-height: 1000px;
-      transition: max-height 0.2s ease-in-out;
+      // transition: max-height 0.2s ease-in-out;
     }
     &.product {
       .accordion-content {
