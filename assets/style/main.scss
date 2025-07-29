@@ -131,7 +131,6 @@ strong {
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  display: inline-block;
 }
 
 .bg-label-primary {
@@ -1035,13 +1034,19 @@ a {
   &.link-text {
     color: var(--text-content);
     &:hover {
-      color: var(--stock-system-yellow);
+      color: var(--text-logo);
     }
   }
   &.link-white {
     color: var(--white);
     &:hover {
-      color: var(--stock-system-yellow);
+      color: var(--text-logo);
+    }
+  }
+  &.link-white-yellow {
+    color: var(--white);
+    &:hover {
+      color: var(--stock-system-orange);
     }
   }
 }
@@ -1059,7 +1064,7 @@ a {
   }
 }
 .link-nav {
-  @extend .text-body-md-regular, .text-gradient;
+  @extend .text-body-sm-regular, .text-gradient;
   width: fit-content;
   position: relative;
   padding: 6px 0;
@@ -1357,6 +1362,9 @@ hr {
       .sub-bar-list {
         display: flex;
         flex-direction: column;
+        &.second {
+          padding-left: 16px;
+        }
         .sub-row {
           @extend .text-body-sm-semibold;
           color: #d0d1d2;
@@ -2165,6 +2173,36 @@ hr {
       #053725 59.38%
     );
   }
+
+  .float-button {
+    position: fixed;
+    right: 24px;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 4;
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100rem;
+      background: var(--luxury-green-radial-primary);
+      filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
+      &.active {
+        background: var(--accessible-red);
+      }
+    }
+
+    .item-white {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100rem;
+      background: var(--white);
+      filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
+    }
+  }
   // &-first-row {
   //   position: relative;
   //   background: var(--primary);
@@ -2315,6 +2353,11 @@ hr {
         display: flex;
         align-items: center;
         gap: 8px;
+      }
+      &.item-text {
+        .context {
+          color: var(--text-content);
+        }
       }
     }
   }
