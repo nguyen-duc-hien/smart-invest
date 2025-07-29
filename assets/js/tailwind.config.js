@@ -61,6 +61,10 @@ tailwind.config = {
                 158: '#15852B',
 
             },
+            color: {
+                text: '#115231',
+                'text-100': '#0A0A0A',
+            },
             label: {
                 tertiary: '#E9AE3D',
             }
