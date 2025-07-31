@@ -67,6 +67,9 @@ tailwind.config = {
             },
             label: {
                 tertiary: '#E9AE3D',
+            },
+            neutral: {
+                40: '#605E5E',
             }
         }
     }
