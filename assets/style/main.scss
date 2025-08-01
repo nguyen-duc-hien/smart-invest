@@ -1071,6 +1071,12 @@ a {
       color: var(--text-logo);
     }
   }
+  &.link-white {
+    color: var(--white);
+    &:hover {
+      color: var(--text-logo);
+    }
+  }
   &.link-white-yellow {
     color: var(--white);
     &:hover {
@@ -3379,7 +3385,7 @@ hr {
     }
     .bpgd-colapse-item {
       width: 100%;
-      overflow: auto;
+      // overflow: auto;
       @extend .custom-scrollbar;
       max-height: 0;
       opacity: 0;
@@ -3394,9 +3400,9 @@ hr {
   .bpgd-table {
     margin-top: 38px;
     min-width: 500px;
-    @extend .custom-scrollbar;
+    // @extend .custom-scrollbar;
     width: 100%;
-    overflow: auto;
+    // overflow: auto;
     border-radius: 8px;
     box-shadow: 0px 0px 0.5px 0px rgba(66, 71, 76, 0.32),
       0px 4px 8px 0px rgba(66, 71, 76, 0.05), 0px 4px 40px 0px #eee;
@@ -3437,7 +3443,7 @@ hr {
       }
       .row {
         display: flex;
-        align-items: center;
+        // align-items: center;
 
         .body-item {
           padding: 16px 8px;
