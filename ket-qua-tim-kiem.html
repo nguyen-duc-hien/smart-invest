@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main page</title>
+    <title>Kết quả tìm kiếm</title>
     <!-- taildwind css import -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/assets/js/tailwind.config.js"></script>
@@ -332,249 +332,125 @@
                 </div>
             </div>
         </section>
-
-        <!-- main-view -->
-        <div class="relative flex main-view">
-            <!-- sidebar -->
-            <div class="side-bar">
-                <div class="side-container">
-                    <button class="collapse-sidebar">
-                        <figure><img src="/assets/image/icon/chev-left-side.svg" alt="chev"></figure>
-                    </button>
-                    <div class="side-view">
-                        <!-- title and open side -->
-                        <div class="side-context">
-                            <button class="w-full text-center open-sidebar hidden">
-                                <figure><img src="/assets/image/icon/hamburger-icon-black.svg" alt="chev"></figure>
-                            </button>
-                            <h2 class="text-body-md-semibold text-text-content">Dịch vụ chứng khoán</h2>
-                        </div>
-
-                        <!-- main view -->
-
-                        <div class="main-sidebar">
-                            <div class="side-row active">
-                                <div class="title">
-                                    <figure class="side-icon"><img src="/assets/image/side-bar/chart-icon.svg"
-                                            alt="icon">
-                                    </figure>
-                                    <p>Tiện ích giao dịch</p>
-                                </div>
-                            </div>
-
-                            <div class="side-row">
-                                <div class="title">
-                                    <figure class="side-icon"><img src="/assets/image/side-bar/chart-icon.svg"
-                                            alt="icon">
-                                    </figure>
-                                    <p>Tiện ích giao dịch</p>
-                                </div>
-                            </div>
-
-                            <div class="side-row">
-                                <div class="title">
-                                    <figure class="side-icon"><img src="/assets/image/side-bar/chart-icon.svg"
-                                            alt="icon">
-                                    </figure>
-                                    <p>Tiện ích giao dịch</p>
-                                    <button class="open-sub">
-                                        <figure class="side-icon"><img src="/assets/image/icon/side-chev-down-16.svg"
-                                                alt="icon"></figure>
-                                    </button>
-                                </div>
-                                <div class="sub-bar">
-                                    <div class="mt-6">
-                                    </div>
-
-                                    <ul class="sub-bar-list">
-                                        <li>
-                                            <a href="#" class="sub-row active">
-                                                Phí giao dịch chứng khoán
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="sub-row">
-                                                Phí giao dịch chứng khoán
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="sub-row">
-                                                Phí giao dịch chứng khoán
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="sub-row">
-                                                Phí giao dịch chứng khoán
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="sub-row">
-                                                Phí giao dịch chứng khoán
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <!-- -------------------- section 3 -------------------- -->
+        <section class="mt-10 xl:mt-20">
+            <div class="container">
+                <h2 class="text-heading-h2-semibold text-text-content text-center">Chúng tôi có thể giúp gì?</h2>
+                <div class="filter-faq flex items-center gap-5 max-w-[956px] mx-auto mt-8">
+                    <input type="text" class="flex-1 input-faq" style="box-shadow: 0 4px 16px 0 rgba(0, 78, 26, 0.06);"
+                        placeholder="Từ khóa tìm kiếm">
+                    <button class="button-faq">Tìm kiếm</button>
                 </div>
-            </div>
+                <div class="mt-10 2xl:mt-[66px]">
+                    <p class="text-body-md-regular text-[#2B2E3A] tracking-[-0.16px]">
+                        Tìm thấy 20 kết quả cho từ khóa: <span class="font-semibold text-[#004200]">“Cách”</span>
+                    </p>
 
-            <!-- main content -->
-            <div class="main-content-with-sub pt-5 lg:pt-[50px]">
-                <style>
-                    .box-custom-spdt figure {
-                        box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
-                        border-radius: 16px;
-                    }
-
-                    .context {
-                        background: rgba(255, 255, 255, 0.50);
-                        backdrop-filter: blur(17.5px);
-                        border-radius: 0 0 16px 16px;
-                        transition: all 300ms ease-in-out;
-                    }
-
-                    .box-custom-spdt:hover .context {
-                        background: linear-gradient(270deg, #025436 0%, #053725 100%);
-                        backdrop-filter: blur(17.5px);
-                    }
-                </style>
-                <div class="container">
-                    <div class="grid grid-cols-12 mt-8 lg:mt-12 gap-5">
-                        <div class="col-span-12 lg:col-span-4 relative z-[2] box-custom-spdt group overflow-hidden">
-                            <figure class="overflow-hidden">
-                                <img class="min-w-full h-[277px] aspect-[416/277]" src="/assets/image/spdt/1.png"
-                                    alt="img">
-                            </figure>
-                            <div
-                                class="context absolute bottom-0 left-1/2 -translate-x-1/2 z-20 w-full px-4 py-4 lg:px-6 lg:py-6">
-                                <div class="flex justify-center items-center">
-                                    <h3
-                                        class="text-body-xl-semibold text-text-logo transition-all duration-300 group-hover:text-white">
-                                        Cổ phiếu
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-10 lg:mt-[100px] relative flex h-screen max-h-[698px] items-end justify-end">
-                    <div
-                        class="relative z-[2] xl:w-[52%] max-h-[92.4%] p-6 xl:pb-10 xl:pt-[73px] rounded-r-[32px] bg-white shadow-[0px_2px_8px_0px_rgba(50,50,50,0.08)] overflow-hidden mr-[-50%] lg:mr-[-10%]">
-                        <figure class="absolute left-0 bottom-0"><img src="/assets/image/lkcq/form-illus.svg"
-                                alt="illus"></figure>
-                        <div class="w-full h-full flex flex-col items-center justify-center">
-                            <div class="flex flex-col gap-6 lg:gap-10 lg:pl-[10%]">
-                                <h2 class="text-heading-h2-semibold text-text-logo">Đăng ký thông tin để được tư vấn đầu
-                                    tư
+                    <div class="mt-10 flex flex-col gap-4">
+                        <div class="accordion-faq-wrap">
+                            <div class="accordion-faq-title">
+                                <h2 class="flex-1 text-body-md-regular text-[#02542D]"><span
+                                        class="font-semibold">Cách</span> nộp tiền vào Tài khoản GD chứng khoán tại AAS
                                 </h2>
-                                <form class="flex flex-col gap-3 lg:max-w-[525px]">
-                                    <label class="input-label"><input type="text" class="input-field"
-                                            placeholder="Nhập tên"></label>
-                                    <div class="flex max-lg:flex-col items-center gap-2">
-                                        <label class="input-label"><input type="email" class="input-field"
-                                                placeholder="Nhập email"></label>
-                                        <label class="input-label"><input type="text" class="input-field"
-                                                placeholder="Nhập số điện thoại"></label>
-                                    </div>
-                                    <label class="input-label">
-                                        <select class="input-field">
-                                            <option value="">Số tiền dự định đầu tư</option>
-                                            <option value="under-10m">Dưới 10 triệu VND</option>
-                                            <option value="10m-50m">10 - 50 triệu VND</option>
-                                            <option value="50m-100m">50 - 100 triệu VND</option>
-                                            <option value="100m-500m">100 - 500 triệu VND</option>
-                                            <option value="500m-1b">500 triệu - 1 tỷ VND</option>
-                                            <option value="1b-5b">1 - 5 tỷ VND</option>
-                                            <option value="over-5b">Trên 5 tỷ VND</option>
-                                        </select>
-                                    </label>
-                                    <label class="input-label">
-                                        <select class="input-field">
-                                            <option value="">Tỉnh/ Thành phố</option>
-
-                                            <!-- Các tỉnh thành không sáp nhập -->
-                                            <option value="hanoi">Thành phố Hà Nội</option>
-                                            <option value="hue">Thành phố Huế</option>
-                                            <option value="lai-chau">Tỉnh Lai Châu</option>
-                                            <option value="dien-bien">Tỉnh Điện Biên</option>
-                                            <option value="son-la">Tỉnh Sơn La</option>
-                                            <option value="lang-son">Tỉnh Lạng Sơn</option>
-                                            <option value="quang-ninh">Tỉnh Quảng Ninh</option>
-                                            <option value="thanh-hoa">Tỉnh Thanh Hóa</option>
-                                            <option value="nghe-an">Tỉnh Nghệ An</option>
-                                            <option value="ha-tinh">Tỉnh Hà Tĩnh</option>
-                                            <option value="cao-bang">Tỉnh Cao Bằng</option>
-
-                                            <!-- Các tỉnh thành mới sau sáp nhập -->
-                                            <option value="tuyen-quang">Tỉnh Tuyên Quang</option>
-                                            <option value="lao-cai">Tỉnh Lào Cai</option>
-                                            <option value="thai-nguyen">Tỉnh Thái Nguyên</option>
-                                            <option value="phu-tho">Tỉnh Phú Thọ</option>
-                                            <option value="bac-ninh">Tỉnh Bắc Ninh</option>
-                                            <option value="hung-yen">Tỉnh Hưng Yên</option>
-                                            <option value="hai-phong">Thành phố Hải Phòng</option>
-                                            <option value="ninh-binh">Tỉnh Ninh Bình</option>
-                                            <option value="quang-tri">Tỉnh Quảng Trị</option>
-                                            <option value="da-nang">Thành phố Đà Nẵng</option>
-                                            <option value="quang-ngai">Tỉnh Quảng Ngãi</option>
-                                            <option value="gia-lai">Tỉnh Gia Lai</option>
-                                            <option value="khanh-hoa">Tỉnh Khánh Hòa</option>
-                                            <option value="lam-dong">Tỉnh Lâm Đồng</option>
-                                            <option value="dak-lak">Tỉnh Đắk Lắk</option>
-                                            <option value="ho-chi-minh">Thành phố Hồ Chí Minh</option>
-                                            <option value="dong-nai">Tỉnh Đồng Nai</option>
-                                            <option value="tay-ninh">Tỉnh Tây Ninh</option>
-                                            <option value="can-tho">Thành phố Cần Thơ</option>
-                                            <option value="vinh-long">Tỉnh Vĩnh Long</option>
-                                            <option value="dong-thap">Tỉnh Đồng Tháp</option>
-                                            <option value="ca-mau">Tỉnh Cà Mau</option>
-                                            <option value="an-giang">Tỉnh An Giang</option>
-                                        </select>
-                                    </label>
-                                    <label class="input-label"><textarea class="input-field" rows="4"
-                                            placeholder="Nhập nội dung bạn cần hỗ trợ"></textarea></label>
-
-                                    <button class="mt-3 button-wrap bg-green w-fit">
-                                        <div class="inner w-full">
-                                            <p class="text">Nhập nội dung bạn cần hỗ trợ</p>
-                                        </div>
-                                    </button>
-                                </form>
+                                <button class="accordion-faq-button">
+                                    <figure><img src="/assets/image/icon/chev-down-24-green.svg" alt="illus">
+                                    </figure>
+                                </button>
+                            </div>
+                            <div class="accordion-faq-content-wrap">
+                                <div class="w-full mt-[18px] px-3 xl:px-8 py-3 text-body-md-regular text-text-content">
+                                    chưa biết trong này ghi gì, nhưng mà chắc là text editor nên viết tạm như này đã
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-faq-wrap">
+                            <div class="accordion-faq-title">
+                                <h2 class="flex-1 text-body-md-regular text-[#02542D]"><span
+                                        class="font-semibold">Cách</span> nộp tiền vào Tài khoản GD chứng khoán tại AAS
+                                </h2>
+                                <button class="accordion-faq-button">
+                                    <figure><img src="/assets/image/icon/chev-down-24-green.svg" alt="illus">
+                                    </figure>
+                                </button>
+                            </div>
+                            <div class="accordion-faq-content-wrap">
+                                <div class="w-full mt-[18px] px-3 xl:px-8 py-3 text-body-md-regular text-text-content">
+                                    chưa biết trong này ghi gì, nhưng mà chắc là text editor nên viết tạm như này đã
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-faq-wrap">
+                            <div class="accordion-faq-title">
+                                <h2 class="flex-1 text-body-md-regular text-[#02542D]"><span
+                                        class="font-semibold">Cách</span> nộp tiền vào Tài khoản GD chứng khoán tại AAS
+                                </h2>
+                                <button class="accordion-faq-button">
+                                    <figure><img src="/assets/image/icon/chev-down-24-green.svg" alt="illus">
+                                    </figure>
+                                </button>
+                            </div>
+                            <div class="accordion-faq-content-wrap">
+                                <div class="w-full mt-[18px] px-3 xl:px-8 py-3 text-body-md-regular text-text-content">
+                                    chưa biết trong này ghi gì, nhưng mà chắc là text editor nên viết tạm như này đã
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="w-full xl:w-[62%] h-full">
-                        <figure class="rounded-l-[32px] h-full overflow-hidden"><img class="min-w-full aspect-[903/698]"
-                                src="/assets/image/lkcq/form-img.png" alt="img"></figure>
+                </div>
+            </div>
+        </section>
+        <!-- -------------------- section 4 -------------------- -->
+        <style>
+            .tu-van-bg {
+                background: url(/assets/image/trung-tam-ho-tro/tu-van.png) no-repeat center/cover;
+            }
+        </style>
+        <section class="my-10 xl:mt-16 xl:mb-[100px]">
+            <div class="container">
+                <div class="tu-van-bg rounded-3xl min-h-[370px] flex flex-col items-center justify-center gap-10">
+                    <h2 class="text-heading-h1-semibold text-white text-center">
+                        Tôi có thắc mắc và muốn được tư vấn
+                    </h2>
+                    <div class="flex flex-wrap items-center justify-center gap-2.5">
+                        <a href="#" class="button-wrap bg-red">
+                            <div class="inner">
+                                <figure class="w-5 h-5 aspect-[1/1]"><img src="/assets/image/icon/chat-aas.svg"
+                                        alt="icon">
+                                </figure>
+                                <p class="text">Chat với aas</p>
+                            </div>
+                        </a>
+                        <a href="#" class="button-wrap bg-green">
+                            <div class="inner">
+                                <figure class="w-5 h-5 aspect-[1/1]"><img src="/assets/image/header/gd-ngay.svg"
+                                        alt="icon">
+                                </figure>
+                                <p class="text">gọi cho aas</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
-
-                <!-- -------------------- section 3 -------------------- -->
-
-                <!-- -------------------- section 4 -------------------- -->
-
-                <!-- -------------------- section 5 -------------------- -->
-
-                <!-- -------------------- section 6 -------------------- -->
-
-                <!-- -------------------- section 7 -------------------- -->
-
-                <!-- -------------------- section 7 -------------------- -->
-
-                <!-- -------------------- section 8 -------------------- -->
-
-                <!-- -------------------- section 9 -------------------- -->
-
-                <!-- -------------------- section 10 -------------------- -->
-
-                <!-- -------------------- section 11 -------------------- -->
-
-                <!-- -------------------- section 12 -------------------- -->
             </div>
-        </div>
+        </section>
+        <!-- -------------------- section 5 -------------------- -->
+
+        <!-- -------------------- section 6 -------------------- -->
+
+        <!-- -------------------- section 7 -------------------- -->
+
+        <!-- -------------------- section 7 -------------------- -->
+
+        <!-- -------------------- section 8 -------------------- -->
+
+        <!-- -------------------- section 9 -------------------- -->
+
+        <!-- -------------------- section 10 -------------------- -->
+
+        <!-- -------------------- section 11 -------------------- -->
+
+        <!-- -------------------- section 12 -------------------- -->
+
+
 
     </main>
     <footer class="footer footer-bg">
@@ -729,9 +605,123 @@
     <script defer src="/assets/js/header.js"></script>
     <script defer src="/assets/js/language.js"></script>
     <script defer src="/assets/js/accordion.js"></script>
-    <script defer src="/assets/js/header-scroll.js"></script>
-    <script defer src="/assets/js/sidebar.js"></script>
+    <script defer src="/assets/js/accordion-faq.js"></script>
     <!-- sticky section script -->
+    <script defer>
+        const header = document.getElementById("header");
+        const stickySection = document.querySelector(".sticky-section");
+
+        function handleScroll() {
+            const scrollY = window.scrollY;
+            const sectionTop = stickySection.offsetTop;
+            const sectionHeight = stickySection.offsetHeight;
+            const sectionBottom = sectionTop + sectionHeight;
+
+            // Nếu scrollY vào giữa sticky section
+            if (scrollY >= sectionTop && scrollY <= sectionBottom) {
+                header.classList.add("hidden");
+            } else {
+                header.classList.remove("hidden");
+            }
+        }
+
+        window.addEventListener("scroll", handleScroll);
+
+    </script>
+
+    <!-- swiper script -->
+    <script defer>
+        const swiper = new Swiper('#dvck-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: true,
+            loop: true,
+            // autoplay: true,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1280: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 20,
+                },
+                1440: {
+                    slidesPerView: 3.5,
+                    spaceBetween: 20,
+                }
+            },
+            pagination: {
+                el: ".dvck-pagin",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.dvck-next',
+                prevEl: '.dvck-prev',
+            },
+        });
+
+        const swiper2 = new Swiper('#dvtt-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: true,
+            loop: true,
+            // autoplay: true,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1280: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 20,
+                },
+                1440: {
+                    slidesPerView: 3.5,
+                    spaceBetween: 20,
+                }
+            },
+            pagination: {
+                el: ".dvtt-pagin",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.dvtt-next',
+                prevEl: '.dvtt-prev',
+            },
+        });
+
+        const swiper3 = new Swiper('#research-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: true,
+            loop: true,
+            // autoplay: true,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1280: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1440: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                }
+            },
+            pagination: {
+                el: ".research-pagin",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.research-next',
+                prevEl: '.research-prev',
+            },
+        });
+
+    </script>
 </body>
 
 </html>
