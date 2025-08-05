@@ -499,11 +499,13 @@
                             </div>
 
                         </div>
-                        <div class="mt-8 flex gap-8">
-                            <a href="#1" class=" tab-item faq-tab active text-body-md-semibold text-[#02542D]  pb-4 ">
+                        <div class="mt-8 flex gap-8 pb-4 overflow-auto custom-scrollbar">
+                            <a href="#1"
+                                class="min-w-[150px] tab-item faq-tab active text-body-md-semibold text-[#02542D]  pb-4 ">
                                 Giao dịch cổ phiếu
                             </a>
-                            <a href="#2" class=" tab-item faq-tab text-body-md-regular text-[#444444]  pb-4">
+                            <a href="#2"
+                                class="min-w-[150px] tab-item faq-tab text-body-md-regular text-[#444444]  pb-4">
                                 Giao dịch trái phiếu
                             </a>
                         </div>
@@ -561,7 +563,7 @@
                                                                 d="M20.7694 16.265L21.4749 12.1852C21.6511 11.1662 20.8675 10.2342 19.8345 10.2342H14.6534C14.1399 10.2342 13.7489 9.77328 13.832 9.26598L14.4947 5.22142C14.6024 4.56435 14.5716 3.892 14.4044 3.24752C14.2659 2.71364 13.854 2.28495 13.3123 2.11093L13.1673 2.06435C12.8399 1.95918 12.4826 1.98365 12.1739 2.13239C11.8342 2.29611 11.5856 2.59473 11.4935 2.94989L11.0178 4.78374C10.8664 5.36723 10.646 5.93045 10.3617 6.46262C9.94634 7.24017 9.30416 7.86246 8.63663 8.43769L7.19789 9.67749C6.79223 10.0271 6.57919 10.5506 6.62535 11.0844L7.43752 20.4771C7.51201 21.3386 8.23231 22 9.09609 22H13.7447C17.226 22 20.197 19.5744 20.7694 16.265Z"
                                                                 fill="#02542D" />
                                                             <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                d="M3.46767 9.48508C3.86893 9.46777 4.21261 9.76963 4.24721 10.1698L5.21881 21.4063C5.28122 22.1281 4.71268 22.7502 3.98671 22.7502C3.30289 22.7502 2.75 22.1954 2.75 21.5129V10.2344C2.75 9.83275 3.0664 9.5024 3.46767 9.48508Z"
+                                                                d="M3.46767 9.48508C3.86893 9.46777 4.21261 9.76963 4.24721 10.1548L5.21881 21.4063C5.28122 22.1281 4.71268 22.7502 3.98671 22.7502C3.30289 22.7502 2.75 22.1954 2.75 21.5129V10.2344C2.75 9.83275 3.0664 9.5024 3.46767 9.48508Z"
                                                                 fill="#02542D" />
                                                         </svg>
                                                     </figure>
@@ -709,28 +711,30 @@
                     }
                 </style>
                 <section class="mt-10 xl:mt-16">
-                    <div
-                        class="container tu-van-bg rounded-3xl min-h-[370px] flex flex-col items-center justify-center gap-6">
-                        <h2 class="text-heading-h1-semibold text-white text-center">
-                            Tôi có thắc mắc và muốn được tư vấn
-                        </h2>
-                        <div class="flex flex-wrap items-center justify-center gap-2.5">
-                            <a href="#" class="button-wrap bg-red">
-                                <div class="inner">
-                                    <figure class="w-5 h-5 aspect-[1/1]"><img src="/assets/image/icon/chat-aas.svg"
-                                            alt="icon">
-                                    </figure>
-                                    <p class="text">Chat với aas</p>
-                                </div>
-                            </a>
-                            <a href="#" class="button-wrap bg-green">
-                                <div class="inner">
-                                    <figure class="w-5 h-5 aspect-[1/1]"><img src="/assets/image/header/gd-ngay.svg"
-                                            alt="icon">
-                                    </figure>
-                                    <p class="text">gọi cho aas</p>
-                                </div>
-                            </a>
+                    <div class="container">
+                        <div
+                            class="tu-van-bg rounded-3xl min-h-[370px] flex flex-col items-center justify-center gap-6">
+                            <h2 class="text-heading-h1-semibold text-white text-center">
+                                Tôi có thắc mắc và muốn được tư vấn
+                            </h2>
+                            <div class="flex flex-wrap items-center justify-center gap-2.5">
+                                <a href="#" class="button-wrap bg-red">
+                                    <div class="inner">
+                                        <figure class="w-5 h-5 aspect-[1/1]"><img src="/assets/image/icon/chat-aas.svg"
+                                                alt="icon">
+                                        </figure>
+                                        <p class="text">Chat với aas</p>
+                                    </div>
+                                </a>
+                                <a href="#" class="button-wrap bg-green">
+                                    <div class="inner">
+                                        <figure class="w-5 h-5 aspect-[1/1]"><img src="/assets/image/header/gd-ngay.svg"
+                                                alt="icon">
+                                        </figure>
+                                        <p class="text">gọi cho aas</p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -742,14 +746,21 @@
                     .border-cus-img-form-research {
                         border-radius: 32px 76px 206px 32px;
                     }
+
+                    @media(max-width:1023px) {
+                        .border-cus-img-form-research {
+                            border-radius: 0;
+                        }
+                    }
                 </style>
-                <div class="mt-10 lg:mt-[100px] relative flex h-screen max-h-[698px] max-lg:items-end justify-start">
+                <div
+                    class="mt-10 lg:mt-[100px] relative flex max-xl:flex-col xl:h-screen xl:max-h-[548px] xl:items-end justify-start">
                     <div
-                        class="relative z-[2] xl:w-[52%] p-6 xl:pb-10 xl:pt-[111px] rounded-r-[32px] bg-white shadow-[0px_2px_8px_0px_rgba(50,50,50,0.08)] overflow-hidden">
+                        class="relative z-[2] xl:w-[52%] h-full p-6 rounded-r-[32px] bg-white shadow-[0px_2px_8px_0px_rgba(50,50,50,0.08)] overflow-hidden">
                         <figure class="absolute left-0 bottom-0"><img src="/assets/image/lkcq/form-illus.svg"
                                 alt="illus"></figure>
                         <div class="w-full h-full flex flex-col items-center justify-center">
-                            <div class="flex flex-col gap-6 lg:gap-10 lg:pl-[10%]">
+                            <div class="flex flex-col gap-6 lg:pl-[10%]">
                                 <h2 class="text-heading-h2-semibold text-text-logo">Đăng ký thông tin để được tư vấn đầu
                                     tư
                                 </h2>
@@ -769,13 +780,6 @@
                                             <option value="">Chọn giao dịch tư vấn</option>
                                         </select>
                                     </label>
-                                    <label class="input-label">
-                                        <select class="input-field">
-                                            <option value="">Tỉnh/ Thành phố</option>
-                                            <option value="">Tỉnh/ Thành phố</option>
-                                            <option value="">Tỉnh/ Thành phố</option>
-                                        </select>
-                                    </label>
                                     <label class="input-label"><textarea class="input-field" rows="4"
                                             placeholder="Nhập nội dung bạn cần hỗ trợ"></textarea></label>
 
@@ -791,9 +795,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-full xl:w-[67%] h-full absolute top-0 left-[25%]">
+                    <div class="w-full xl:w-[67%] h-full xl:absolute top-0 left-[25%]">
                         <figure class="border-cus-img-form-research h-full overflow-hidden"><img
-                                class="min-w-full aspect-[903/621]" src="/assets/image/lkcq/form-img.png" alt="img">
+                                class="min-w-full xl:aspect-[903/548]" src="/assets/image/lkcq/form-img.png" alt="img">
                         </figure>
                     </div>
                 </div>
