@@ -1322,6 +1322,18 @@ strong {
 .button-wrap.bg-white:hover .inner .text {
   color: var(--white);
 }
+.button-wrap.bg-white.hover-yellow:hover {
+  background: var(--text-title);
+}
+.button-wrap.bg-white.hover-yellow:hover:before {
+  background: var(--text-title);
+}
+.button-wrap.bg-white.hover-yellow:hover .inner {
+  background: var(--text-title);
+}
+.button-wrap.bg-white.hover-yellow:hover .inner .text {
+  color: var(--white);
+}
 .button-wrap.bg-trans {
   background: transparent;
 }
@@ -1364,10 +1376,23 @@ a.link-text:hover {
   color: var(--text-logo);
 }
 a.link-white {
-  color: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  color: #fff;
+}
+a.link-white svg path {
+  fill: #fff;
 }
 a.link-white:hover {
-  color: var(--text-logo);
+  color: var(--stock-system-orange);
+}
+a.link-white:hover svg path {
+  fill: var(--stock-system-orange);
 }
 a.link-white-yellow {
   color: var(--white);
@@ -1540,12 +1565,8 @@ a.link-white-yellow:hover {
 .link-text:hover svg path {
   fill: var(--text-logo);
 }
-.link-text.stock-system:hover {
-  color: var(--stock-system-orange);
-}
-.link-text.stock-system:hover svg path {
-  fill: var(--stock-system-orange);
-  stroke: var(--stock-system-orange);
+.link-text.hover-white:hover {
+  color: #fff;
 }
 
 .link-666 {
@@ -1678,6 +1699,7 @@ hr.footer-divider {
   border-right: 1px solid #d0d1d2;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  z-index: 3;
 }
 .side-bar .side-container {
   padding: 95px 16px;
@@ -1697,6 +1719,7 @@ hr.footer-divider {
   min-width: unset;
 }
 .side-bar .collapse-sidebar {
+  z-index: 2;
   width: 18px;
   height: 18px;
   position: absolute;
@@ -2983,6 +3006,7 @@ hr.footer-divider {
   background: rgba(21, 133, 43, 0.1);
 }
 .accordion-faq-wrap.active .accordion-faq-content-wrap {
+  width: 100%;
   max-height: 1000px;
   opacity: 1;
   -webkit-transition: all 0.4s ease;
@@ -3130,6 +3154,9 @@ hr.footer-divider {
   }
 }
 .row-chat .chat.news-content {
+  margin-top: 0;
+}
+.row-chat .chat .news-content {
   margin-top: 0;
 }
 .row-chat .avatar {

@@ -1036,6 +1036,23 @@ strong {
           }
         }
       }
+      &.hover-yellow {
+        &:hover {
+          background: var(--text-title);
+
+          &:before {
+            // transition: all 0.4s ease;
+            background: var(--text-title);
+          }
+          .inner {
+            background: var(--text-title);
+            .text {
+              // @extend .text-gradient;
+              color: var(--white);
+            }
+          }
+        }
+      }
     }
     &.bg-trans {
       background: transparent;
@@ -1089,9 +1106,22 @@ a {
     }
   }
   &.link-white {
-    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
     &:hover {
-      color: var(--text-logo);
+      color: var(--stock-system-orange);
+      svg {
+        path {
+          fill: var(--stock-system-orange);
+        }
+      }
     }
   }
   &.link-white-yellow {
@@ -1267,15 +1297,15 @@ a {
       }
     }
   }
-  &.stock-system {
+  &.hover-white {
     &:hover {
-      color: var(--stock-system-orange);
-      svg {
-        path {
-          fill: var(--stock-system-orange);
-          stroke: var(--stock-system-orange);
-        }
-      }
+      color: #fff;
+      // svg {
+      //   path {
+      //     fill: #fff;
+      //     stroke: #fff;
+      //   }
+      // }
     }
   }
 }
@@ -1415,6 +1445,7 @@ hr {
   min-height: 100vh;
   border-right: 1px solid #d0d1d2;
   transition: all 0.4s ease;
+  z-index: 3;
   .side-container {
     padding: 95px 16px;
     position: sticky;
@@ -1431,6 +1462,7 @@ hr {
   }
 
   .collapse-sidebar {
+    z-index: 2;
     width: 18px;
     height: 18px;
     position: absolute;
@@ -2644,6 +2676,7 @@ hr {
       background: rgba(21, 133, 43, 0.1);
     }
     .accordion-faq-content-wrap {
+      width: 100%;
       max-height: 1000px;
       opacity: 1;
       transition: all 0.4s ease;
@@ -2758,6 +2791,9 @@ hr {
       padding: 8px 10px;
     }
     &.news-content {
+      margin-top: 0;
+    }
+    .news-content {
       margin-top: 0;
     }
   }
