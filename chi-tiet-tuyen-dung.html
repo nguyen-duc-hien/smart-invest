@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main page</title>
+    <title>Chi tiết tuyển dụng</title>
     <!-- taildwind css import -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/assets/js/tailwind.config.js"></script>
@@ -436,372 +436,266 @@
 
             <!-- main content -->
             <div class="main-content-with-sub ">
-                <section class="bg-hdgd relative pt-10 lg:pt-[70px]">
+                <section class="mt-10 xl:mt-20">
                     <div class="container">
-                        <div class="flex flex-col lg:flex-row gap-5 lg:gap-[116px] items-center">
-                            <div class="flex flex-col gap-4">
-                                <h2 class="text-heading-h2-semibold text-text-content">Hướng dẫn giao dịch</h2>
-                                <div class="text-body-lg-regular text-[#605E5E]">
-                                    Hướng dẫn chi tiết cách sử dụng các sản phẩm - dịch vụ của AAS
+                        <div class="flex flex-wrap gap-4 text-body-lg-semibold text-text-content">
+                            <img src="/assets/image/icon/home-icon-text.svg" alt="icon">
+                            <a href="#" class="link-text">Home</a>
+                            <span class="opacity-50">/</span>
+                            <a href="#" class="link-text">Cơ hội nghề nghiệp</a>
+                            <span class="opacity-50">/</span>
+                            <p class="opacity-50">Vị trí tuyển dụng</p>
+                        </div>
+
+                        <div class="flex flex-col mt-12 gap-12">
+                            <div class="flex flex-col gap-2">
+                                <h2 class="text-heading-h2-bold text-text-logo">
+                                    Chuyên viên Tư vấn Chứng khoán (Hồ Chí Minh/ Nha Trang)
+                                </h2>
+                                <p class="text-body-md-medium text-text-tertiary">Đăng 10 phút trước</p>
+                            </div>
+                            <!-- main card -->
+                            <div class="grid 2xl:grid-cols-12 gap-5">
+                                <style>
+                                    .tab-item {
+                                        padding-bottom: 14px;
+                                        border-bottom: 2px solid;
+                                        border-color: transparent;
+                                        color: #444;
+                                    }
+
+                                    .tab-item.active {
+                                        font-weight: 700;
+                                        color: #02542D;
+                                        border-color: #02542D;
+                                    }
+
+                                    .tab-view {
+                                        display: none;
+                                    }
+
+                                    .tab-view.active {
+                                        display: block;
+                                    }
+                                </style>
+                                <div class="2xl:col-span-8 xl:max-w-[794px]">
+                                    <div class="flex max-sm:flex-col sm:items-center gap-6 3xl:gap-16">
+                                        <button class="tab-item text-body-lg-regular" data-tab="nvct">Nhiệm vụ cụ
+                                            thể</button>
+                                        <button class="tab-item text-body-lg-regular" data-tab="yccv">Yêu cầu công
+                                            việc</button>
+                                        <button class="tab-item text-body-lg-regular" data-tab="cddh">Chế độ được
+                                            hưởng</button>
+                                    </div>
+
+                                    <div class="mt-8">
+                                        <div id="nvct"
+                                            class="tab-view text-body-md-regular text-text-content flex flex-col gap-6">
+                                            nvct abcd
+                                        </div>
+                                        <div id="yccv"
+                                            class="tab-view text-body-md-regular text-text-content flex flex-col gap-6">
+                                            yccv abcd
+                                        </div>
+                                        <div id="cddh"
+                                            class="tab-view text-body-md-regular text-text-content flex flex-col gap-6">
+                                            cddh abcd
+                                        </div>
+                                    </div>
+                                </div>
+                                <script defer src="/assets/js/tab-switch.js"></script>
+
+
+                                <div class="2xl:col-span-4">
+                                    <div class="p-6 rounded-[10px] bg-[rgba(21,133,43,0.10)]">
+                                        <h2 class="text-body-3xl-semibold text-text-content">
+                                            Thông tin chung
+                                        </h2>
+
+                                        <div class="mt-6 flex flex-col gap-4">
+                                            <div class="flex flex-col gap-2">
+                                                <p class="text-body-md-medium text-text-tertiary">Địa điểm làm việc:</p>
+                                                <p class="text-body-md-semibold text-text-content">
+                                                    222 Nguyễn Lương Bằng, P.Quang Trung, Đống Đa, Hà Nội
+                                                </p>
+                                            </div>
+                                            <div class="flex flex-col gap-2">
+                                                <p class="text-body-md-medium text-text-tertiary">Địa điểm làm việc:</p>
+                                                <p class="text-body-md-semibold text-text-content">
+                                                    Thứ 2 - Thứ 7
+                                                    (8h30 - 17h45) <br>
+                                                    Nghỉ trưa: Từ 11h45 đến 13h00
+                                                </p>
+                                            </div>
+                                            <div class="flex flex-col gap-2">
+                                                <p class="text-body-md-medium text-text-tertiary">Địa điểm làm việc:</p>
+                                                <p class="text-body-md-semibold text-text-content">
+                                                    Chuyên viên Truyền thông
+                                                </p>
+                                            </div>
+                                            <div class="flex flex-col gap-2">
+                                                <p class="text-body-md-medium text-text-tertiary">Địa điểm làm việc:</p>
+                                                <p class="text-body-md-semibold text-text-content">
+                                                    10/08/2025
+                                                </p>
+                                            </div>
+                                            <div class="flex flex-col gap-2">
+                                                <p class="text-body-md-medium text-text-tertiary">Địa điểm làm việc:</p>
+                                                <p class="text-body-md-semibold text-text-content">
+                                                    Marcom
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="mt-10 button-wrap bg-red w-[220px]">
+                                            <div class="inner w-full">
+                                                <!-- <figure class="w-5 h-5 aspect-[1/1]"><img
+                                                        src="/assets/image/header/gd-ngay.svg" alt="icon">
+                                                </figure> -->
+                                                <p class="text">Ứng tuyển ngay</p>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                            <figure class="aspect-[553/411] max-w-[553px]">
-                                <img src="/assets/image/cau-hoi-thuong-gap/img-ss1.png" alt="illus">
-                            </figure>
                         </div>
                     </div>
+
                 </section>
                 <!-- -------------------- section 3 -------------------- -->
-                <style>
-                    .faq-tab.active {
-                        border-bottom: 2px solid #02542D;
-                    }
-
-                    .faq-tab:hover {
-                        color: #02542D;
-                        font-weight: 600;
-                        border-bottom: 2px solid #02542D;
-                        transition: all 0.1s ease-in-out;
-
-                    }
-
-                    .favorite-zone {
-                        display: flex;
-                        padding: 24px;
-                        flex-direction: column;
-                        align-items: center;
-                        gap: 16px;
-
-                        border-radius: 16px;
-                        background: linear-gradient(90deg, rgba(199, 134, 61, 0.10) 6.25%, rgba(255, 206, 111, 0.10) 50%, rgba(199, 134, 61, 0.10) 93.75%);
-                        box-shadow: 0 0 0.5px 0 rgba(66, 71, 76, 0.32), 0 4px 8px 0 rgba(66, 71, 76, 0.05), 0 4px 40px 0 #EEE;
-                    }
-
-                    .accordion-faq-content-wrap .content {
-                        padding: 24px;
-                    }
-                </style>
-                <section class="pt-10 lg:pt-[110px]">
+                <section class="my-10 xl:mt-20 xl:mb-[100px]">
                     <div class="container">
-                        <div
-                            class="filter-faq p-3 xl:px-12 xl:py-6 rounded-2xl flex max-md:flex-col lg:items-center gap-5 bg-[rgba(21,133,43,0.10)]">
-                            <div class="select-wrap relative w-full md:w-[240px]">
-                                <select id="selectElement" class="select-element">
-                                    <option value="">Chọn một mục</option>
-                                    <option value="1">Dịch vụ chứng khoán</option>
-                                    <option value="2">Dịch vụ chứng khoán 1</option>
-                                </select>
+                        <h2 class="text-body-3xl-bold text-text-content">
+                            Việc làm liên quan
+                        </h2>
+
+                        <div class="mt-8 grid md:grid-cols-2 xl:grid-cols-3 gap-5">
+                            <div class="recruitment-wrap">
+                                <h2 class="text-body-lg-semibold text-text-logo">Chuyên viên Tư vấn Chứng khoán
+                                    (Hồ
+                                    Chí Minh/ Nha Trang)</h2>
+                                <div class="flex flex-col gap-4">
+                                    <div class="flex items-center gap-4">
+                                        <figure><img src="/assets/image/icon/map.svg" alt="icon"></figure>
+                                        <p class="text-body-md-regular text-text-tertiary">Hồ Chí Minh, Khánh Hòa
+                                        </p>
+                                    </div>
+                                    <div class="flex items-center gap-4">
+                                        <figure><img src="/assets/image/icon/clock.svg" alt="icon"></figure>
+                                        <p class="text-body-md-regular text-text-tertiary">Hết hạn trong 127 ngày
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex max-4xl:flex-wrap items-center gap-2">
+                                    <a href="#" class="button-wrap bg-red w-[150px]">
+                                        <div class="inner w-full">
+                                            <p class="text">Ứng tuyển</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="button-wrap bg-green w-[150px]">
+                                        <div class="inner w-full">
+                                            <p class="text">Xem thêm</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="recruitment-wrap">
+                                <h2 class="text-body-lg-semibold text-text-logo">Chuyên viên Tư vấn Chứng khoán
+                                    (Hồ
+                                    Chí Minh/ Nha Trang)</h2>
+                                <div class="flex flex-col gap-4">
+                                    <div class="flex items-center gap-4">
+                                        <figure><img src="/assets/image/icon/map.svg" alt="icon"></figure>
+                                        <p class="text-body-md-regular text-text-tertiary">Hồ Chí Minh, Khánh Hòa
+                                        </p>
+                                    </div>
+                                    <div class="flex items-center gap-4">
+                                        <figure><img src="/assets/image/icon/clock.svg" alt="icon"></figure>
+                                        <p class="text-body-md-regular text-text-tertiary">Hết hạn trong 127 ngày
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex max-4xl:flex-wrap items-center gap-2">
+                                    <a href="#" class="button-wrap bg-red w-[150px]">
+                                        <div class="inner w-full">
+                                            <p class="text">Ứng tuyển</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="button-wrap bg-green w-[150px]">
+                                        <div class="inner w-full">
+                                            <p class="text">Xem thêm</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="recruitment-wrap">
+                                <h2 class="text-body-lg-semibold text-text-logo">Chuyên viên Tư vấn Chứng khoán
+                                    (Hồ
+                                    Chí Minh/ Nha Trang)</h2>
+                                <div class="flex flex-col gap-4">
+                                    <div class="flex items-center gap-4">
+                                        <figure><img src="/assets/image/icon/map.svg" alt="icon"></figure>
+                                        <p class="text-body-md-regular text-text-tertiary">Hồ Chí Minh, Khánh Hòa
+                                        </p>
+                                    </div>
+                                    <div class="flex items-center gap-4">
+                                        <figure><img src="/assets/image/icon/clock.svg" alt="icon"></figure>
+                                        <p class="text-body-md-regular text-text-tertiary">Hết hạn trong 127 ngày
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex max-4xl:flex-wrap items-center gap-2">
+                                    <a href="#" class="button-wrap bg-red w-[150px]">
+                                        <div class="inner w-full">
+                                            <p class="text">Ứng tuyển</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="button-wrap bg-green w-[150px]">
+                                        <div class="inner w-full">
+                                            <p class="text">Xem thêm</p>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
 
-                            <div class="flex max-sm:flex-col items-center gap-5 max-lg:w-full flex-1">
-                                <input type="text" class="flex-1 input-faq" placeholder="Từ khóa tìm kiếm">
-                                <button class="button-faq">Tìm kiếm</button>
-                            </div>
+                            <!-- pagination -->
+                            <div class="md:col-span-2 xl:col-span-3 mt-10 flex items-center justify-center">
+                                <div class="pagination">
 
-                        </div>
-                        <div class="mt-8 flex gap-8 pb-4 overflow-auto custom-scrollbar">
-                            <a href="#1"
-                                class="min-w-[150px] tab-item faq-tab active text-body-md-semibold text-[#02542D]  pb-4 ">
-                                Giao dịch cổ phiếu
-                            </a>
-                            <a href="#2"
-                                class="min-w-[150px] tab-item faq-tab text-body-md-regular text-[#444444]  pb-4">
-                                Giao dịch trái phiếu
-                            </a>
-                        </div>
-                        <div class="mt-8 flex flex-col gap-6">
-                            <div class="accordion-faq-wrap tab-content" data-tab="1">
-                                <div class="accordion-faq-title">
-                                    <h2 class="flex-1 text-body-md-regular text-[#02542D]">Giao dịch cổ phiếu</h2>
-                                    <button class="accordion-faq-button">
-                                        <figure><img src="/assets/image/icon/chev-down-24-green.svg" alt="illus">
-                                        </figure>
+                                    <button class="page-numbers prev">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path d="M14 7L9 12L14 17" stroke="#2A2D2F" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M14 7L9 12L14 17" stroke="black" stroke-opacity="0.2"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                    <button class="page-numbers current">1</button>
+                                    <button class="page-numbers ">2</button>
+                                    <button class="page-numbers ">3</button>
+                                    <button class="page-numbers ">4</button>
+                                    <button class="page-numbers next">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path d="M10 7L15 12L10 17" stroke="#2A2D2F" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M10 7L15 12L10 17" stroke="black" stroke-opacity="0.2"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
                                     </button>
                                 </div>
-                                <div class="accordion-faq-content-wrap">
-                                    <div class="content text-body-md-regular text-[#666]">
-                                        <p>
-                                            Nhằm thuận tiện giúp Quý Khách hàng có thể dễ dàng thực hiện giao dịch
-                                            chuyển tiền/nộp tiền chứng khoán, AAS có triển khai qua 2 hình thức sau:
-                                        </p>
-                                        <span class="text-body-md-semibold text-[#02542D]">
-                                            CÁCH 1: QUA TÀI KHOẢN ĐỊNH DANH
-                                        </span>
-                                        <p>
-                                            Tài khoản định danh là chương trình AAS hợp tác cùng Ngân hàng TMCP Đầu tư
-                                            và Phát triển Việt Nam (BIDV). Theo đó, tài khoản chứng khoán của Quý khách
-                                            sẽ có mã định danh là “AAS” tại BIDV.Cụ thể, “Số tài khoản định danh
-                                            (TKĐD) của Quý khách có cú pháp như sau:AAS + số TKGDCK của KH (6 số) + số
-                                            tiểu khoản (01/ 06/ 08)
-                                        </p>
-                                        <p>
-                                            Quý khách thực hiện nộp tiền/ chuyển khoản tại các ngân hàng trong nước đến
-                                            tài khoản của AAS vào một trong các số tài khoản sau theo thông tin dưới
-                                            đây:
-                                            Tên người thụ hưởng: Cong ty Co phan Chung khoan SmartInvestNội dung: CT
-                                            TK so 111C……….+( Số tiểu khoản) cua (Họ Tên chủ tài khoản)Danh sách các tài
-                                            khoản Quý khách có thể nộp tiền/chuyển khoản vào TKCK như sau:
-                                        </p>
-                                        <p>
-                                            12160639664 BIDV - Chi nhánh Đống Đa
-                                            21222111119 BIDV - Chi nhánh Hà Thành
-                                            30851000029629 VCB - Chi nhánh Hà Thành
-                                            419122213441026 TCB - Chi nhánh Ba Đình
-                                            51017682643 SHB - Chi nhánh Đông Đô
-                                            6141001536655 VietinBank – Chi nhánh Đống Đa
-                                        </p>
-                                        <div class="favorite-zone lg:min-h-[112px] mt-8">
-                                            <h4>Bạn thấy câu trả lời này hữu ích không?</h4>
-                                            <div class="flex items-center gap-8">
-                                                <button class="button-favorite flex gap-2">
-
-                                                    <span class="text-body-md-semibold text-[#02542D]">Có</span>
-                                                    <figure class="w-6 h-6">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
-                                                            viewBox="0 0 25 24" fill="none">
-                                                            <path
-                                                                d="M20.7694 16.265L21.4749 12.1852C21.6511 11.1662 20.8675 10.2342 19.8345 10.2342H14.6534C14.1399 10.2342 13.7489 9.77328 13.832 9.26598L14.4947 5.22142C14.6024 4.56435 14.5716 3.892 14.4044 3.24752C14.2659 2.71364 13.854 2.28495 13.3123 2.11093L13.1673 2.06435C12.8399 1.95918 12.4826 1.98365 12.1739 2.13239C11.8342 2.29611 11.5856 2.59473 11.4935 2.94989L11.0178 4.78374C10.8664 5.36723 10.646 5.93045 10.3617 6.46262C9.94634 7.24017 9.30416 7.86246 8.63663 8.43769L7.19789 9.67749C6.79223 10.0271 6.57919 10.5506 6.62535 11.0844L7.43752 20.4771C7.51201 21.3386 8.23231 22 9.09609 22H13.7447C17.226 22 20.197 19.5744 20.7694 16.265Z"
-                                                                fill="#02542D" />
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                d="M3.46767 9.48508C3.86893 9.46777 4.21261 9.76963 4.24721 10.1548L5.21881 21.4063C5.28122 22.1281 4.71268 22.7502 3.98671 22.7502C3.30289 22.7502 2.75 22.1954 2.75 21.5129V10.2344C2.75 9.83275 3.0664 9.5024 3.46767 9.48508Z"
-                                                                fill="#02542D" />
-                                                        </svg>
-                                                    </figure>
-                                                </button>
-                                                <button class="button-favorite flex gap-2">
-                                                    <span class="text-body-md-semibold text-[#02542D]">Không</span>
-
-                                                    <figure class="w-6 h-6">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
-                                                            viewBox="0 0 25 24" fill="none">
-                                                            <path
-                                                                d="M20.7694 8.48505L21.4749 12.5648C21.6511 13.5838 20.8675 14.5158 19.8345 14.5158H14.6534C14.1399 14.5158 13.7489 14.9767 13.832 15.484L14.4947 19.5286C14.6024 20.1857 14.5716 20.858 14.4044 21.5025C14.2659 22.0364 13.854 22.465 13.3123 22.6391L13.1673 22.6856C12.8399 22.7908 12.4826 22.7663 12.1739 22.6176C11.8342 22.4539 11.5856 22.1553 11.4935 21.8001L11.0178 19.9663C10.8664 19.3828 10.646 18.8195 10.3617 18.2874C9.94634 17.5098 9.30416 16.8875 8.63663 16.3123L7.19789 15.0725C6.79223 14.7229 6.57919 14.1994 6.62535 13.6656L7.43752 4.27293C7.51201 3.41139 8.23231 2.75 9.09609 2.75H13.7447C17.226 2.75 20.197 5.17561 20.7694 8.48505Z"
-                                                                fill="#02542D" />
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                d="M3.46767 15.2651C3.86893 15.2824 4.21261 14.9806 4.24721 14.5804L5.21881 3.34389C5.28122 2.6221 4.71268 2 3.98671 2C3.30289 2 2.75 2.55474 2.75 3.23726V14.5158C2.75 14.9174 3.0664 15.2478 3.46767 15.2651Z"
-                                                                fill="#02542D" />
-                                                        </svg>
-                                                    </figure>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-faq-wrap tab-content" data-tab="2">
-                                <div class="accordion-faq-title">
-                                    <h2 class="flex-1 text-body-md-regular text-[#02542D]">Giao dịch trái phiếu</h2>
-                                    <button class="accordion-faq-button">
-                                        <figure><img src="/assets/image/icon/chev-down-24-green.svg" alt="illus">
-                                        </figure>
-                                    </button>
-                                </div>
-                                <div class="accordion-faq-content-wrap">
-                                    <div class="content text-body-md-regular text-[#666]">
-                                        <p>
-                                            Nhằm thuận tiện giúp Quý Khách hàng có thể dễ dàng thực hiện giao dịch
-                                            chuyển tiền/nộp tiền chứng khoán, AAS có triển khai qua 2 hình thức sau:
-                                        </p>
-                                        <span class="text-body-md-semibold text-[#02542D]">
-                                            CÁCH 1: QUA TÀI KHOẢN ĐỊNH DANH
-                                        </span>
-                                        <p>
-                                            Tài khoản định danh là chương trình AAS hợp tác cùng Ngân hàng TMCP Đầu tư
-                                            và Phát triển Việt Nam (BIDV). Theo đó, tài khoản chứng khoán của Quý khách
-                                            sẽ có mã định danh là “AAS” tại BIDV.Cụ thể, “Số tài khoản định danh
-                                            (TKĐD) của Quý khách có cú pháp như sau:AAS + số TKGDCK của KH (6 số) + số
-                                            tiểu khoản (01/ 06/ 08)
-                                        </p>
-                                        <p>
-                                            Quý khách thực hiện nộp tiền/ chuyển khoản tại các ngân hàng trong nước đến
-                                            tài khoản của AAS vào một trong các số tài khoản sau theo thông tin dưới
-                                            đây:
-                                            Tên người thụ hưởng: Cong ty Co phan Chung khoan SmartInvestNội dung: CT
-                                            TK so 111C……….+( Số tiểu khoản) cua (Họ Tên chủ tài khoản)Danh sách các tài
-                                            khoản Quý khách có thể nộp tiền/chuyển khoản vào TKCK như sau:
-                                        </p>
-                                        <p>
-                                            12160639664 BIDV - Chi nhánh Đống Đa
-                                            21222111119 BIDV - Chi nhánh Hà Thành
-                                            30851000029629 VCB - Chi nhánh Hà Thành
-                                            419122213441026 TCB - Chi nhánh Ba Đình
-                                            51017682643 SHB - Chi nhánh Đông Đô
-                                            6141001536655 VietinBank – Chi nhánh Đống Đa
-                                        </p>
-                                        <div class="favorite-zone lg:min-h-[112px] mt-8">
-                                            <h4>Bạn thấy câu trả lời này hữu ích không?</h4>
-                                            <div class="flex items-center gap-8">
-                                                <button class="button-favorite flex gap-2">
-
-                                                    <span class="text-body-md-semibold text-[#02542D]">Có</span>
-                                                    <figure class="w-6 h-6">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
-                                                            viewBox="0 0 25 24" fill="none">
-                                                            <path
-                                                                d="M20.7694 16.265L21.4749 12.1852C21.6511 11.1662 20.8675 10.2342 19.8345 10.2342H14.6534C14.1399 10.2342 13.7489 9.77328 13.832 9.26598L14.4947 5.22142C14.6024 4.56435 14.5716 3.892 14.4044 3.24752C14.2659 2.71364 13.854 2.28495 13.3123 2.11093L13.1673 2.06435C12.8399 1.95918 12.4826 1.98365 12.1739 2.13239C11.8342 2.29611 11.5856 2.59473 11.4935 2.94989L11.0178 4.78374C10.8664 5.36723 10.646 5.93045 10.3617 6.46262C9.94634 7.24017 9.30416 7.86246 8.63663 8.43769L7.19789 9.67749C6.79223 10.0271 6.57919 10.5506 6.62535 11.0844L7.43752 20.4771C7.51201 21.3386 8.23231 22 9.09609 22H13.7447C17.226 22 20.197 19.5744 20.7694 16.265Z"
-                                                                fill="#02542D" />
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                d="M3.46767 9.48508C3.86893 9.46777 4.21261 9.76963 4.24721 10.1698L5.21881 21.4063C5.28122 22.1281 4.71268 22.7502 3.98671 22.7502C3.30289 22.7502 2.75 22.1954 2.75 21.5129V10.2344C2.75 9.83275 3.0664 9.5024 3.46767 9.48508Z"
-                                                                fill="#02542D" />
-                                                        </svg>
-                                                    </figure>
-                                                </button>
-                                                <button class="button-favorite flex gap-2">
-                                                    <span class="text-body-md-semibold text-[#02542D]">Không</span>
-
-                                                    <figure class="w-6 h-6">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
-                                                            viewBox="0 0 25 24" fill="none">
-                                                            <path
-                                                                d="M20.7694 8.48505L21.4749 12.5648C21.6511 13.5838 20.8675 14.5158 19.8345 14.5158H14.6534C14.1399 14.5158 13.7489 14.9767 13.832 15.484L14.4947 19.5286C14.6024 20.1857 14.5716 20.858 14.4044 21.5025C14.2659 22.0364 13.854 22.465 13.3123 22.6391L13.1673 22.6856C12.8399 22.7908 12.4826 22.7663 12.1739 22.6176C11.8342 22.4539 11.5856 22.1553 11.4935 21.8001L11.0178 19.9663C10.8664 19.3828 10.646 18.8195 10.3617 18.2874C9.94634 17.5098 9.30416 16.8875 8.63663 16.3123L7.19789 15.0725C6.79223 14.7229 6.57919 14.1994 6.62535 13.6656L7.43752 4.27293C7.51201 3.41139 8.23231 2.75 9.09609 2.75H13.7447C17.226 2.75 20.197 5.17561 20.7694 8.48505Z"
-                                                                fill="#02542D" />
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                d="M3.46767 15.2651C3.86893 15.2824 4.21261 14.9806 4.24721 14.5804L5.21881 3.34389C5.28122 2.6221 4.71268 2 3.98671 2C3.30289 2 2.75 2.55474 2.75 3.23726V14.5158C2.75 14.9174 3.0664 15.2478 3.46767 15.2651Z"
-                                                                fill="#02542D" />
-                                                        </svg>
-                                                    </figure>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </section>
-
-
-                <script>
-                    document.getElementById('selectElement').addEventListener('change', function () {
-                        const wrap = this.closest('.select-wrap');
-                        if (this.value !== '') {
-                            wrap.classList.add('active');
-                        } else {
-                            wrap.classList.remove('active');
-                        }
-                    });
-                    $(document).ready(function () {
-                        // Tab functionality
-                        $('.tab-item').on('click', function () {
-                            var tabId = $(this).attr('href').substring(1);
-                            $('.tab-item').removeClass('active');
-                            $(this).addClass('active');
-                            $('.tab-content').hide();
-                            $('.tab-content[data-tab="' + tabId + '"]').show();
-                        });
-
-                        // Show the first tab content by default
-                        $('.tab-content').hide();
-                        $('.tab-content[data-tab="1"]').show();
-
-                        // Fancybox for video links
-                        $('[data-fancybox="gallery"]').fancybox({
-                            buttons: [
-                                "close"
-                            ]
-                        });
-                    });
-                </script>
-
-
-                <!-- -------------------- section 4 -------------------- -->
-
-                <style>
-                    .tu-van-bg {
-                        background: url(/assets/image/trung-tam-ho-tro/tu-van.png) no-repeat center/cover;
-                    }
-                </style>
-                <section class="mt-10 xl:mt-16">
-                    <div class="container">
-                        <div
-                            class="tu-van-bg rounded-3xl min-h-[370px] flex flex-col items-center justify-center gap-6">
-                            <h2 class="text-heading-h1-semibold text-white text-center">
-                                Tôi có thắc mắc và muốn được tư vấn
-                            </h2>
-                            <div class="flex flex-wrap items-center justify-center gap-2.5">
-                                <a href="#" class="button-wrap bg-red">
-                                    <div class="inner">
-                                        <figure class="w-5 h-5 aspect-[1/1]"><img src="/assets/image/icon/chat-aas.svg"
-                                                alt="icon">
-                                        </figure>
-                                        <p class="text">Chat với aas</p>
-                                    </div>
-                                </a>
-                                <a href="#" class="button-wrap bg-green">
-                                    <div class="inner">
-                                        <figure class="w-5 h-5 aspect-[1/1]"><img src="/assets/image/header/gd-ngay.svg"
-                                                alt="icon">
-                                        </figure>
-                                        <p class="text">gọi cho aas</p>
-                                    </div>
-                                </a>
                             </div>
                         </div>
                     </div>
                 </section>
+                <!-- -------------------- section 4 -------------------- -->
 
                 <!-- -------------------- section 5 -------------------- -->
 
                 <!-- -------------------- section 6 -------------------- -->
-                <style>
-                    .border-cus-img-form-research {
-                        border-radius: 32px 76px 206px 32px;
-                    }
-
-                    @media(max-width:1023px) {
-                        .border-cus-img-form-research {
-                            border-radius: 0;
-                        }
-                    }
-                </style>
-                <div
-                    class="mt-10 lg:mt-[100px] relative flex max-xl:flex-col xl:h-screen xl:max-h-[548px] xl:items-end justify-start">
-                    <div
-                        class="relative z-[2] xl:w-[52%] h-full p-6 rounded-r-[32px] bg-white shadow-[0px_2px_8px_0px_rgba(50,50,50,0.08)] overflow-hidden">
-                        <figure class="absolute left-0 bottom-0"><img src="/assets/image/lkcq/form-illus.svg"
-                                alt="illus"></figure>
-                        <div class="w-full h-full flex flex-col items-center justify-center">
-                            <div class="flex flex-col gap-6 lg:pl-[10%]">
-                                <h2 class="text-heading-h2-semibold text-text-logo">Đăng ký thông tin để được tư vấn đầu
-                                    tư
-                                </h2>
-                                <form class="flex flex-col gap-3 lg:max-w-[525px]">
-                                    <label class="input-label"><input type="text" class="input-field"
-                                            placeholder="Nhập tên"></label>
-                                    <div class="flex max-lg:flex-col items-center gap-2">
-                                        <label class="input-label"><input type="email" class="input-field"
-                                                placeholder="Nhập email"></label>
-                                        <label class="input-label"><input type="text" class="input-field"
-                                                placeholder="Nhập số điện thoại"></label>
-                                    </div>
-                                    <label class="input-label">
-                                        <select class="input-field">
-                                            <option value="">Chọn giao dịch tư vấn</option>
-                                            <option value="">Chọn giao dịch tư vấn</option>
-                                            <option value="">Chọn giao dịch tư vấn</option>
-                                        </select>
-                                    </label>
-                                    <label class="input-label"><textarea class="input-field" rows="4"
-                                            placeholder="Nhập nội dung bạn cần hỗ trợ"></textarea></label>
-
-                                    <button class="mt-3 button-wrap bg-green w-fit">
-                                        <div class="inner w-full">
-                                            <p class="text">Nhập nội dung bạn cần hỗ trợ</p>
-                                            <!-- <figure><img src="/assets/image/icon/arrow-right-gradient-yellow-2.svg"
-                                                                                                                        alt="">
-                                                                                                                </figure> -->
-                                        </div>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full xl:w-[67%] h-full xl:absolute top-0 left-[25%]">
-                        <figure class="border-cus-img-form-research h-full overflow-hidden"><img
-                                class="min-w-full xl:aspect-[903/548]" src="/assets/image/lkcq/form-img.png" alt="img">
-                        </figure>
-                    </div>
-                </div>
-
 
                 <!-- -------------------- section 6 -------------------- -->
 
