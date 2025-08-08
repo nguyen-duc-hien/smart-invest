@@ -2725,6 +2725,44 @@ hr {
     }
   }
 
+  .input-wrap {
+    border-radius: 8px;
+    padding: 1px;
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 8px;
+      padding: 1px;
+      background: linear-gradient(
+        -90deg,
+        #c7863d 0%,
+        #ffce6f 50%,
+        #c7863d 100%
+      );
+      z-index: -1;
+      // opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .input-field {
+      width: 100%;
+      height: 100%;
+      padding: 12px 16px;
+      border-radius: 8px;
+      background: #fff;
+      outline: none;
+      @extend .text-body-md-medium;
+      color: var(--text-content);
+      &::placeholder {
+        color: rgba(102, 102, 102, 0.6);
+      }
+      &:focus {
+        outline: none;
+        border: none;
+      }
+    }
+  }
+
   .input-faq {
     @extend .text-body-md-medium;
     display: flex;
