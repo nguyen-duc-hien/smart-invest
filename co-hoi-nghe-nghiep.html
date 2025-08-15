@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <!-- taildwind css import -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/assets/js/tailwind.config.js"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="/assets/style/main.css" />
+
+    <!-- font import -->
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- fancy box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+        integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdơ]ơpXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script defer src="/assets/js/fancybox.min.js"></script>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="header-pc">
+            <div class="container w-full 4xl:max-w-[1523px] relative z-[2]">
+                <div class="first-row w-full 4xl:max-w-[1483px] flex flex-wrap gap-10 items-center justify-between">
+                    <div class="flex items-center gap-5">
+                        <a href="#" class="link-sub">Về AAS</a>
+                        <a href="#" class="link-sub">Thông tin cổ đông</a>
+                        <a href="#" class="link-sub">Cơ hội nghề nghiệp</a>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="language-select">
+                            <div class="language-show">
+                                <div class="flex items-center gap-2">
+                                    <figure class="show-flag aspect-[1/1] max-w-5 "><img
+                                            src="/assets/image/country-flag/vn.svg" alt="vn">
+                                    </figure>
+                                    <p class="show-text text-body-sm-semibold text-white">Vie</p>
+                                </div>
+                                <figure class="action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.69247 7.09327C3.91711 6.83119 4.31167 6.80084 4.57375 7.02548L10.0003 11.6768L15.4269 7.02548C15.689 6.80084 16.0836 6.83119 16.3082 7.09327C16.5328 7.35535 16.5025 7.74991 16.2404 7.97455L10.4071 12.9745C10.173 13.1752 9.82765 13.1752 9.59359 12.9745L3.76026 7.97455C3.49818 7.74991 3.46783 7.35535 3.69247 7.09327Z"
+                                            fill="white" />
+                                    </svg>
+                                </figure>
+
+                            </div>
+                            <div class="language-container">
+                                <div class="language-item">
+                                    <figure class="aspect-[1/1] max-w-5 "><img src="/assets/image/country-flag/vn.svg"
+                                            alt="vn"></figure>
+                                    <p class="show-text text-body-sm-semibold text-text-content">Vie</p>
+                                </div>
+                                <div class="language-item">
+                                    <figure class="aspect-[1/1] max-w-5 "><img src="/assets/image/country-flag/vn.svg"
+                                            alt="vn"></figure>
+                                    <p class="show-text text-body-sm-semibold text-text-content">Vie</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-[1px] h-[26px] line-1">
+                        </div>
+
+                        <a href="#" class="hotline">
+                            <figure class="icon"><img src="/assets/image/header/hotline.svg" alt="icon"></figure>
+                            1900 1811
+                        </a>
+                    </div>
+                </div>
+                <div class="second-row">
+                    <div class="content-inner">
+                        <div class="flex items-center gap-6 4xl:gap-8">
+                            <a href="#" class="logo">
+                                <figure><img src="/assets/image/header/logo.svg" alt="logo"></figure>
+                            </a>
+                            <nav class="flex items-center gap-4 4xl:gap-6">
+                                <a href="#" class="link-nav active">Trang chủ</a>
+                                <a href="#" class="link-nav">Khách hàng cá nhân</a>
+                                <a href="#" class="link-nav">Khách hàng tổ chức</a>
+                                <a href="#" class="link-nav">AAS Research</a>
+                                <a href="#" class="link-nav">AAS Academy</a>
+                                <a href="#" class="link-nav">Trung tâm CSKH</a>
+                            </nav>
+                        </div>
+                        <div class="flex items-center gap-6">
+                            <a href="#" class="button-wrap bg-green">
+                                <div class="inner">
+                                    <figure class="w-5 h-5 aspect-[1/1]"><img src="/assets/image/header/gd-ngay.svg"
+                                            alt="icon">
+                                    </figure>
+                                    <p class="!hidden 3xl:!inline-block text">Giao dịch ngay</p>
+                                </div>
+                            </a>
+                            <a href="" class="button-wrap bg-red">
+                                <div class="inner">
+                                    <figure class="w-5 h-5 aspect-[1/1]"><img src="/assets/image/header/mo-tk.svg"
+                                            alt="icon">
+                                    </figure>
+                                    <p class="!hidden 3xl:!inline-block text">Mở tài khoản</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-mobile">
+            <div class="container">
+                <div class="second-row">
+                    <div class="content-inner">
+                        <a href="#" class="logo">
+                            <figure><img src="/assets/image/header/logo.svg" alt="logo"></figure>
+                        </a>
+                        <button class="breadcrumb-button">
+                            <figure class="w-6 h-6">
+                                <img src="/assets/image/icon/hamburger-icon.svg" alt="">
+                            </figure>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- breadcrumb mobile -->
+            <div
+                class="breadcrumb-header hidden fixed w-[95vw] max-w-[350px] h-[100vh] top-0 left-0 z-[5] transform transition-transform duration-300 ease-in-out translate-x-full">
+                <div class="shadow-1 flex flex-col gap-10 bg-[#025436] w-full h-full p-6">
+                    <div class="flex items-center justify-between">
+                        <a href="#" class="logo">
+                            <figure><img src="/assets/image/header/logo.svg" alt="logo"></figure>
+                        </a>
+                        <button class="breadcrumb-close">
+                            <figure class="w-8 h-8">
+                                <img src="/assets/image/icon/close.svg" alt="">
+                            </figure>
+                        </button>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="language-select">
+                            <div class="language-show">
+                                <div class="flex items-center gap-2">
+                                    <figure class="show-flag aspect-[1/1] max-w-5 "><img
+                                            src="/assets/image/country-flag/vn.svg" alt="vn">
+                                    </figure>
+                                    <p class="show-text text-body-sm-semibold text-white">Vie</p>
+                                </div>
+                                <figure class="action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.69247 7.09327C3.91711 6.83119 4.31167 6.80084 4.57375 7.02548L10.0003 11.6768L15.4269 7.02548C15.689 6.80084 16.0836 6.83119 16.3082 7.09327C16.5328 7.35535 16.5025 7.74991 16.2404 7.97455L10.4071 12.9745C10.173 13.1752 9.82765 13.1752 9.59359 12.9745L3.76026 7.97455C3.49818 7.74991 3.46783 7.35535 3.69247 7.09327Z"
+                                            fill="white" />
+                                    </svg>
+                                </figure>
+
+                            </div>
+                            <div class="language-container">
+                                <div class="language-item">
+                                    <figure class="aspect-[1/1] max-w-5 "><img src="/assets/image/country-flag/vn.svg"
+                                            alt="vn"></figure>
+                                    <p class="show-text text-body-sm-semibold text-text-content">Vie</p>
+                                </div>
+                                <div class="language-item">
+                                    <figure class="aspect-[1/1] max-w-5 "><img src="/assets/image/country-flag/vn.svg"
+                                            alt="vn"></figure>
+                                    <p class="show-text text-body-sm-semibold text-text-content">Vie</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-[1px] h-[26px] line-1">
+                        </div>
+
+                        <a href="#" class="hotline">
+                            <figure class="icon"><img src="/assets/image/header/hotline.svg" alt="icon"></figure>
+                            1900 1811
+                        </a>
+                    </div>
+
+                    <div class="breadcrumb-container custom-scrollbar">
+                        <nav class="flex flex-col gap-4 4xl:gap-6">
+                            <a href="#" class="link-nav active">Trang chủ</a>
+                            <a href="#" class="link-nav">Khách hàng cá nhân</a>
+                            <a href="#" class="link-nav">Khách hàng tổ chức</a>
+                            <a href="#" class="link-nav">AAS Research</a>
+                            <a href="#" class="link-nav">AAS Academy</a>
+                            <a href="#" class="link-nav">Trung tâm CSKH</a>
+                        </nav>
+                    </div>
+
+                    <div class="flex flex-col items-center gap-4">
+                        <a href="#" class="button-wrap bg-green">
+                            <div class="inner">
+                                <figure class="w-5 h-5 aspect-[1/1]"><img src="/assets/image/header/gd-ngay.svg"
+                                        alt="icon">
+                                </figure>
+                                <p class="text">Giao dịch ngay</p>
+                            </div>
+                        </a>
+                        <a href="" class="button-wrap bg-red">
+                            <div class="inner">
+                                <figure class="w-5 h-5 aspect-[1/1]"><img src="/assets/image/header/mo-tk.svg"
+                                        alt="icon">
+                                </figure>
+                                <p class="text">Mở tài khoản</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- -------------------- section 1 -------------------- -->
+        <style>
+            .job-banner {
+                position: relative;
+            }
+
+            .job-banner::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                background: linear-gradient(180deg, #025436 0%, rgba(2, 84, 54, 0.00) 52.76%);
+            }
+
+            .job-banner::after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                background: linear-gradient(0deg, rgba(0, 30, 0, 0.50) 0%, rgba(0, 30, 0, 0.50) 100%);
+            }
+
+            .border-gradient-cus {
+                position: relative;
+            }
+
+            .border-gradient-cus::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                border-radius: 8px;
+                padding: 1px;
+                background: -webkit-gradient(linear, right top, left top, from(#c7863d), color-stop(50%, #ffce6f), to(#c7863d));
+                background: linear-gradient(-90deg, #c7863d 0%, #ffce6f 50%, #c7863d 100%);
+                z-index: -1;
+                -webkit-transition: opacity 0.3s;
+                transition: opacity 0.3s;
+            }
+
+            .tool-search-banner .wrapper-search {
+                border-radius: 24px;
+                border: 3px solid transparent;
+                border-image: linear-gradient(to right,
+                        rgba(0, 0, 0, 0),
+                        #FFCE6F,
+                        rgba(0, 0, 0, 0)) 1;
+                background: rgba(255, 255, 255, 0.60);
+                backdrop-filter: blur(6px);
+            }
+
+            .input-faq-cus {
+                padding: 12px;
+                border-radius: 8px;
+                background-color: #fff;
+            }
+        </style>
+        <section class="">
+            <div class="job-banner relative">
+                <figure class="max-h-screen">
+                    <img class="max-h-screen min-w-full min-h-[734px]" src="/assets/image/job/banner.png" alt="banner">
+                </figure>
+
+                <div
+                    class="container 4xl:max-w-[1523px] absolute z-[2] top-[20%] left-1/2 -translate-x-1/2 -translate-y-1/2 pt-10">
+                    <div class="flex flex-wrap gap-4 text-body-sm-medium text-white">
+                        <img src="/assets/image/icon/home-icon-white.svg" alt="icon">
+                        <a href="#" class="link-white opacity-50 hover:opacity-100">Home</a>
+                        <span class="opacity-50">/</span>
+                        <a href="#" class="link-white opacity-50 hover:opacity-100">Khách hàng cá nhân</a>
+                        <span class="opacity-50">/</span>
+                        <p>Dịch vụ chứng khoán</p>
+                    </div>
+                </div>
+                <div class="text-content-banner">
+                    <div
+                        class="container 4xl:max-w-[1523px] absolute z-[2] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                        <h1 class="text-heading-h1-semibold text-white uppercase text-center">THĂNG HOA SỰ NGHIỆP - KIẾN
+                            TẠO TƯƠNG LAI</h1>
+                    </div>
+                </div>
+
+                <div class="tool-search-banner">
+                    <div
+                        class="container 4xl:max-w-[1200px] absolute z-[2] top-[80%] left-1/2 -translate-x-1/2 -translate-y-1/2">
+                        <div class=" wrapper-search">
+                            <form
+                                class="flex flex-col 2xl:flex-row gap-5 items-center justify-center min-h-[152px] filter-faq">
+                                <div class="input-wrap relative w-full md:w-[304px] h-12">
+                                    <input type="text" class="input-field" placeholder="Nhập chức danh, vị trí">
+                                </div>
+                                <div class="select-wrap relative w-full md:w-[304px] active">
+                                    <select id="selectElement" class="select-element ">
+                                        <option value="">Tất cả địa điểm</option>
+                                        <option value="1">Dịch vụ chứng khoán</option>
+                                        <option value="2">Dịch vụ chứng khoán 1</option>
+                                    </select>
+                                </div>
+                                <div class="select-wrap relative w-full md:w-[304px] active">
+                                    <select id="selectElement" class="select-element">
+                                        <option value="">Tất cả nghành nghề</option>
+                                        <option value="1">Dịch vụ chứng khoán</option>
+                                        <option value="2">Dịch vụ chứng khoán 1</option>
+                                    </select>
+                                </div>
+                                <button class="button-wrap bg-red">
+                                    <div class="inner">
+                                        <p class=" 3xl:!inline-block text">tìm kiếm</p>
+                                    </div>
+                                </button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- -------------------- section 2 -------------------- -->
+
+
+        <!-- main-view -->
+        <div class="relative flex main-view">
+            <!-- sidebar -->
+            <div class="side-bar">
+                <div class="side-container">
+                    <button class="collapse-sidebar">
+                        <figure><img src="/assets/image/icon/chev-left-side.svg" alt="chev"></figure>
+                    </button>
+                    <div class="side-view">
+                        <!-- title and open side -->
+                        <div class="side-context">
+                            <button class="w-full text-center open-sidebar hidden">
+                                <figure><img src="/assets/image/icon/hamburger-icon-black.svg" alt="chev"></figure>
+                            </button>
+                            <h2 class="text-body-md-semibold text-text-content">Dịch vụ chứng khoán</h2>
+                        </div>
+
+                        <!-- main view -->
+
+                        <div class="main-sidebar">
+                            <div class="side-row active">
+                                <div class="title">
+                                    <figure class="side-icon"><img src="/assets/image/side-bar/chart-icon.svg"
+                                            alt="icon">
+                                    </figure>
+                                    <p>Tiện ích giao dịch</p>
+                                </div>
+                            </div>
+
+                            <div class="side-row">
+                                <div class="title">
+                                    <figure class="side-icon"><img src="/assets/image/side-bar/chart-icon.svg"
+                                            alt="icon">
+                                    </figure>
+                                    <p>Tiện ích giao dịch</p>
+                                </div>
+                            </div>
+
+                            <div class="side-row">
+                                <div class="title">
+                                    <figure class="side-icon"><img src="/assets/image/side-bar/chart-icon.svg"
+                                            alt="icon">
+                                    </figure>
+                                    <p>Tiện ích giao dịch</p>
+                                    <button class="open-sub">
+                                        <figure class="side-icon"><img src="/assets/image/icon/side-chev-down-16.svg"
+                                                alt="icon"></figure>
+                                    </button>
+                                </div>
+                                <div class="sub-bar">
+                                    <div class="mt-6">
+                                    </div>
+
+                                    <ul class="sub-bar-list">
+                                        <li>
+                                            <a href="#" class="sub-row active">
+                                                Phí giao dịch chứng khoán
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="sub-row">
+                                                Phí giao dịch chứng khoán
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="sub-row">
+                                                Phí giao dịch chứng khoán
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="sub-row">
+                                                Phí giao dịch chứng khoán
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="sub-row">
+                                                Phí giao dịch chứng khoán
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- main content -->
+            <div class="main-content-with-sub ">
+                <style>
+                    .bg-hdgd::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 440px;
+                        height: 259px;
+                        background-image: url('/assets/image/huong-dan-gao-dich/back-ss1.svg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        z-index: 1;
+                        user-select: none;
+                    }
+                </style>
+                <section class="bg-hdgd relative pt-10 lg:pt-[70px]">
+                    <div class="container">
+                        <div class="flex flex-col lg:flex-row gap-10 lg:gap-[140px] items-center">
+                            <div class="flex flex-col gap-4">
+                                <h2 class="text-heading-h2-semibold text-text-logo">Vì sao chọn AAS</h2>
+                                <div class="text-body-lg-regular text-[#605E5E] lg:max-w-[628px]">
+                                    Chúng tôi tin rằng mỗi nhân viên tại SmartInvest đều là những mảnh ghép quan trọng
+                                    tạo nên một bức tranh hoàn hảo. Một bức tranh có giá trị vì những mảnh ghép có giá
+                                    trị. Chúng tôi kiến tạo một môi trường làm việc mà ở đó mỗi con người sẽ được phát
+                                    huy giá trị cao nhất trong sự thăng hoa của công việc với những tiêu chí:
+                                </div>
+                            </div>
+                            <figure class="aspect-[487/589] max-w-[487px]">
+                                <img src="/assets/image/job/img-ss1.png" alt="illus">
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+
+                <style>
+                    .box-item {
+                        background: url(/assets/image/job/frame-1.svg) no-repeat center/cover;
+
+                    }
+                </style>
+                <section class="py-10 lg:py-20">
+                    <div class="container">
+                        <div class="flex gap-8 lg:gap-[65px] flex-col lg:flex-row">
+                            <div class="box-item w-full h-full lg:w-[380px] min-h-[282px] relative ">
+                                <div
+                                    class="absolute top-[10%] left-[10%] z-2 transform -translate-x-1/2 -translate-y-1/2">
+                                    <img src="./assets/image/job/circle.svg" alt="">
+                                    <figure
+                                        class="w-10 h-10 absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2">
+                                        <img src="./assets/image/job/icon1.svg" alt="">
+                                    </figure>
+                                </div>
+                                <div
+                                    class=" w-full max-w-[280px] content-in-box  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-1">
+                                    <span class="text-body-xl-bold text-text-logo">Trân trọng sáng tạo</span>
+                                    <ul
+                                        class="flex flex-col gap-2 mt-4 text-body-md-regular text-[#666] custom-disc-job">
+                                        <li class="flex items-baseline gap-2">
+                                            <span class="w-2 h-2 aspect-[1/1] bg-[#15852B]"></span>
+                                            <span>Chúng tôi khuyến khích sự sáng tạo và đổi mới trong công việc</span>
+                                        </li>
+                                        <li class="flex items-baseline gap-2">
+                                            <span class="w-2 h-2 aspect-[1/1] bg-[#15852B]"></span>
+                                            Lộ trình thăng tiến sự nghiệp rõ ràng
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+                <!-- -------------------- section 3 -------------------- -->
+
+
+                <section class=" xl:mb-[222px]">
+                    <div class="container">
+                        <h2 class="text-body-3xl-bold text-[#115231]">
+                            Việc làm liên quan
+                        </h2>
+                        <div class="wrapper-search mt-[30px]">
+                            <form class="flex flex-col lg:flex-row gap-5 items-center justify-st filter-faq">
+                                <div class="input-wrap relative w-full md:w-[304px] h-12">
+                                    <input type="text" class="input-field" placeholder="Nhập chức danh, vị trí">
+                                </div>
+                                <div class="select-wrap relative w-full md:w-[304px] active">
+                                    <select id="selectElement" class="select-element ">
+                                        <option value="">Tất cả địa điểm</option>
+                                        <option value="1">Dịch vụ chứng khoán</option>
+                                        <option value="2">Dịch vụ chứng khoán 1</option>
+                                    </select>
+                                </div>
+                                <div class="select-wrap relative w-full md:w-[304px] active">
+                                    <select id="selectElement" class="select-element">
+                                        <option value="">Tất cả nghành nghề</option>
+                                        <option value="1">Dịch vụ chứng khoán</option>
+                                        <option value="2">Dịch vụ chứng khoán 1</option>
+                                    </select>
+                                </div>
+                                <button class="button-wrap bg-red">
+                                    <div class="inner">
+                                        <p class="!hidden 3xl:!inline-block text">tìm kiếm</p>
+                                    </div>
+                                </button>
+                            </form>
+
+                        </div>
+                        <div class="mt-10 grid md:grid-cols-2 xl:grid-cols-3 gap-5">
+                            <div class="recruitment-wrap">
+                                <h2 class="text-body-lg-semibold text-text-logo">Chuyên viên Tư vấn Chứng khoán
+                                    (Hồ
+                                    Chí Minh/ Nha Trang)</h2>
+                                <div class="flex flex-col gap-4">
+                                    <div class="flex items-center gap-4">
+                                        <figure><img src="/assets/image/icon/map.svg" alt="icon"></figure>
+                                        <p class="text-body-md-regular text-text-tertiary">Hồ Chí Minh, Khánh Hòa
+                                        </p>
+                                    </div>
+                                    <div class="flex items-center gap-4">
+                                        <figure><img src="/assets/image/icon/clock.svg" alt="icon"></figure>
+                                        <p class="text-body-md-regular text-text-tertiary">Hết hạn trong 127 ngày
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex max-4xl:flex-wrap items-center gap-2">
+                                    <a href="#" class="button-wrap bg-red w-[150px]">
+                                        <div class="inner w-full">
+                                            <p class="text">Ứng tuyển</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="button-wrap bg-green w-[150px]">
+                                        <div class="inner w-full">
+                                            <p class="text">Xem thêm</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="recruitment-wrap">
+                                <h2 class="text-body-lg-semibold text-text-logo">Chuyên viên Tư vấn Chứng khoán
+                                    (Hồ
+                                    Chí Minh/ Nha Trang)</h2>
+                                <div class="flex flex-col gap-4">
+                                    <div class="flex items-center gap-4">
+                                        <figure><img src="/assets/image/icon/map.svg" alt="icon"></figure>
+                                        <p class="text-body-md-regular text-text-tertiary">Hồ Chí Minh, Khánh Hòa
+                                        </p>
+                                    </div>
+                                    <div class="flex items-center gap-4">
+                                        <figure><img src="/assets/image/icon/clock.svg" alt="icon"></figure>
+                                        <p class="text-body-md-regular text-text-tertiary">Hết hạn trong 127 ngày
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex max-4xl:flex-wrap items-center gap-2">
+                                    <a href="#" class="button-wrap bg-red w-[150px]">
+                                        <div class="inner w-full">
+                                            <p class="text">Ứng tuyển</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="button-wrap bg-green w-[150px]">
+                                        <div class="inner w-full">
+                                            <p class="text">Xem thêm</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="recruitment-wrap">
+                                <h2 class="text-body-lg-semibold text-text-logo">Chuyên viên Tư vấn Chứng khoán
+                                    (Hồ
+                                    Chí Minh/ Nha Trang)</h2>
+                                <div class="flex flex-col gap-4">
+                                    <div class="flex items-center gap-4">
+                                        <figure><img src="/assets/image/icon/map.svg" alt="icon"></figure>
+                                        <p class="text-body-md-regular text-text-tertiary">Hồ Chí Minh, Khánh Hòa
+                                        </p>
+                                    </div>
+                                    <div class="flex items-center gap-4">
+                                        <figure><img src="/assets/image/icon/clock.svg" alt="icon"></figure>
+                                        <p class="text-body-md-regular text-text-tertiary">Hết hạn trong 127 ngày
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="flex max-4xl:flex-wrap items-center gap-2">
+                                    <a href="#" class="button-wrap bg-red w-[150px]">
+                                        <div class="inner w-full">
+                                            <p class="text">Ứng tuyển</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="button-wrap bg-green w-[150px]">
+                                        <div class="inner w-full">
+                                            <p class="text">Xem thêm</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- pagination -->
+                            <div class="md:col-span-2 xl:col-span-3 mt-10 flex items-center justify-center">
+                                <div class="pagination">
+
+                                    <button class="page-numbers prev">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path d="M14 7L9 12L14 17" stroke="#2A2D2F" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M14 7L9 12L14 17" stroke="black" stroke-opacity="0.2"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                    <button class="page-numbers current">1</button>
+                                    <button class="page-numbers ">2</button>
+                                    <button class="page-numbers ">3</button>
+                                    <button class="page-numbers ">4</button>
+                                    <button class="page-numbers next">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path d="M10 7L15 12L10 17" stroke="#2A2D2F" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M10 7L15 12L10 17" stroke="black" stroke-opacity="0.2"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <style>
+                    .bg-btcg {
+                        background: url(/assets/image/trung-tam-ho-tro/tu-van.png) no-repeat center/cover;
+                    }
+                </style>
+                <section class="mt-10 xl:mt-[67px]">
+                    <div class="container relative bg-btcg rounded-3xl">
+                        <div class="grid md:grid-cols-2 gap-5 items-center">
+                            <div class="p-5 2xl:pl-[45px]">
+                                <div class="text-body-3xl-bold text-white mb-10">
+                                    AAS hướng tới trở thành định chế tài chính hàng đầu Việt Nam dựa trên sức mạnh công
+                                    nghệ Fintech với nền tảng từ sự am hiểu thị trường
+                                    và lấy "Khách hàng là trọng tâm"
+                                </div>
+
+                                <a href="#" class="button-wrap bg-red w-fit">
+                                    <div class="inner">
+                                        <p class="text">Về chúng tôi</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="max-md:order-2 2xl:pr-11 xl:-mt-[22%]">
+                                <figure><img class="xl:ml-auto max-w-[602px]" src="/assets/image/job/about.png"
+                                        alt="img"></figure>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- -------------------- section 4 -------------------- -->
+
+
+                <!-- -------------------- section 5 -------------------- -->
+
+                <section class="my-10 xl:mt-20 xl:mb-[80px]">
+                    <div class="container">
+                        <h2 class="text-heading-h2-bold text-text-logo">Hoạt động sự kiện</h2>
+                        <div class="mt-8 w-full">
+                            <!-- Slider main container -->
+                            <div id="research-swiper" class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="research-item news">
+                                            <figure class="images"><img
+                                                    class="aspect-[413/220] max-lg:min-h-[220px] min-w-full"
+                                                    src="/assets/image/homepage/research.png" alt="research">
+                                            </figure>
+                                            <div class="content">
+                                                <div class="flex flex-col gap-4">
+                                                    <div
+                                                        class="text-body-sm-regular text-text-logo flex items-center gap-2.5">
+                                                        <p>
+                                                            Hướng dẫn nộp tiền
+                                                        </p>
+                                                        <p>
+                                                            -
+                                                        </p>
+                                                        <div class="flex items-center gap-2">
+                                                            <figure><img src="/assets/image/icon/calendar-green.svg"
+                                                                    alt="icon">
+                                                            </figure>
+                                                            <p>
+                                                                01/10/2023</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="flex flex-col gap-2">
+                                                        <h2
+                                                            class="text-body-lg-semibold text-text-content min-h-2lh truncate-2row">
+                                                            VPB – Sẵn sàng cho sự trở lại - cập nhật
+                                                        </h2>
+                                                        <p
+                                                            class="text-body-sm-regular text-text-tertiary truncate-2row">
+                                                            Công ty Cổ phần Chứng khoán SmartInvest công bố thông tin
+                                                            Báo
+                                                            cáo Tỷ
+                                                            lệ an toàn tài chính tại thời điểm 30/6/2023
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="flex flex-wrap gap-10 items-center justify-between">
+                                                    <a href="#" class="download">
+                                                        Xem thêm
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z"
+                                                                fill="#D28D3E" />
+                                                        </svg>
+                                                    </a>
+
+                                                    <div
+                                                        class="flex items-center gap-2 text-body-sm-regular text-text-tertiary">
+                                                        <figure><img src="/assets/image/icon/eyes.svg" alt="icon">
+                                                        </figure>
+                                                        8386 lượt xem
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                   <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="research-item news">
+                                            <figure class="images"><img
+                                                    class="aspect-[413/220] max-lg:min-h-[220px] min-w-full"
+                                                    src="/assets/image/homepage/research.png" alt="research">
+                                            </figure>
+                                            <div class="content">
+                                                <div class="flex flex-col gap-4">
+                                                    <div
+                                                        class="text-body-sm-regular text-text-logo flex items-center gap-2.5">
+                                                        <p>
+                                                            Hướng dẫn nộp tiền
+                                                        </p>
+                                                        <p>
+                                                            -
+                                                        </p>
+                                                        <div class="flex items-center gap-2">
+                                                            <figure><img src="/assets/image/icon/calendar-green.svg"
+                                                                    alt="icon">
+                                                            </figure>
+                                                            <p>
+                                                                01/10/2023</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="flex flex-col gap-2">
+                                                        <h2
+                                                            class="text-body-lg-semibold text-text-content min-h-2lh truncate-2row">
+                                                            VPB – Sẵn sàng cho sự trở lại - cập nhật
+                                                        </h2>
+                                                        <p
+                                                            class="text-body-sm-regular text-text-tertiary truncate-2row">
+                                                            Công ty Cổ phần Chứng khoán SmartInvest công bố thông tin
+                                                            Báo
+                                                            cáo Tỷ
+                                                            lệ an toàn tài chính tại thời điểm 30/6/2023
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="flex flex-wrap gap-10 items-center justify-between">
+                                                    <a href="#" class="download">
+                                                        Xem thêm
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z"
+                                                                fill="#D28D3E" />
+                                                        </svg>
+                                                    </a>
+
+                                                    <div
+                                                        class="flex items-center gap-2 text-body-sm-regular text-text-tertiary">
+                                                        <figure><img src="/assets/image/icon/eyes.svg" alt="icon">
+                                                        </figure>
+                                                        8386 lượt xem
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="research-item news">
+                                            <figure class="images"><img
+                                                    class="aspect-[413/220] max-lg:min-h-[220px] min-w-full"
+                                                    src="/assets/image/homepage/research.png" alt="research">
+                                            </figure>
+                                            <div class="content">
+                                                <div class="flex flex-col gap-4">
+                                                    <div
+                                                        class="text-body-sm-regular text-text-logo flex items-center gap-2.5">
+                                                        <p>
+                                                            Hướng dẫn nộp tiền
+                                                        </p>
+                                                        <p>
+                                                            -
+                                                        </p>
+                                                        <div class="flex items-center gap-2">
+                                                            <figure><img src="/assets/image/icon/calendar-green.svg"
+                                                                    alt="icon">
+                                                            </figure>
+                                                            <p>
+                                                                01/10/2023</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="flex flex-col gap-2">
+                                                        <h2
+                                                            class="text-body-lg-semibold text-text-content min-h-2lh truncate-2row">
+                                                            VPB – Sẵn sàng cho sự trở lại - cập nhật
+                                                        </h2>
+                                                        <p
+                                                            class="text-body-sm-regular text-text-tertiary truncate-2row">
+                                                            Công ty Cổ phần Chứng khoán SmartInvest công bố thông tin
+                                                            Báo
+                                                            cáo Tỷ
+                                                            lệ an toàn tài chính tại thời điểm 30/6/2023
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="flex flex-wrap gap-10 items-center justify-between">
+                                                    <a href="#" class="download">
+                                                        Xem thêm
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z"
+                                                                fill="#D28D3E" />
+                                                        </svg>
+                                                    </a>
+
+                                                    <div
+                                                        class="flex items-center gap-2 text-body-sm-regular text-text-tertiary">
+                                                        <figure><img src="/assets/image/icon/eyes.svg" alt="icon">
+                                                        </figure>
+                                                        8386 lượt xem
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="research-item news">
+                                            <figure class="images"><img
+                                                    class="aspect-[413/220] max-lg:min-h-[220px] min-w-full"
+                                                    src="/assets/image/homepage/research.png" alt="research">
+                                            </figure>
+                                            <div class="content">
+                                                <div class="flex flex-col gap-4">
+                                                    <div
+                                                        class="text-body-sm-regular text-text-logo flex items-center gap-2.5">
+                                                        <p>
+                                                            Hướng dẫn nộp tiền
+                                                        </p>
+                                                        <p>
+                                                            -
+                                                        </p>
+                                                        <div class="flex items-center gap-2">
+                                                            <figure><img src="/assets/image/icon/calendar-green.svg"
+                                                                    alt="icon">
+                                                            </figure>
+                                                            <p>
+                                                                01/10/2023</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="flex flex-col gap-2">
+                                                        <h2
+                                                            class="text-body-lg-semibold text-text-content min-h-2lh truncate-2row">
+                                                            VPB – Sẵn sàng cho sự trở lại - cập nhật
+                                                        </h2>
+                                                        <p
+                                                            class="text-body-sm-regular text-text-tertiary truncate-2row">
+                                                            Công ty Cổ phần Chứng khoán SmartInvest công bố thông tin
+                                                            Báo
+                                                            cáo Tỷ
+                                                            lệ an toàn tài chính tại thời điểm 30/6/2023
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="flex flex-wrap gap-10 items-center justify-between">
+                                                    <a href="#" class="download">
+                                                        Xem thêm
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            viewBox="0 0 24 24" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M13.4697 5.46967C13.7626 5.17678 14.2374 5.17678 14.5303 5.46967L20.5303 11.4697C20.8232 11.7626 20.8232 12.2374 20.5303 12.5303L14.5303 18.5303C14.2374 18.8232 13.7626 18.8232 13.4697 18.5303C13.1768 18.2374 13.1768 17.7626 13.4697 17.4697L18.1893 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H18.1893L13.4697 6.53033C13.1768 6.23744 13.1768 5.76256 13.4697 5.46967Z"
+                                                                fill="#D28D3E" />
+                                                        </svg>
+                                                    </a>
+
+                                                    <div
+                                                        class="flex items-center gap-2 text-body-sm-regular text-text-tertiary">
+                                                        <figure><img src="/assets/image/icon/eyes.svg" alt="icon">
+                                                        </figure>
+                                                        8386 lượt xem
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex swiper-button-container mt-10 mx-auto w-full h-[36px] items-center gap-[34px]">
+                                    <!-- If we need navigation buttons -->
+                                    <div class="research-prev swiper-button-prev"></div>
+                                    <!-- If we need pagination -->
+                                    <div class="!relative !w-fit !bottom-0 research-pagin swiper-pagination"></div>
+                                    <div class="research-next swiper-button-next"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- -------------------- section 6 -------------------- -->
+
+
+                <style>
+                    .tu-van-bg {
+                        background: url(/assets/image/trung-tam-ho-tro/tu-van.png) no-repeat center/cover;
+                    }
+                </style>
+                <section class=" mb-10 xl:mb-[100px]">
+                    <div class=" tu-van-bg  min-h-[370px] flex flex-col items-center justify-center gap-6">
+                        <h2 class="text-heading-h1-semibold text-white text-center">
+                            Tôi có thắc mắc và muốn được tư vấn
+                        </h2>
+                        <div class="flex flex-wrap items-center justify-center gap-2.5">
+                            <a href="#" class="button-wrap bg-red">
+                                <div class="inner">
+                                    <p class="text">ứng tuyển ngay</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- -------------------- section 6 -------------------- -->
+
+                <!-- -------------------- section 7 -------------------- -->
+
+                <!-- -------------------- section 7 -------------------- -->
+
+                <!-- -------------------- section 8 -------------------- -->
+
+                <!-- -------------------- section 9 -------------------- -->
+
+                <!-- -------------------- section 10 -------------------- -->
+
+                <!-- -------------------- section 11 -------------------- -->
+
+                <!-- -------------------- section 12 -------------------- -->
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer footer-bg">
+        <div class="absolute top-0 right-0 z-[1] h-full overflow-hidden">
+            <figure><img src="/assets/image/footer/illus-bg.svg" alt="illus"></figure>
+        </div>
+        <div class="container relative z-[2] w-full 4xl:max-w-[1543px] pt-10 pb-8">
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:flex lg:flex-row gap-10 4xl:gap-20">
+                <!-- first col -->
+                <div class="flex flex-col gap-6 lg:w-[27%] lg:max-w-[403px]">
+                    <a href="#" class="">
+                        <figure class="max-w-[175px]"><img src="/assets/image/footer/logo.svg" alt="logo"></figure>
+                    </a>
+
+                    <div class="social-link-list">
+                        <div class="social-link-item">
+                            <figure><img src="/assets/image/icon/location.svg" alt="icon"></figure>
+                            <div class="context text-body-sm-regular"><a href="#" class="link-white">
+                                    Số 220 + 222 + 224 phố Nguyễn Lương Bằng,
+                                    phường Quang Trung, quận Đồng Đa, thành phố Hà Nội
+                                </a></div>
+                        </div>
+                        <div class="social-link-item">
+                            <figure><img src="/assets/image/icon/headset.svg" alt="icon"></figure>
+                            <div class="context text-body-sm-regular">
+                                Số điện thoại:
+                                <a href="#" class="link-white">
+                                    0243 573 9779
+                                </a>
+                            </div>
+                        </div>
+                        <div class="social-link-item">
+                            <figure><img src="/assets/image/icon/phone.svg" alt="icon"></figure>
+                            <div class="context text-body-sm-regular">
+                                Tổng đài:
+                                <a href="#" class="link-white">
+                                    1900 1811
+                                </a>
+                            </div>
+                        </div>
+                        <div class="social-link-item">
+                            <figure><img src="/assets/image/icon/mail.svg" alt="icon"></figure>
+                            <div class="context text-body-sm-regular">
+                                Email:
+                                <a href="#" class="link-white">
+                                    trungtamcskh@aas.com.vn
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-icon-list">
+                        <a href="#" class="social-icon-item">
+                            <figure><img src="/assets/image/icon/social-fb.svg" alt="social"></figure>
+                        </a>
+                        <a href="#" class="social-icon-item">
+                            <figure><img src="/assets/image/icon/social-zalo.svg" alt="social"></figure>
+                        </a>
+                        <a href="#" class="social-icon-item">
+                            <figure><img src="/assets/image/icon/social-yt.svg" alt="social"></figure>
+                        </a>
+                        <a href="#" class="social-icon-item">
+                            <figure><img src="/assets/image/icon/social-tt.svg" alt="social"></figure>
+                        </a>
+                        <a href="#" class="social-icon-item">
+                            <figure><img src="/assets/image/icon/social-sc.svg" alt="social"></figure>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- second col -->
+                <div class="flex flex-col gap-[22px] lg:w-[33%] lg:max-w-[490px]">
+                    <h2 class="text-body-md-semibold text-white">
+                        Hệ thống chi nhánh và văn phòng đại diện
+                    </h2>
+                    <div class="flex flex-col gap-5">
+                        <div class="flex items-start gap-2.5">
+                            <figure><img src="/assets/image/icon/location.svg" alt="icon"></figure>
+                            <div class="flex-1 flex flex-col gap-2.5">
+                                <p class="text-body-md-semibold text-white">Chi nhánh Hồ Chí Minh</p>
+                                <a href="#" class="link-white text-body-sm-regular">Tầng 12, Diamond Plaza, 34 Lê Duẩn,
+                                    phường Bến Nghé, quận 1, thành phố Hồ Chí Minh</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <figure><img src="/assets/image/icon/location.svg" alt="icon"></figure>
+                            <div class="flex-1 flex flex-col gap-2.5">
+                                <p class="text-body-md-semibold text-white">Văn phòng đại diện Thái Nguyên</p>
+                                <a href="#" class="link-white text-body-sm-regular">Số 668 Phan Đình Phùng, phường Đồng
+                                    Quang, thành phố Thái Nguyên</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2.5">
+                            <figure><img src="/assets/image/icon/location.svg" alt="icon"></figure>
+                            <div class="flex-1 flex flex-col gap-2.5">
+                                <p class="text-body-md-semibold text-white">Văn phòng đại diện Nam Định</p>
+                                <a href="#" class="link-white text-body-sm-regular">Tầng 1, số 13 Minh Khai, phường
+                                    Nguyễn
+                                    Du, thành phố Nam Định</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- third col -->
+                <div class="md:col-span-2 lg:col-span-1 flex flex-col gap-6 lg:w-[30%] lg:max-w-[442px]">
+                    <div class="flex flex-col gap-[15px]">
+                        <h2 class="text-body-md-semibold text-white">
+                            Nhận bản tin phân tích mới nhất từ AAS Research
+                        </h2>
+                        <form class="footer-form">
+                            <div class="relative">
+                                <input type="text" class="input-home" placeholder="Nhập địa chỉ email của bạn">
+                                <button class="button-wrap bg-red">
+                                    <div class="inner footer-button">
+                                        <figure class="w-5 h-5 aspect-[1/1]"><img src="/assets/image/footer/send.svg"
+                                                alt="icon">
+                                        </figure>
+                                        <p class="text">Gửi</p>
+                                    </div>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="flex flex-col gap-5">
+                        <h2 class="text-body-md-semibold text-white">
+                            Quét để tải ứng dụng AAS
+                        </h2>
+                        <div class="flex items-center gap-10">
+                            <div class="flex items-center gap-[15px]">
+                                <figure class="w-16 h-16"><img class="aspect-[1/1]"
+                                        src="/assets/image/footer/qr-aas-pro.svg" alt="qr"></figure>
+                                <p class="text-body-sm-regular text-white">
+                                    Tải ứng dụng <br>AAS PRO
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-[15px]">
+                                <figure class="w-16 h-16"><img class="aspect-[1/1]"
+                                        src="/assets/image/footer/qr-aas-robo.svg" alt="qr"></figure>
+                                <p class="text-body-sm-regular text-white">
+                                    Tải ứng dụng <br>AAS Robo
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-6 w-full h-[1px]"
+                style=" background: linear-gradient(90deg, #03482F 0%, #AEAEB2 50% , #034930 100%);"></div>
+
+            <div class="max-w-[1280px] mx-auto flex flex-wrap items-center justify-center lg:justify-between gap-10">
+                <div class="flex flex-col sm:flex-row items-center gap-4">
+                    <a href="#" class="link-white text-body-sm-medium opacity-70 hover:opacity-100">Khuyến cáo rủi
+                        ro</a>
+                    <div class="w-full h-[1px] sm:w-[1px] sm:h-[26px] line-1">
+                    </div>
+                    <a href="#" class="link-white text-body-sm-medium opacity-70 hover:opacity-100">Điều khoản sử
+                        dụng</a>
+                    <div class="w-full h-[1px] sm:w-[1px] sm:h-[26px] line-1">
+                    </div>
+                    <a href="#" class="link-white text-body-sm-medium opacity-70 hover:opacity-100">Chính sách bảo
+                        mật</a>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <p class="text-body-xs-regular text-white">© 2024 Smart Invest Securities</p>
+                    <div class="w-[1px] h-[26px] line-1">
+                    </div>
+                    <a href="#" class="link-white text-body-xs-regular">All rights Reserved.</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- header script -->
+    <script defer src="/assets/js/sub-menu.js"></script>
+    <script defer src="/assets/js/header.js"></script>
+    <script defer src="/assets/js/language.js"></script>
+    <script defer src="/assets/js/accordion.js"></script>
+    <script defer src="/assets/js/header-scroll.js"></script>
+    <script defer src="/assets/js/sidebar.js"></script>
+    <!-- sticky section script -->
+
+    <!-- swiper script -->
+    <script defer>
+        const swiper = new Swiper('#dvck-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: true,
+            loop: true,
+            // autoplay: true,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1280: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 20,
+                },
+                1440: {
+                    slidesPerView: 3.5,
+                    spaceBetween: 20,
+                }
+            },
+            pagination: {
+                el: ".dvck-pagin",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.dvck-next',
+                prevEl: '.dvck-prev',
+            },
+        });
+
+        const swiper2 = new Swiper('#dvtt-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: true,
+            loop: true,
+            // autoplay: true,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1280: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 20,
+                },
+                1440: {
+                    slidesPerView: 3.5,
+                    spaceBetween: 20,
+                }
+            },
+            pagination: {
+                el: ".dvtt-pagin",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.dvtt-next',
+                prevEl: '.dvtt-prev',
+            },
+        });
+
+        const swiper3 = new Swiper('#research-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: true,
+            loop: true,
+            // autoplay: true,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1280: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1440: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                }
+            },
+            pagination: {
+                el: ".research-pagin",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.research-next',
+                prevEl: '.research-prev',
+            },
+        });
+
+    </script>
+</body>
+
+</html>
