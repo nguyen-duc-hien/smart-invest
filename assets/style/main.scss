@@ -2013,6 +2013,13 @@ hr {
         opacity: 1;
       }
     }
+    &.pagin-active-white {
+      .swiper-pagination {
+        &-bullet-active {
+          background: var(--white);
+        }
+      }
+    }
     .swiper-button {
       &-prev {
         margin: 0;
